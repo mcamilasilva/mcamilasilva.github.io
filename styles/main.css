@@ -27,12 +27,31 @@
   outline: none;
 }
 
-/* Icons */
-
 .btn-icon {
-  color: #fff;
-  background-color: #979797;
+  color: #FFFFFF;
 }
+
+.btn-linkedin, .btn-linkedin i {
+  background-color: #0077B5;
+  color: #FFFFFF;
+}
+
+.btn-linkedin, .btn-linkedin:hover {
+  text-decoration: none;
+  outline: none;
+}
+
+.btn-linkedin:hover,
+.btn-linkedin:focus,
+.btn-linkedin:active,
+.btn-linkedin i:hover,
+.btn-linkedin:hover i,
+.btn-linkedin:focus i,
+.btn-linkedin:active i {
+  background-color: #008bd4 !important;
+}
+
+/* Icons */
 
 .btn-icon:hover {
   color: #fff;
@@ -621,3 +640,29 @@
     font-size: 1em;
   }
 }
+
+
+.btn-fab {
+  position: fixed;
+  bottom: 20px;
+  width: 50px;
+  height: auto;
+  right: 20px;
+  background-color: #2CA8FF;
+}
+
+.btn-fab .btn {
+  position: absolute;
+  bottom: 0;
+  border-radius: 50%;
+  display: block;
+  margin-bottom: 4px;
+  width: 50px; 
+  height: 50px;
+  margin: 4px auto;
+}
+
+.btn-fab > .btn-icon > i.fa-2x {
+  left: 48% !important;
+}
+
