@@ -62,44 +62,10 @@
     box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.17);
   }
   
-  /* NavBar */
-  
-  .sidebar-collapse .navbar .navbar-toggler-bar.bar2 {
-    width: 22px;
-  }
-  
-  .navbar {
-    font-size: 18px;
-    letter-spacing: 1px;
-  }
-  
-  .profile-page .button-container {
-    margin-top: -95px;
-  }
-  
   @media (max-width: 575.98px) {
-    .languages>div {
+    .languages > div {
       margin-top: 1rem!important
     }
-  }
-  
-  .ms-personal-photo img {
-    position: relative;
-    border-radius: 50%;
-    height: 180px;
-    width: 180px;
-    padding: 0;
-    margin: 0;
-    border: 15px solid transparent;
-    z-index: 9999;
-    -webkit-transition: all .3s ease-out;
-    transition: all .3s ease-out;
-  }
-  
-  .ms-personal-photo img:hover {
-    -webkit-transform: scale(1.06, 1.06);
-    transform: scale(1.06, 1.06);
-    cursor: pointer;
   }
   
   /* Circular progress */
@@ -640,35 +606,6 @@
     .ms-certification-header>.date {
       font-size: 1em;
     }
-  }
-  
-  
-  .btn-fab {
-    position: fixed;
-    bottom: 20px;
-    width: 50px;
-    height: auto;
-    right: 20px;
-    background-color: #2CA8FF;
-  }
-  
-  .btn-fab .btn {
-    position: absolute;
-    bottom: 0;
-    border-radius: 50%;
-    display: block;
-    margin-bottom: 4px;
-    width: 50px; 
-    height: 50px;
-    margin: 4px auto;
-  }
-  
-  .btn-fab > .btn-icon > i.fa-2x {
-    left: 48% !important;
-  }
-
-  .nav-link:hover {
-    cursor: pointer;
   }
   
   

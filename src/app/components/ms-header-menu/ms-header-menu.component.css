@@ -1,0 +1,12 @@
+.sidebar-collapse .navbar .navbar-toggler-bar.bar2 {
+    width: 22px;
+  }
+  
+  .navbar {
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+
+.nav-link:hover {
+    cursor: pointer;
+}

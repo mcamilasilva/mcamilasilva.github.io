@@ -1,0 +1,28 @@
+<div class="profile-page">
+  <div class="wrapper">
+    <div class="page-header page-header-small" filter-color="blue">
+      <div class="page-header-image" data-parallax="true"
+        style="background-image: url('assets/images/header_background.jpg');">
+      </div>
+      <div class="container">
+        <div class="content-center">
+          <div class="ms-personal-photo"><img [src]="info.photoUrl" alt="me" /></div>
+          <div class="h2 title">{{info.name}}</div>
+          <p class="category text-white">{{info.position}}</p>
+          <a class="btn btn-icon btn-round btn-linkedin has-tooltip" placement="left" ngbTooltip="Profile on LinkedIn" [href]="info.linkedinUrl" rel="external"
+            target="_blank">
+            <i class="fa fa-linkedin-square"></i>
+          </a>
+        </div>
+      </div>
+      <div class="section pb-0">
+        <div class="container">
+          <div class="button-container">
+            <a class="btn btn-info btn-round" [href]="info.resumeBase64" data-aos="zoom-in"
+              data-aos-anchor="data-aos-anchor" [download]="info.resumeDownloadName">Download CV</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
