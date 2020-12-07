@@ -8,13 +8,17 @@ import { AppComponent } from './app.component';
 import { MsBackToTopButtonComponent } from './components/ms-back-to-top-button/ms-back-to-top-button.component';
 import { MsHeaderMenuComponent } from './components/ms-header-menu/ms-header-menu.component';
 import { MsHeaderBodyComponent } from './components/ms-header-body/ms-header-body.component';
+import { MsAboutMeComponent } from './components/ms-about-me/ms-about-me.component';
+import { MsLanguageLevelComponent } from './components/ms-language-level/ms-language-level.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MsBackToTopButtonComponent,
     MsHeaderMenuComponent,
-    MsHeaderBodyComponent
+    MsHeaderBodyComponent,
+    MsAboutMeComponent,
+    MsLanguageLevelComponent
   ],
   imports: [
     BrowserModule,
