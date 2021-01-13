@@ -10,6 +10,12 @@ import { MsHeaderMenuComponent } from './components/ms-header-menu/ms-header-men
 import { MsHeaderBodyComponent } from './components/ms-header-body/ms-header-body.component';
 import { MsAboutMeComponent } from './components/ms-about-me/ms-about-me.component';
 import { MsLanguageLevelComponent } from './components/ms-language-level/ms-language-level.component';
+import { MsWorkExperienceComponent } from './components/work-experience/ms-work-experience/ms-work-experience.component';
+import { MsWorkExperienceItemComponent } from './components/work-experience/ms-work-experience-item/ms-work-experience-item.component';
+import { PeriodPipe } from './pipes/period.pipe';
+import { MsEducationComponent } from './components/education/ms-education/ms-education.component';
+import { MsEducationItemComponent } from './components/education/ms-education-item/ms-education-item.component';
+import { TranslatePipe } from './pipes/translate.pipe';
 
 @NgModule({
   declarations: [
@@ -18,7 +24,13 @@ import { MsLanguageLevelComponent } from './components/ms-language-level/ms-lang
     MsHeaderMenuComponent,
     MsHeaderBodyComponent,
     MsAboutMeComponent,
-    MsLanguageLevelComponent
+    MsLanguageLevelComponent,
+    MsWorkExperienceComponent,
+    MsWorkExperienceItemComponent,
+    MsEducationComponent,
+    MsEducationItemComponent,
+    PeriodPipe,
+    TranslatePipe
   ],
   imports: [
     BrowserModule,

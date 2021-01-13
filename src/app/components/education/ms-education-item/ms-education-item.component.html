@@ -1,0 +1,34 @@
+<div class="timeline-card-title">
+    <div class="title">
+        <span class="h5">{{info.degree | translate: 'majorDegree'}}</span>
+    </div>
+    <div class="major">
+        <span class="h6">{{info.major | translate: 'major'}}</span>
+    </div>
+    <div class="school">
+        <span>{{info.school | translate: 'school'}}</span>
+    </div>
+    <div class="period">
+        <button class="btn btn-dark btn-round ms-btn-period">{{info.period | period}}</button>
+    </div>
+</div>
+<div class="timeline-card-body" *ngIf="info.additionalInfo">
+    <div>
+        <p class="mb-2"><strong>{{info.additionalInfo.title}}</strong></p>
+        <p>{{info.additionalInfo.info}}</p>
+    </div>
+</div>
+<div class="timeline-footer">
+    <div class="row">
+        <div class=".ms-external-link col-5" *ngIf="info.externalLink">
+            <a [href]="info.externalLink.uri" rel="external" target="_blank">
+                {{info.externalLink.label}} <i class="fa fa-external-link text-info"></i>
+            </a>
+        </div>
+
+        <div class="col-7 text-right">
+            <span>{{info.locale | translate: 'locale'}}</span><i class="fa fa-map-marker text-info"></i>
+        </div>
+    </div>
+
+</div>

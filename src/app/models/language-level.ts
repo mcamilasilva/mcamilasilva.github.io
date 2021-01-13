@@ -1,19 +1,21 @@
+import { Language } from './enums/language.enum';
+
 export class LanguageLevel {
 
-    private _language: string;
+    private _language: Language;
     private _level: number;
 
-    constructor(language?: string, level?: number)
-    constructor(language: string, level: number) {
+    constructor(language?: Language, level?: number)
+    constructor(language: Language, level: number) {
         this._language = language;
         this._level = level;
     }
 
-    get language(): string {
+    get language(): Language {
         return this._language;
     }
 
-    set language(language: string) {
+    set language(language: Language) {
         this._language = language;
     }
 
