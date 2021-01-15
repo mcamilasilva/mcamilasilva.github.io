@@ -16,6 +16,7 @@ import { PeriodPipe } from './pipes/period.pipe';
 import { MsEducationComponent } from './components/education/ms-education/ms-education.component';
 import { MsEducationItemComponent } from './components/education/ms-education-item/ms-education-item.component';
 import { TranslatePipe } from './pipes/translate.pipe';
+import { MsBtnPeriodComponent } from './components/ms-btn-period/ms-btn-period.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { TranslatePipe } from './pipes/translate.pipe';
     MsEducationComponent,
     MsEducationItemComponent,
     PeriodPipe,
-    TranslatePipe
+    TranslatePipe,
+    MsBtnPeriodComponent
   ],
   imports: [
     BrowserModule,

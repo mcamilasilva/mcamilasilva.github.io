@@ -9,7 +9,7 @@
         <span>{{info.school | translate: 'school'}}</span>
     </div>
     <div class="period">
-        <button class="btn btn-dark btn-round ms-btn-period">{{info.period | period}}</button>
+        <ms-btn-period [period]="info.period"></ms-btn-period>
     </div>
 </div>
 <div class="timeline-card-body" *ngIf="info.additionalInfo">

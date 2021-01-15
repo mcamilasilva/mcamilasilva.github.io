@@ -12,9 +12,7 @@ export class MsEducationComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-    console.log(this.items);
-  }
+  ngOnInit(): void {}
 
   /**
    * Indicates if should be an inverted card or not
