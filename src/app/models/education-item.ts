@@ -1,23 +1,23 @@
 import { EducationAdditionalInfo } from './education-additional-info';
-import { Locale } from './enums/locale.enum';
-import { MajorDegree } from './enums/major-degree.enum';
-import { Major } from './enums/major.enum';
-import { School } from './enums/school.enum';
+import { LocaleEnum } from './enums/locale.enum';
+import { MajorDegreeEnum } from './enums/major-degree.enum';
+import { MajorEnum } from './enums/major.enum';
+import { SchoolEnum } from './enums/school.enum';
 import { ExternalLink } from './external-link';
 import { Period } from './period';
 
 export class EducationItem {
 
-    private _school: School;
-    private _degree: MajorDegree;
-    private _major: Major[];
+    private _school: SchoolEnum;
+    private _degree: MajorDegreeEnum;
+    private _major: MajorEnum[];
     private _period: Period;
-    private _locale: Locale;
+    private _locale: LocaleEnum;
     private _externalLink: ExternalLink;
     private _additionalInfo: EducationAdditionalInfo;
 
-    constructor(school?: School, degree?: MajorDegree, major?: Major[], period?: Period, locale?: Locale, externalLink?: ExternalLink, additionalInfo?: EducationAdditionalInfo)
-    constructor(school: School, degree: MajorDegree, major: Major[], period: Period, locale: Locale, externalLink: ExternalLink, additionalInfo: EducationAdditionalInfo) {
+    constructor(school?: SchoolEnum, degree?: MajorDegreeEnum, major?: MajorEnum[], period?: Period, locale?: LocaleEnum, externalLink?: ExternalLink, additionalInfo?: EducationAdditionalInfo)
+    constructor(school: SchoolEnum, degree: MajorDegreeEnum, major: MajorEnum[], period: Period, locale: LocaleEnum, externalLink: ExternalLink, additionalInfo: EducationAdditionalInfo) {
         this._school = school;
         this._degree = degree;
         this._major = major;
@@ -27,27 +27,27 @@ export class EducationItem {
         this._additionalInfo = additionalInfo;
     }
 
-    get school(): School {
+    get school(): SchoolEnum {
         return this._school;
     }
 
-    set school(school: School) {
+    set school(school: SchoolEnum) {
         this._school = school;
     }
 
-    get degree(): MajorDegree {
+    get degree(): MajorDegreeEnum {
         return this._degree;
     }
 
-    set degree(degree: MajorDegree) {
+    set degree(degree: MajorDegreeEnum) {
         this._degree = degree;
     }
 
-    get major(): Major[] {
+    get major(): MajorEnum[] {
         return this._major;
     }
 
-    set major(major: Major[]) {
+    set major(major: MajorEnum[]) {
         this._major = major;
     }
 
@@ -59,11 +59,11 @@ export class EducationItem {
         this._period = period;
     }
 
-    get locale(): Locale {
+    get locale(): LocaleEnum {
         return this._locale;
     }
 
-    set locale(locale: Locale) {
+    set locale(locale: LocaleEnum) {
         this._locale = locale;
     }
 

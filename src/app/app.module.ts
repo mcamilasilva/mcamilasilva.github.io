@@ -17,6 +17,7 @@ import { MsEducationComponent } from './components/education/ms-education/ms-edu
 import { MsEducationItemComponent } from './components/education/ms-education-item/ms-education-item.component';
 import { TranslatePipe } from './pipes/translate.pipe';
 import { MsBtnPeriodComponent } from './components/ms-btn-period/ms-btn-period.component';
+import { MsDetailItemComponent } from './components/ms-detail-item/ms-detail-item.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { MsBtnPeriodComponent } from './components/ms-btn-period/ms-btn-period.c
     MsEducationItemComponent,
     PeriodPipe,
     TranslatePipe,
-    MsBtnPeriodComponent
+    MsBtnPeriodComponent,
+    MsDetailItemComponent
   ],
   imports: [
     BrowserModule,

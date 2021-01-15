@@ -1,12 +1,12 @@
-import { ActivityType } from './enums/activity-type.enum';
+import { ActivityTypeEnum } from './enums/activity-type.enum';
 
 export class ActivityItem {
 
-    private _type: ActivityType;
+    private _type: ActivityTypeEnum;
     private _description: string;
 
-    constructor(type?: ActivityType, description?: string)
-    constructor(type: ActivityType, description: string) {
+    constructor(type?: ActivityTypeEnum, description?: string)
+    constructor(type: ActivityTypeEnum, description: string) {
         this._type = type;
         this._description = description;
     }
@@ -21,11 +21,11 @@ export class ActivityItem {
 
     get iconClass(): string {
         switch (this._type) {
-            case ActivityType.CODING:
+            case ActivityTypeEnum.CODING:
                 return 'fa-code';
-            case ActivityType.DATABASE:
+            case ActivityTypeEnum.DATABASE:
                 return 'fa-database';
-            case ActivityType.SUPPORT:
+            case ActivityTypeEnum.SUPPORT:
                 return 'fa-info-circle';
         }
     }

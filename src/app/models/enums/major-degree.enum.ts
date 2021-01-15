@@ -1,4 +1,4 @@
-export enum MajorDegree {
+export enum MajorDegreeEnum {
 
     BACHELOR,
     MASTER,

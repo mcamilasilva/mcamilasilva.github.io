@@ -1,19 +1,21 @@
+import { MenuItemEnum } from './enums/menu-item.enum';
+
 export class MenuItem {
 
-    private _name: string;
+    private _name: MenuItemEnum;
     private _target: string;
 
-    constructor(name?: string, target?: string)
-    constructor(name: string, target: string) {
+    constructor(name?: MenuItemEnum, target?: string)
+    constructor(name: MenuItemEnum, target: string) {
         this._name = name;
         this._target = target;
     }
 
-    get name(): string {
+    get name(): MenuItemEnum {
         return this._name;
     }
 
-    set name(name: string) {
+    set name(name: MenuItemEnum) {
         this._name = name;
     }
 

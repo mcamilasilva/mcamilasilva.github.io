@@ -1,21 +1,21 @@
-import { Month } from './enums/month.enum';
+import { MonthEnum } from './enums/month.enum';
 
 export class MonthYear {
 
-    private _month: Month;
+    private _month: MonthEnum;
     private _year: number;
 
-    constructor(month?: Month, year?: number)
-    constructor(month: Month, year: number) {
+    constructor(month?: MonthEnum, year?: number)
+    constructor(month: MonthEnum, year: number) {
         this._month = month;
         this._year = year;
     }
 
-    get month(): Month {
+    get month(): MonthEnum {
         return this._month;
     }
 
-    set month(month: Month) {
+    set month(month: MonthEnum) {
         this._month = month;
     }
 

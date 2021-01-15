@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-lg-6 col-md-12">
                 <div class="card-body">
-                    <div class="h5 mt-0 title">About me</div>
+                    <div class="h5 mt-0 title">{{title | translate: 'title'}}</div>
                     <div class="text-justify">
                         <p *ngFor="let paragraph of info.bioParagraphs">{{paragraph}}</p>
                     </div>
@@ -11,26 +11,11 @@
             </div>
             <div class="col-lg-6 col-md-12">
                 <div class="card-body">
-                    <div class="h5 mt-0 title">Details</div>
-                    <div class="row">
-                        <div class="col-lg-3"><strong class="text-capitalize">Age:</strong></div>
-                        <div class="col-lg-9">{{info.age}}</div>
-                    </div>
-                    <div class="row mt-3">
-                        <div class="col-lg-3"><strong class="text-capitalize">Email:</strong></div>
-                        <div class="col-lg-9">{{info.email}}</div>
-                    </div>
-                    <div class="row mt-3">
-                        <div class="col-lg-3"><strong class="text-capitalize">Phone:</strong></div>
-                        <div class="col-lg-9">{{info.phone}}</div>
-                    </div>
-                    <div class="row mt-3">
-                        <div class="col-lg-3"><strong class="text-capitalize">Location:</strong></div>
-                        <div class="col-lg-9">{{info.location}}</div>
-                    </div>
+                    <div class="h5 mt-0 title">{{detailsSectionTitle | translate: 'title'}}</div>
+                    <ms-detail-item *ngFor="let item of info.details" [info]="item"></ms-detail-item>
                 </div>
                 <div class="card-body">
-                    <div class="h5 mt-0 title">Languages</div>
+                    <div class="h5 mt-0 title">{{languagesSectionTitle | translate: 'title'}}</div>
                     <div class="row languages">
                         <div class="col-4" *ngFor="let language of info.languages">
                             <ms-language-level [info]="language"></ms-language-level>

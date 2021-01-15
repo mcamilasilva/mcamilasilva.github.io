@@ -1,21 +1,16 @@
+import { DetailItem } from './detail-item';
 import { LanguageLevel } from './language-level';
 
 export class AboutMe {
 
     private _bioParagraphs: string[];
-    private _age: number;
-    private _email: string;
-    private _phone: string;
-    private _location: string;
+    private _details: DetailItem[];
     private _languages: LanguageLevel[];
-
-    constructor(bioParagraphs?: string[], age?: number, email?: string, phone?: string, location?: string, languages?: LanguageLevel[])
-    constructor(bioParagraphs: string[], age: number, email: string, phone: string, location: string, languages: LanguageLevel[]) {
+    
+    constructor(bioParagraphs?: string[], details?: DetailItem[], languages?: LanguageLevel[])
+    constructor(bioParagraphs: string[], details: DetailItem[], languages: LanguageLevel[]) {
         this._bioParagraphs = bioParagraphs;
-        this._age = age;
-        this._email = email;
-        this._phone = phone;
-        this._location = location;
+        this._details = details;
         this._languages = languages;
     }
 
@@ -27,36 +22,12 @@ export class AboutMe {
         this._bioParagraphs = bioParagraphs;
     }
 
-    get age(): number {
-        return this._age;
+    get details(): DetailItem[] {
+        return this._details;
     }
 
-    set age(age: number) {
-        this._age = age;
-    }
-
-    get email(): string {
-        return this._email;
-    }
-
-    set email(email: string) {
-        this._email = email;
-    }
-
-    get phone(): string {
-        return this._phone;
-    }
-
-    set phone(phone: string) {
-        this._phone = phone;
-    }
-
-    get location(): string {
-        return this._location;
-    }
-
-    set location(location: string) {
-        this._location = location;
+    set details(details: DetailItem[]) {
+        this._details = details;
     }
 
     get languages(): LanguageLevel[] {

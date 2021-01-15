@@ -1,4 +1,4 @@
-export enum School {
+export enum SchoolEnum {
 
     UFSCAR,
     SAPIENZA

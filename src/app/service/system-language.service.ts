@@ -1,6 +1,6 @@
 import { Inject, Injectable } from '@angular/core';
 import { LOCAL_STORAGE, StorageService } from 'ngx-webstorage-service';
-import { SystemLanguage } from '../models/enums/system-language.enum';
+import { SystemLanguageEnum } from '../models/enums/system-language.enum';
 
 @Injectable({
   providedIn: 'root'
@@ -12,14 +12,14 @@ export class SystemLanguageService {
   constructor(@Inject(LOCAL_STORAGE) private storage: StorageService) { }
 
 
-  set language(language: SystemLanguage) {
+  set language(language: SystemLanguageEnum) {
     this.storage.set(this.LANGUAGE_KEY, language);
   }
 
-  get language(): SystemLanguage {
+  get language(): SystemLanguageEnum {
     let language = this.storage.get(this.LANGUAGE_KEY);
-    if (!language || !Object.values(SystemLanguage).includes(language)) {
-      language = SystemLanguage.EN_US;
+    if (!language || !Object.values(SystemLanguageEnum).includes(language)) {
+      language = SystemLanguageEnum.EN_US;
       this.storage.set(this.LANGUAGE_KEY, language);
     }
 

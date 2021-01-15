@@ -1,24 +1,24 @@
-import { SystemLanguage } from '../models/enums/system-language.enum';
-import { Language } from '../models/enums/language.enum';
+import { SystemLanguageEnum } from '../models/enums/system-language.enum';
+import { LanguageEnum } from '../models/enums/language.enum';
 
 const english = <{ [id: string]: string }> {
-    [Language.PORTUGUESE]: 'Portuguese',
-    [Language.ENGLISH]: 'English',
-    [Language.ITALIAN]: 'Italian',
-    [Language.SPANISH]: 'Spanish',
-    [Language.FRENCH]: 'French'
+    [LanguageEnum.PORTUGUESE]: 'Portuguese',
+    [LanguageEnum.ENGLISH]: 'English',
+    [LanguageEnum.ITALIAN]: 'Italian',
+    [LanguageEnum.SPANISH]: 'Spanish',
+    [LanguageEnum.FRENCH]: 'French'
 };
 
 const portuguese = <{ [id: string]: string }> {
-    [Language.PORTUGUESE]: 'Português',
-    [Language.ENGLISH]: 'Inglês',
-    [Language.ITALIAN]: 'Italiano',
-    [Language.SPANISH]: 'Espanhol',
-    [Language.FRENCH]: 'Francês'
+    [LanguageEnum.PORTUGUESE]: 'Português',
+    [LanguageEnum.ENGLISH]: 'Inglês',
+    [LanguageEnum.ITALIAN]: 'Italiano',
+    [LanguageEnum.SPANISH]: 'Espanhol',
+    [LanguageEnum.FRENCH]: 'Francês'
 };
 
 export const LanguageDictionary = <{ [id: string]: { [id: string]: string } }>{
-    [SystemLanguage.EN_US]: english,
-    [SystemLanguage.PT_BR]: portuguese
+    [SystemLanguageEnum.EN_US]: english,
+    [SystemLanguageEnum.PT_BR]: portuguese
 };
 

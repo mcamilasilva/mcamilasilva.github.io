@@ -3,9 +3,10 @@ import { LanguageDictionary } from '../dictionaries/language.dictionary';
 import { LocaleDictionary } from '../dictionaries/locale.dictionary';
 import { MajorDegreeDictionary } from '../dictionaries/major-degree.dictionary';
 import { MajorDictionary } from '../dictionaries/major.dictionary';
+import { MenuItemDictionary } from '../dictionaries/menu-item.dictionary';
 import { SchoolDictionary } from '../dictionaries/school.dictionary';
-import { SectionTitleDictionary } from '../dictionaries/section-title.dictionary';
-import { Major } from '../models/enums/major.enum';
+import { TitleDictionary } from '../dictionaries/title.dictionary';
+import { MajorEnum } from '../models/enums/major.enum';
 import { SystemLanguageService } from '../service/system-language.service';
 
 @Pipe({
@@ -38,8 +39,11 @@ export class TranslatePipe implements PipeTransform {
       case 'language': 
         translatedValue = LanguageDictionary[this.languageService.language][value];
         break;
-      case 'sectionTitle': 
-        translatedValue = SectionTitleDictionary[this.languageService.language][value];
+      case 'title': 
+        translatedValue = TitleDictionary[this.languageService.language][value];
+        break;
+      case 'menuItem': 
+        translatedValue = MenuItemDictionary[this.languageService.language][value];
         break;
       default:
           return value;
@@ -57,7 +61,7 @@ export class TranslatePipe implements PipeTransform {
    * 
    * @param value 
    */
-  private transformMajor(value: Major[]): any {
+  private transformMajor(value: MajorEnum[]): any {
     let majors = new Array<string>(value.length);
     for (let i = 0; i < value.length; i++) {
       if (MajorDictionary[this.languageService.language][value[i]] != null) {

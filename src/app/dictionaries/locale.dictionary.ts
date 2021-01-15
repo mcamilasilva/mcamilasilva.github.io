@@ -1,18 +1,18 @@
-import { SystemLanguage } from '../models/enums/system-language.enum';
-import { Locale } from '../models/enums/locale.enum';
+import { SystemLanguageEnum } from '../models/enums/system-language.enum';
+import { LocaleEnum } from '../models/enums/locale.enum';
 
 const english = <{ [id: string]: string }> {
-    [Locale.SOROCABA]: 'Sorocaba, SP, Brazil',
-    [Locale.ROME]: 'Rome, Italy'
+    [LocaleEnum.SOROCABA]: 'Sorocaba, SP, Brazil',
+    [LocaleEnum.ROME]: 'Rome, Italy'
 };
 
 const portuguese = <{ [id: string]: string }> {
-    [Locale.SOROCABA]: 'Sorocaba, SP, Brasil',
-    [Locale.ROME]: 'Roma, Itália'
+    [LocaleEnum.SOROCABA]: 'Sorocaba, SP, Brasil',
+    [LocaleEnum.ROME]: 'Roma, Itália'
 };
 
 export const LocaleDictionary = <{ [id: string]: { [id: string]: string } }>{
-    [SystemLanguage.EN_US]: english,
-    [SystemLanguage.PT_BR]: portuguese
+    [SystemLanguageEnum.EN_US]: english,
+    [SystemLanguageEnum.PT_BR]: portuguese
 };
 
