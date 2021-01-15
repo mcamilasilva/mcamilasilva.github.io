@@ -8,7 +8,6 @@ import { MonthYear } from '../models/month-year';
 import { Period } from '../models/period';
 import { WorkExperience } from '../models/work-experience';
 
-
 const english = [
     new WorkExperience([PositionEnum.SENIOR_SOFTWARE_DEVELOPER, PositionEnum.TECH_LEAD], CompanyEnum.OPUS, new Period(new MonthYear(MonthEnum.NOV, 2019)),
         'OPUS Software is a software development consulting company based in São Paulo - Brazil. As Tech Lead and Senior Developer, my responsabilities consist mostly of designing solutions, coding, performing code review and assisting my colleagues in order to come out with the best solutions and practices. Currently, I am part of a team that develops and mantains a white label platform that provides bank loans for individuals. Some of the activities I have been involved are given as follows:',

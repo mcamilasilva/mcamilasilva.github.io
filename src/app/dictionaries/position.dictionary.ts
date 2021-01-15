@@ -10,7 +10,7 @@ const english = <{ [id: string]: string }> {
 };
 
 const portuguese = <{ [id: string]: string }> {
-    [PositionEnum.TECH_LEAD]: 'Líder Técnico',
+    [PositionEnum.TECH_LEAD]: 'Líder Técnica',
     [PositionEnum.SENIOR_SOFTWARE_DEVELOPER]: 'Desenvolvedora de Software Sênior',
     [PositionEnum.INTERMEDIATE_SOFTWARE_DEVELOPER]: 'Desenvolvedora de Software Pleno',
     [PositionEnum.WEB_DEVELOPER]: 'Desenvolvedora Web',

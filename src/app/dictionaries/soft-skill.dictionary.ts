@@ -28,8 +28,8 @@ const portuguese = <{ [id: string]: string }> {
     [SoftSkillEnum.PROBLEM_SOLVING]: 'Resolução de Problemas',
     [SoftSkillEnum.RESILIENCE]: 'Resiliência',
     [SoftSkillEnum.SELF_LEARNING]: 'Auto-aprendizagem',
-    [SoftSkillEnum.TEAM_WORK]: 'Trabalho em equipe',
-    [SoftSkillEnum.TIME_MANAGEMENT]: 'Gerenciamento de tempo'
+    [SoftSkillEnum.TEAM_WORK]: 'Trabalho em Equipe',
+    [SoftSkillEnum.TIME_MANAGEMENT]: 'Gerenciamento de Tempo'
 };
 
 export const SoftSkillsDictionary = <{ [id: string]: { [id: string]: string } }>{
