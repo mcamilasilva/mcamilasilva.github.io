@@ -18,7 +18,7 @@ import { MenuItem } from './models/menu-item';
 import { MonthYear } from './models/month-year';
 import { Period } from './models/period';
 import { WorkExperience } from './models/work-experience';
-import { SystemLanguageService } from './service/language.service';
+import { SystemLanguageService } from './service/system-language.service';
 
 @Component({
   selector: 'app-root',

@@ -1,7 +1,7 @@
 import { Pipe, PipeTransform } from '@angular/core';
 import { MonthYear } from '../models/month-year';
 import { Period } from '../models/period';
-import { SystemLanguageService } from '../service/language.service';
+import { SystemLanguageService } from '../service/system-language.service';
 
 @Pipe({
   name: 'period'

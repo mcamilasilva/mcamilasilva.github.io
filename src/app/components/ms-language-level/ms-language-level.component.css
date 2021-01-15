@@ -91,8 +91,8 @@
     animation: loading-100 1s linear forwards 1.8s;
   }
   
-  .circular-progress.progress-65 .progress-left .progress-bar {
-    animation: loading-65 0.4s linear forwards 1.8s;
+  .circular-progress.progress-60 .progress-left .progress-bar {
+    animation: loading-60 0.4s linear forwards 1.8s;
   }
   
   @keyframes loading-100 {
@@ -117,7 +117,7 @@
     }
   }
   
-  @keyframes loading-65 {
+  @keyframes loading-60 {
     0% {
       -webkit-transform: rotate(0deg);
       transform: rotate(0deg);

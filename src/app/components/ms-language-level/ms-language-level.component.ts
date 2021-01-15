@@ -19,7 +19,6 @@ export class MsLanguageLevelComponent implements OnInit {
 
     if (this.info) {
       this.progressClass = { [`progress-${this.info.level}`]: true };
-      this.progressValueClass = { [`progress-value-${this.info.level}`]: true };
     }
   }
 }

@@ -26,7 +26,7 @@
             </a>
         </div>
 
-        <div class="col-7 text-right">
+        <div class="text-right" [class.col-7]="info.externalLink" [class.col-12]="!info.externalLink" >
             <span>{{info.locale | translate: 'locale'}}</span><i class="fa fa-map-marker text-info"></i>
         </div>
     </div>
