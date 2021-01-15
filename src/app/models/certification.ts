@@ -1,16 +1,16 @@
+import { MonthYear } from "./month-year";
+
 export class Certification {
 
     private _name: string;
     private _provider: string;
-    private _month: string;
-    private _year: number;
+    private _date: MonthYear;
 
-    constructor(name?: string, provider?: string, month?: string, year?: number)
-    constructor(name: string, provider: string, month: string, year: number) {
+    constructor(name?: string, provider?: string, date?: MonthYear)
+    constructor(name: string, provider: string, date: MonthYear) {
         this._name = name;
         this._provider = provider;
-        this._month = month;
-        this._year = year;
+        this._date = date;
     }
 
     get name(): string {
@@ -29,20 +29,11 @@ export class Certification {
         this._provider = provider;
     }
 
-    get month(): string {
-        return this._month;
+    get date(): MonthYear {
+        return this._date;
     }
 
-    set month(month: string) {
-        this._month = month;
+    set date(date: MonthYear) {
+        this._date = date;
     }
-
-    get year(): number {
-        return this._year;
-    }
-
-    set year(year: number) {
-        this._year = year;
-    }
-
 }

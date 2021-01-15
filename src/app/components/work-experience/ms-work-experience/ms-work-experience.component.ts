@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { TitleEnum } from 'src/app/models/enums/title.enum';
 import { WorkExperience } from 'src/app/models/work-experience';
 
 @Component({
@@ -9,6 +10,8 @@ import { WorkExperience } from 'src/app/models/work-experience';
 export class MsWorkExperienceComponent implements OnInit {
 
   @Input() experiences: WorkExperience[] = [];
+
+  public title: TitleEnum = TitleEnum.WORK_EXPERIENCE;
 
   constructor() { }
 

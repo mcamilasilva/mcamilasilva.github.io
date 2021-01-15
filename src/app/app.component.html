@@ -8,13 +8,11 @@
   </div>
   <div class="section pb-0" id="experience">
     <div class="container">
-      <div class="h4 text-center mb-4 title">Work Experience</div>
       <ms-work-experience [experiences]="workExperiences"></ms-work-experience>
     </div>
   </div>
   <div class="section pb-0" id="education">
     <div class="container">
-      <div class="h4 text-center mb-4 title">Education</div>
       <ms-education [items]="education"></ms-education>      
     </div>
   </div>
@@ -430,33 +428,7 @@
   </div>
   <div class="section pb-0" id="certifications">
     <div class="container">
-      <div class="h4 text-center mb-4 title">Certifications</div>
-      <div class="card ms-certification">
-        <div class="row">
-          <div class="col-sm-3 bg-info ms-certification-header card-body" data-aos="fade-right" data-aos-offset="50"
-            data-aos-duration="700">
-            <p class="date">Mar 2020</p>
-            <p class="provider">IELTS</p>
-          </div>
-          <div class="col-sm-9 ms-certification-body card-body" data-aos="fade-left" data-aos-offset="50"
-            data-aos-duration="700">
-            <p class="h5">IELTS General Training Overall Band Scores 8</p>
-          </div>
-        </div>
-      </div>
-      <div class="card ms-certification">
-        <div class="row">
-          <div class="col-sm-3 bg-info ms-certification-header card-body" data-aos="fade-right" data-aos-offset="50"
-            data-aos-duration="700">
-            <p class="date">Oct 2018</p>
-            <p class="provider">MCSA</p>
-          </div>
-          <div class="col-sm-9 ms-certification-body card-body" data-aos="fade-left" data-aos-offset="50"
-            data-aos-duration="700">
-            <p class="h5">MCSA: SQL 2016 Database Development</p>
-          </div>
-        </div>
-      </div>
+      <ms-certifications [items]="certifications"></ms-certifications>
     </div>
   </div>
   <ms-back-to-top-button></ms-back-to-top-button>

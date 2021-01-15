@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { EducationItem } from 'src/app/models/education-item';
+import { TitleEnum } from 'src/app/models/enums/title.enum';
 
 @Component({
   selector: 'ms-education',
@@ -9,6 +10,8 @@ import { EducationItem } from 'src/app/models/education-item';
 export class MsEducationComponent implements OnInit {
 
   @Input() items: EducationItem[] = []
+
+  public title: TitleEnum = TitleEnum.EDUCATION;
 
   constructor() { }
 

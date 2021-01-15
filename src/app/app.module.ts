@@ -18,6 +18,9 @@ import { MsEducationItemComponent } from './components/education/ms-education-it
 import { TranslatePipe } from './pipes/translate.pipe';
 import { MsBtnPeriodComponent } from './components/ms-btn-period/ms-btn-period.component';
 import { MsDetailItemComponent } from './components/ms-detail-item/ms-detail-item.component';
+import { MsCertificationsComponent } from './components/certifications/ms-certifications/ms-certifications.component';
+import { MsCertificationItemComponent } from './components/certifications/ms-certification-item/ms-certification-item.component';
+import { DatePipe } from './pipes/date.pipe';
 
 @NgModule({
   declarations: [
@@ -34,7 +37,10 @@ import { MsDetailItemComponent } from './components/ms-detail-item/ms-detail-ite
     PeriodPipe,
     TranslatePipe,
     MsBtnPeriodComponent,
-    MsDetailItemComponent
+    MsDetailItemComponent,
+    MsCertificationsComponent,
+    MsCertificationItemComponent,
+    DatePipe
   ],
   imports: [
     BrowserModule,

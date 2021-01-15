@@ -2,7 +2,7 @@ import { SystemLanguageEnum } from '../models/enums/system-language.enum';
 import { MenuItemEnum } from '../models/enums/menu-item.enum';
 
 const english = <{ [id: string]: string }> {
-    [MenuItemEnum.ABOUT_ME]: 'About',
+    [MenuItemEnum.ABOUT_ME]: 'About me',
     [MenuItemEnum.CERTIFICATION]: 'Certifications',
     [MenuItemEnum.EDUCATION]: 'Education',
     [MenuItemEnum.SKILLS]: 'Skills',

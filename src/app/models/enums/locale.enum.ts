@@ -1,6 +1,7 @@
 export enum LocaleEnum {
 
     SOROCABA,
-    ROME
+    ROME,
+    SAO_PAULO
 
 }
