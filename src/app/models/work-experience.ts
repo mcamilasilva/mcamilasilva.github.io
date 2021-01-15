@@ -1,12 +1,13 @@
 import { ActivityItem } from './activity-item';
 import { CompanyEnum } from './enums/company.enum';
+import { PositionEnum } from './enums/position.enum';
 import { Period } from './period';
 
 export class WorkExperience {
 
     readonly TECHNOLOGIES_THRESHOLD: number = 9;
 
-    private _position: string;
+    private _positions: PositionEnum[];
     private _company: CompanyEnum;
     private _period: Period;
     private _description: string;
@@ -14,9 +15,9 @@ export class WorkExperience {
     private _technologies: string[];
     
     
-    constructor(position?: string, company?: CompanyEnum, period?: Period, description?: string, activities?: ActivityItem[], technologies?: string[])
-    constructor(position: string, company: CompanyEnum, period: Period, description: string, activities: ActivityItem[], technologies: string[]) {
-        this._position = position;
+    constructor(positions?: PositionEnum[], company?: CompanyEnum, period?: Period, description?: string, activities?: ActivityItem[], technologies?: string[])
+    constructor(positions: PositionEnum[], company: CompanyEnum, period: Period, description: string, activities: ActivityItem[], technologies: string[]) {
+        this._positions = positions;
         this._company = company;
         this._period = period;
         this._description = description;
@@ -24,12 +25,12 @@ export class WorkExperience {
         this._technologies = technologies;
     }
 
-    get position(): string {
-        return this._position;
+    get positions(): PositionEnum[] {
+        return this._positions;
     }
 
-    set position(position: string) {
-        this._position = position;
+    set positions(positions: PositionEnum[]) {
+        this._positions = positions;
     }
 
     get company(): CompanyEnum {

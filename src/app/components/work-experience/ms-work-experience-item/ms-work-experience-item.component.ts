@@ -12,6 +12,7 @@ export class MsWorkExperienceItemComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {  }
+  ngOnInit(): void { 
+   }
 
 }

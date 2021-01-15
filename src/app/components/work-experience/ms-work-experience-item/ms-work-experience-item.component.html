@@ -1,9 +1,9 @@
 <div class="timeline-card-title">
     <div class="position">
-        <span class="h5">{{info.position}}</span>
+        <span class="h5">{{ info.positions | translate: 'position'}}</span>
     </div>
     <div class="company">
-        <span>{{info.company}}</span>
+        <span>{{ info.company }}</span>
     </div>
     <div class="period">
         <ms-btn-period [period]="info.period"></ms-btn-period>
