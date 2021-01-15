@@ -16,6 +16,7 @@ import { MajorEnum } from './models/enums/major.enum';
 import { MenuItemEnum } from './models/enums/menu-item.enum';
 import { MonthEnum } from './models/enums/month.enum';
 import { SchoolEnum } from './models/enums/school.enum';
+import { SoftSkillEnum } from './models/enums/soft-skill.enum';
 import { ThesisInfoEnum } from './models/enums/thesis-info.enum';
 import { TitleEnum } from './models/enums/title.enum';
 import { ExternalLink } from './models/external-link';
@@ -24,6 +25,7 @@ import { LanguageLevel } from './models/language-level';
 import { MenuItem } from './models/menu-item';
 import { MonthYear } from './models/month-year';
 import { Period } from './models/period';
+import { Skills } from './models/skills';
 import { WorkExperience } from './models/work-experience';
 import { SystemLanguageService } from './service/system-language.service';
 
@@ -42,6 +44,7 @@ export class AppComponent implements OnInit {
   public workExperiences: WorkExperience[];
   public education: EducationItem[];
   public certifications: Certification[];
+  public skills: Skills;
 
   constructor(private systemLanguageService: SystemLanguageService) {
 
@@ -89,8 +92,13 @@ export class AppComponent implements OnInit {
       new Certification('MCSA: SQL 2016 Database Development', 'MCSA', new MonthYear(MonthEnum.OCT, 2018))
     ];
 
+    let softSkills = [SoftSkillEnum.TEAM_WORK, SoftSkillEnum.COLLABORATION, SoftSkillEnum.COMMITMENT,
+      SoftSkillEnum.CRITICAL_THINKING, SoftSkillEnum.SELF_LEARNING, SoftSkillEnum.ADAPTABILITY,
+      SoftSkillEnum.COMMUNICATION, SoftSkillEnum.TIME_MANAGEMENT, SoftSkillEnum.RESILIENCE,
+      SoftSkillEnum.PROBLEM_SOLVING, SoftSkillEnum.LEADERSHIP, SoftSkillEnum.ATTENTION_TO_DETAIL
+    ];
 
-
+    this.skills = new Skills([], softSkills);
   }
 
   ngOnInit() {

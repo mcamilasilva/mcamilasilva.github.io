@@ -315,7 +315,7 @@
       text-align: center;
     }
   }
-  
+
   .ms-skills {
     padding-right: 15px;
     padding-left: 15px;
@@ -326,73 +326,11 @@
     height: 30px;
     align-content: center;
   }
-  
-  .ms-skill:hover>.ms-level {
-    -webkit-transform: scale(1.2, 1.2);
-    transform: scale(1.2, 1.2);
+
+  .ms-skill > p {
+    margin-bottom: 0px;
   }
-  
+
   .ms-skill:hover {
     cursor: pointer;
   }
-  
-  .ms-hard-skills .ms-skill:hover {
-    background-color: #F4F4F4;
-  }
-  
-  @media (max-width: 575.98px) {
-    .ms-soft-skills .ms-skill:nth-child(even) {
-      color: #2CA8FF;
-    }
-  }
-  
-  @media (min-width: 992px) {
-    .ms-soft-skills .ms-skill:nth-child(even) {
-      color: #2CA8FF;
-    }
-  }
-  
-  @media (min-width: 576px) and (max-width: 991.98px) {
-    .ms-soft-skills .ms-skill-group:nth-child(even) {
-      color: #2CA8FF;
-    }
-  }
-  
-  .ms-soft-skills .ms-skill {
-    text-align: center;
-    margin-bottom: 25px;
-  }
-  
-  .ms-soft-skills .ms-skill>p {
-    margin-bottom: 25px;
-  }
-  
-  .ms-soft-skills .ms-skill-group:first-of-type {
-    margin-top: 30px;
-  }
-  
-  .ms-soft-skills .ms-skill:hover {
-    -webkit-transform: scale(1.4, 1.4);
-    transform: scale(1.4, 1.4);
-  }
-  
-  .ms-skill>p {
-    margin-bottom: 0px;
-  }
-  
-  .ms-hard-skills .ms-skill>.ms-level {
-    float: right;
-    margin-right: 0px;
-    text-align: right;
-  }
-  
-  .ms-skill>.ms-level {
-    color: #2CA8FF;
-  }
-  
-  @media (min-width: 992px) {
-    .ms-hard-skills {
-      max-width: 74%;
-    }
-  }
-  

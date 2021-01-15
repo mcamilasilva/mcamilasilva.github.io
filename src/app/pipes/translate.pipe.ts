@@ -5,6 +5,7 @@ import { MajorDegreeDictionary } from '../dictionaries/major-degree.dictionary';
 import { MajorDictionary } from '../dictionaries/major.dictionary';
 import { MenuItemDictionary } from '../dictionaries/menu-item.dictionary';
 import { SchoolDictionary } from '../dictionaries/school.dictionary';
+import { SoftSkillsDictionary } from '../dictionaries/soft-skill.dictionary';
 import { TitleDictionary } from '../dictionaries/title.dictionary';
 import { MajorEnum } from '../models/enums/major.enum';
 import { SystemLanguageService } from '../service/system-language.service';
@@ -44,6 +45,9 @@ export class TranslatePipe implements PipeTransform {
         break;
       case 'menuItem': 
         translatedValue = MenuItemDictionary[this.languageService.language][value];
+        break;
+      case 'softSkill':
+        translatedValue = SoftSkillsDictionary[this.languageService.language][value];
         break;
       default:
           return value;

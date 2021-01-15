@@ -1,4 +1,5 @@
 import { ActivityItem } from './activity-item';
+import { CompanyEnum } from './enums/company.enum';
 import { Period } from './period';
 
 export class WorkExperience {
@@ -6,15 +7,15 @@ export class WorkExperience {
     readonly TECHNOLOGIES_THRESHOLD: number = 9;
 
     private _position: string;
-    private _company: string;
+    private _company: CompanyEnum;
     private _period: Period;
     private _description: string;
     private _activities: ActivityItem[];
     private _technologies: string[];
     
     
-    constructor(position?: string, company?: string, period?: Period, description?: string, activities?: ActivityItem[], technologies?: string[])
-    constructor(position: string, company: string, period: Period, description: string, activities: ActivityItem[], technologies: string[]) {
+    constructor(position?: string, company?: CompanyEnum, period?: Period, description?: string, activities?: ActivityItem[], technologies?: string[])
+    constructor(position: string, company: CompanyEnum, period: Period, description: string, activities: ActivityItem[], technologies: string[]) {
         this._position = position;
         this._company = company;
         this._period = period;
@@ -31,11 +32,11 @@ export class WorkExperience {
         this._position = position;
     }
 
-    get company(): string {
+    get company(): CompanyEnum {
         return this._company;
     }
 
-    set company(company: string) {
+    set company(company: CompanyEnum) {
         this._company = company;
     }
 

@@ -1,4 +1,4 @@
-export class HardSkillLevel {
+export class HardSkill {
 
     private _skill: string;
     private _level: number; // From 1 to 5

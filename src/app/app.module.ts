@@ -21,9 +21,13 @@ import { MsDetailItemComponent } from './components/ms-detail-item/ms-detail-ite
 import { MsCertificationsComponent } from './components/certifications/ms-certifications/ms-certifications.component';
 import { MsCertificationItemComponent } from './components/certifications/ms-certification-item/ms-certification-item.component';
 import { DatePipe } from './pipes/date.pipe';
+import { MsSkillsComponent } from './components/skills/ms-skills/ms-skills.component';
+import { MsSoftSkillsComponent } from './components/skills/ms-soft-skills/ms-soft-skills.component';
+import { MsHardSkillsComponent } from './components/skills/ms-hard-skills/ms-hard-skills.component';
 
 @NgModule({
   declarations: [
+    // Components
     AppComponent,
     MsBackToTopButtonComponent,
     MsHeaderMenuComponent,
@@ -34,12 +38,17 @@ import { DatePipe } from './pipes/date.pipe';
     MsWorkExperienceItemComponent,
     MsEducationComponent,
     MsEducationItemComponent,
-    PeriodPipe,
-    TranslatePipe,
     MsBtnPeriodComponent,
     MsDetailItemComponent,
     MsCertificationsComponent,
     MsCertificationItemComponent,
+    MsSkillsComponent,
+    MsSoftSkillsComponent,
+    MsHardSkillsComponent,
+
+    // Pipes
+    PeriodPipe,
+    TranslatePipe,
     DatePipe
   ],
   imports: [
