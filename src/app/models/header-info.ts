@@ -1,17 +1,19 @@
+import { PositionEnum } from "./enums/position.enum";
+
 export class HeaderInfo {
 
 
     private _name: string;
-    private _position: string;
+    private _positions: PositionEnum[];
     private _photoUrl: string;
     private _linkedinUrl: string;
     private _resumeBase64: string;
     private _resumeDownloadName: string;
 
-    constructor(name?: string, position?: string, photoUrl?: string, linkedinUrl?: string, resumeBase64?: string)
-    constructor(name: string, position: string, photoUrl: string, linkedinUrl: string, resumeBase64: string) {
+    constructor(name?: string, positions?: PositionEnum[], photoUrl?: string, linkedinUrl?: string, resumeBase64?: string)
+    constructor(name: string, positions: PositionEnum[], photoUrl: string, linkedinUrl: string, resumeBase64: string) {
         this._name = name;
-        this._position = position;
+        this._positions = positions;
         this._photoUrl = photoUrl;
         this._linkedinUrl = linkedinUrl;
         this._resumeBase64 = resumeBase64;
@@ -26,12 +28,12 @@ export class HeaderInfo {
         this._name = name;
     }
 
-    get position(): string {
-        return this._position;
+    get positions(): PositionEnum[] {
+        return this._positions;
     }
 
-    set position(position: string) {
-        this._position = position;
+    set positions(positions: PositionEnum[]) {
+        this._positions = positions;
     }
 
     get photoUrl(): string {

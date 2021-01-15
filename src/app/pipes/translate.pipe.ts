@@ -1,4 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
+import { HardSkillsDictionary } from '../dictionaries/hard-skills.dictionary';
 import { LanguageDictionary } from '../dictionaries/language.dictionary';
 import { LocaleDictionary } from '../dictionaries/locale.dictionary';
 import { MajorDegreeDictionary } from '../dictionaries/major-degree.dictionary';
@@ -51,6 +52,9 @@ export class TranslatePipe implements PipeTransform {
       case 'softSkill':
         translatedValue = SoftSkillsDictionary[this.languageService.language][value];
         break;
+      case 'hardSkill':
+          translatedValue = HardSkillsDictionary[this.languageService.language][value];
+          break;
       case 'position':
           translatedValue = this.transformPositions(value);
           break;

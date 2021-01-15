@@ -1,24 +1,5 @@
-  .ms-skill:hover > .ms-level {
-    -webkit-transform: scale(1.2, 1.2);
-    transform: scale(1.2, 1.2);
+@media (min-width: 992px) {
+  .ms-hard-skills {
+    max-width: 74%;
   }
-  
-  .ms-hard-skills .ms-skill:hover {
-    background-color: #F4F4F4;
-  }  
-  
-  .ms-hard-skills .ms-skill>.ms-level {
-    float: right;
-    margin-right: 0px;
-    text-align: right;
-  }
-  
-  .ms-skill > .ms-level {
-    color: #2CA8FF;
-  }
-  
-  @media (min-width: 992px) {
-    .ms-hard-skills {
-      max-width: 74%;
-    }
-  }
+}

@@ -9,17 +9,21 @@ import { Certification } from './models/certification';
 import { DetailItem } from './models/detail-item';
 import { EducationAdditionalInfo } from './models/education-additional-info';
 import { EducationItem } from './models/education-item';
+import { HardSkillEnum } from './models/enums/hard-skill.enum';
 import { LanguageEnum } from './models/enums/language.enum';
 import { LocaleEnum } from './models/enums/locale.enum';
 import { MajorDegreeEnum } from './models/enums/major-degree.enum';
 import { MajorEnum } from './models/enums/major.enum';
 import { MenuItemEnum } from './models/enums/menu-item.enum';
 import { MonthEnum } from './models/enums/month.enum';
+import { PositionEnum } from './models/enums/position.enum';
 import { SchoolEnum } from './models/enums/school.enum';
+import { SkillLevelEnum } from './models/enums/skill-level.enum';
 import { SoftSkillEnum } from './models/enums/soft-skill.enum';
 import { ThesisInfoEnum } from './models/enums/thesis-info.enum';
 import { TitleEnum } from './models/enums/title.enum';
 import { ExternalLink } from './models/external-link';
+import { HardSkill } from './models/hard-skill';
 import { HeaderInfo } from './models/header-info';
 import { LanguageLevel } from './models/language-level';
 import { MenuItem } from './models/menu-item';
@@ -56,7 +60,7 @@ export class AppComponent implements OnInit {
       new MenuItem(MenuItemEnum.CERTIFICATION, '#certifications')
     ];
 
-    this.headerInfo = new HeaderInfo('Manoela Silva', 'Software Developer, Tech Lead',
+    this.headerInfo = new HeaderInfo('Manoela Silva', [PositionEnum.SENIOR_SOFTWARE_DEVELOPER, PositionEnum.TECH_LEAD],
       'assets/images/me.jpeg', 'https://www.linkedin.com/in/mcbsilva/?locale=en_US',
       'https://drive.google.com/uc?export=download&id=15Jvl7DESK0ieoPxH-vCqz-NcAHK-eU9J');
 
@@ -98,7 +102,46 @@ export class AppComponent implements OnInit {
       SoftSkillEnum.PROBLEM_SOLVING, SoftSkillEnum.LEADERSHIP, SoftSkillEnum.ATTENTION_TO_DETAIL
     ];
 
-    this.skills = new Skills([], softSkills);
+    let hardSkills = [
+      new HardSkill(HardSkillEnum.PROGRAMMING_LOGIC, SkillLevelEnum.FIVE),
+      new HardSkill(HardSkillEnum.OOP, SkillLevelEnum.FIVE),
+      new HardSkill(HardSkillEnum.DATA_WAREHOUSE, SkillLevelEnum.THREE_AND_HALF),
+      new HardSkill(HardSkillEnum.OLAP, SkillLevelEnum.THREE_AND_HALF),
+      new HardSkill(HardSkillEnum.SQL_SERVER, SkillLevelEnum.FOUR),
+      new HardSkill(HardSkillEnum.POSTGRESQL, SkillLevelEnum.FOUR_AND_HALF),
+      new HardSkill(HardSkillEnum.MY_SQL, SkillLevelEnum.THREE_AND_HALF),
+      new HardSkill(HardSkillEnum.MONGO_DB, SkillLevelEnum.FOUR),
+      new HardSkill(HardSkillEnum.NEO4J, SkillLevelEnum.THREE),
+      new HardSkill(HardSkillEnum.SCRUM_KANBAN, SkillLevelEnum.FIVE),
+      new HardSkill(HardSkillEnum.JIRA_CONFLUENCE, SkillLevelEnum.FOUR),
+      new HardSkill(HardSkillEnum.DDD, SkillLevelEnum.THREE_AND_HALF),
+      new HardSkill(HardSkillEnum.TDD, SkillLevelEnum.FIVE),
+      new HardSkill(HardSkillEnum.API_DESIGN, SkillLevelEnum.FOUR),
+      new HardSkill(HardSkillEnum.DESIGN_PATTERNS, SkillLevelEnum.THREE_AND_HALF),
+      new HardSkill(HardSkillEnum.SWAGGER, SkillLevelEnum.FOUR),
+      new HardSkill(HardSkillEnum.POSTMAN, SkillLevelEnum.FOUR),
+      new HardSkill(HardSkillEnum.SOAPUI, SkillLevelEnum.TWO_AND_HALF),
+      new HardSkill(HardSkillEnum.JAVA, SkillLevelEnum.FIVE),
+      new HardSkill(HardSkillEnum.SPRING_BOOT, SkillLevelEnum.FOUR),
+      new HardSkill(HardSkillEnum.HIBERNATE, SkillLevelEnum.THREE_AND_HALF),
+      new HardSkill(HardSkillEnum.C_SHARP, SkillLevelEnum.FOUR),
+      new HardSkill(HardSkillEnum.ENTITY_FRAMEWORK, SkillLevelEnum.FOUR),
+      new HardSkill(HardSkillEnum.JUNIT, SkillLevelEnum.THREE),
+      new HardSkill(HardSkillEnum.ANGULAR, SkillLevelEnum.FOUR),
+      new HardSkill(HardSkillEnum.JAVASCRIPT_TYPESCRIPT, SkillLevelEnum.THREE_AND_HALF),
+      new HardSkill(HardSkillEnum.KENDO_UI, SkillLevelEnum.THREE),
+      new HardSkill(HardSkillEnum.JSON, SkillLevelEnum.FIVE),
+      new HardSkill(HardSkillEnum.XML, SkillLevelEnum.THREE),
+      new HardSkill(HardSkillEnum.FRONT_TECHNOLOGIES, SkillLevelEnum.THREE),
+      new HardSkill(HardSkillEnum.REST, SkillLevelEnum.FOUR_AND_HALF),
+      new HardSkill(HardSkillEnum.GIT, SkillLevelEnum.FOUR),
+      new HardSkill(HardSkillEnum.MAVEN, SkillLevelEnum.FOUR),
+      new HardSkill(HardSkillEnum.JENKINS, SkillLevelEnum.THREE),
+      new HardSkill(HardSkillEnum.AWS, SkillLevelEnum.THREE_AND_HALF),
+      new HardSkill(HardSkillEnum.TFS, SkillLevelEnum.THREE)
+    ];
+
+    this.skills = new Skills(hardSkills, softSkills);
   }
 
   ngOnInit() {

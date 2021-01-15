@@ -14,6 +14,7 @@ export enum HardSkillEnum {
     DDD,
     TDD,
     API_DESIGN,
+    DESIGN_PATTERNS,
     SWAGGER,
     POSTMAN,
     SOAPUI,

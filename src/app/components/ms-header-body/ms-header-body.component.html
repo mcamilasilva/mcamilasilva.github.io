@@ -7,8 +7,8 @@
       <div class="container">
         <div class="content-center">
           <div class="ms-personal-photo"><img [src]="info.photoUrl" alt="me" /></div>
-          <div class="h2 title">{{info.name}}</div>
-          <p class="category text-white">{{info.position}}</p>
+          <div class="h2 title">{{ info.name }}</div>
+          <p class="category text-white">{{ info.positions | translate: 'position' }}</p>
           <a class="btn btn-icon btn-round btn-linkedin has-tooltip" placement="left" ngbTooltip="Profile on LinkedIn" [href]="info.linkedinUrl" rel="external"
             target="_blank">
             <i class="fa fa-linkedin-square"></i>

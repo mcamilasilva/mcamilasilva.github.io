@@ -24,6 +24,7 @@ import { DatePipe } from './pipes/date.pipe';
 import { MsSkillsComponent } from './components/skills/ms-skills/ms-skills.component';
 import { MsSoftSkillsComponent } from './components/skills/ms-soft-skills/ms-soft-skills.component';
 import { MsHardSkillsComponent } from './components/skills/ms-hard-skills/ms-hard-skills.component';
+import { MsHardSkillsItemComponent } from './components/skills/ms-hard-skills-item/ms-hard-skills-item.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { MsHardSkillsComponent } from './components/skills/ms-hard-skills/ms-har
     MsSkillsComponent,
     MsSoftSkillsComponent,
     MsHardSkillsComponent,
+    MsHardSkillsItemComponent,
 
     // Pipes
     PeriodPipe,
