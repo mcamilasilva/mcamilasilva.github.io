@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
 import * as AOS from 'aos';
-import { LocaleDictionary } from './dictionaries/locale.dictionary';
+
+import { AboutMeInfoDictionary } from './dictionaries/about-me-info.dictionary';
 import { ThesisInfoDictionary } from './dictionaries/thesis-info.dictionary';
 import { WorkExperiencesDictionary } from './dictionaries/work-experiences.dictionary';
 import { AboutMe } from './models/about-me';
@@ -9,6 +10,7 @@ import { Certification } from './models/certification';
 import { DetailItem } from './models/detail-item';
 import { EducationAdditionalInfo } from './models/education-additional-info';
 import { EducationItem } from './models/education-item';
+import { AboutMeInfoEnum } from './models/enums/about-me-info.enum';
 import { HardSkillEnum } from './models/enums/hard-skill.enum';
 import { LanguageEnum } from './models/enums/language.enum';
 import { LocaleEnum } from './models/enums/locale.enum';
@@ -61,19 +63,18 @@ export class AppComponent implements OnInit {
     this.headerInfo = new HeaderInfo('Manoela Silva', [PositionEnum.SENIOR_SOFTWARE_DEVELOPER, PositionEnum.TECH_LEAD],
       'assets/images/me.jpeg', 'https://drive.google.com/uc?export=download&id=15Jvl7DESK0ieoPxH-vCqz-NcAHK-eU9J');
 
-    let aboutMeParagraphs: string[] = [
-      `I am a Senior Software Developer who is passionate about technology. Seeing an idea getting off the ground and becoming something that improves people's lives brings me real joy.`,
-      `Although I have a proper knowledge of front-end techniques, my inclination is towards back-end. I am also really fond of good development techniques, such as clean code, design patterns, and so on, and I try to apply them as much as possible.`,
-      `Additionally, I have a strong can-do, hands-on attitude, and I am a true believer of teamwork. I am from the opinion that "two heads are better than one" and knowledge can always be improved. I just love learning new things and acquiring new skills.`
-    ];
-    let languages: LanguageLevel[] = [new LanguageLevel(LanguageEnum.ENGLISH, 90), new LanguageLevel(LanguageEnum.PORTUGUESE, 100), new LanguageLevel(LanguageEnum.ITALIAN, 60)];
-    let details: DetailItem[] = [
-      new DetailItem(TitleEnum.AGE, '28'),
-      new DetailItem(TitleEnum.EMAIL, 'manoelacamila.silva@gmail.com'),
-      new DetailItem(TitleEnum.PHONE, '+55 11 94989-8386'),
-      new DetailItem(TitleEnum.LOCATION, LocaleDictionary[this.systemLanguageService.language][LocaleEnum.SAO_PAULO])
-    ]
-    this.aboutMeInfo = new AboutMe(aboutMeParagraphs, details, languages)
+    this.aboutMeInfo = new AboutMe(AboutMeInfoDictionary[this.systemLanguageService.language][AboutMeInfoEnum.DESCRIPTION],
+      [
+        new DetailItem(TitleEnum.AGE, AboutMeInfoDictionary[this.systemLanguageService.language][AboutMeInfoEnum.AGE]),
+        new DetailItem(TitleEnum.EMAIL, AboutMeInfoDictionary[this.systemLanguageService.language][AboutMeInfoEnum.EMAIL]),
+        new DetailItem(TitleEnum.PHONE, AboutMeInfoDictionary[this.systemLanguageService.language][AboutMeInfoEnum.PHONE]),
+        new DetailItem(TitleEnum.LOCATION, AboutMeInfoDictionary[this.systemLanguageService.language][AboutMeInfoEnum.LOCATION])
+      ],
+      [
+        new LanguageLevel(LanguageEnum.ENGLISH, 90), new LanguageLevel(LanguageEnum.PORTUGUESE, 100),
+        new LanguageLevel(LanguageEnum.ITALIAN, 60)
+      ]
+    )
 
     this.workExperiences = WorkExperiencesDictionary[this.systemLanguageService.language];
 
@@ -93,15 +94,16 @@ export class AppComponent implements OnInit {
       new Certification('MCSA: SQL 2016 Database Development', 'MCSA', new MonthYear(MonthEnum.OCT, 2018))
     ];
 
-    let softSkills = [SoftSkillEnum.TEAM_WORK, SoftSkillEnum.COLLABORATION, SoftSkillEnum.COMMITMENT,
+    let softSkills = [
+      SoftSkillEnum.TEAM_WORK, SoftSkillEnum.COLLABORATION, SoftSkillEnum.COMMITMENT,
       SoftSkillEnum.CRITICAL_THINKING, SoftSkillEnum.SELF_LEARNING, SoftSkillEnum.ADAPTABILITY,
       SoftSkillEnum.COMMUNICATION, SoftSkillEnum.TIME_MANAGEMENT, SoftSkillEnum.RESILIENCE,
       SoftSkillEnum.PROBLEM_SOLVING, SoftSkillEnum.LEADERSHIP, SoftSkillEnum.ATTENTION_TO_DETAIL
     ];
 
     let hardSkills = [
-      new HardSkill(HardSkillEnum.PROGRAMMING_LOGIC, SkillLevelEnum.FIVE),
-      new HardSkill(HardSkillEnum.OOP, SkillLevelEnum.FIVE),
+      new HardSkill(HardSkillEnum.PROGRAMMING_LOGIC, SkillLevelEnum.MAX),
+      new HardSkill(HardSkillEnum.OOP, SkillLevelEnum.MAX),
       new HardSkill(HardSkillEnum.DATA_WAREHOUSE, SkillLevelEnum.THREE_AND_HALF),
       new HardSkill(HardSkillEnum.OLAP, SkillLevelEnum.THREE_AND_HALF),
       new HardSkill(HardSkillEnum.SQL_SERVER, SkillLevelEnum.FOUR),
@@ -109,16 +111,16 @@ export class AppComponent implements OnInit {
       new HardSkill(HardSkillEnum.MY_SQL, SkillLevelEnum.THREE_AND_HALF),
       new HardSkill(HardSkillEnum.MONGO_DB, SkillLevelEnum.FOUR),
       new HardSkill(HardSkillEnum.NEO4J, SkillLevelEnum.THREE),
-      new HardSkill(HardSkillEnum.SCRUM_KANBAN, SkillLevelEnum.FIVE),
+      new HardSkill(HardSkillEnum.SCRUM_KANBAN, SkillLevelEnum.MAX),
       new HardSkill(HardSkillEnum.JIRA_CONFLUENCE, SkillLevelEnum.FOUR),
       new HardSkill(HardSkillEnum.DDD, SkillLevelEnum.THREE_AND_HALF),
-      new HardSkill(HardSkillEnum.TDD, SkillLevelEnum.FIVE),
+      new HardSkill(HardSkillEnum.TDD, SkillLevelEnum.MAX),
       new HardSkill(HardSkillEnum.API_DESIGN, SkillLevelEnum.FOUR),
       new HardSkill(HardSkillEnum.DESIGN_PATTERNS, SkillLevelEnum.THREE_AND_HALF),
       new HardSkill(HardSkillEnum.SWAGGER, SkillLevelEnum.FOUR),
       new HardSkill(HardSkillEnum.POSTMAN, SkillLevelEnum.FOUR),
       new HardSkill(HardSkillEnum.SOAPUI, SkillLevelEnum.TWO_AND_HALF),
-      new HardSkill(HardSkillEnum.JAVA, SkillLevelEnum.FIVE),
+      new HardSkill(HardSkillEnum.JAVA, SkillLevelEnum.MAX),
       new HardSkill(HardSkillEnum.SPRING_BOOT, SkillLevelEnum.FOUR),
       new HardSkill(HardSkillEnum.HIBERNATE, SkillLevelEnum.THREE_AND_HALF),
       new HardSkill(HardSkillEnum.C_SHARP, SkillLevelEnum.FOUR),
@@ -127,7 +129,7 @@ export class AppComponent implements OnInit {
       new HardSkill(HardSkillEnum.ANGULAR, SkillLevelEnum.FOUR),
       new HardSkill(HardSkillEnum.JAVASCRIPT_TYPESCRIPT, SkillLevelEnum.THREE_AND_HALF),
       new HardSkill(HardSkillEnum.KENDO_UI, SkillLevelEnum.THREE),
-      new HardSkill(HardSkillEnum.JSON, SkillLevelEnum.FIVE),
+      new HardSkill(HardSkillEnum.JSON, SkillLevelEnum.MAX),
       new HardSkill(HardSkillEnum.XML, SkillLevelEnum.THREE),
       new HardSkill(HardSkillEnum.FRONT_TECHNOLOGIES, SkillLevelEnum.THREE),
       new HardSkill(HardSkillEnum.REST, SkillLevelEnum.FOUR_AND_HALF),

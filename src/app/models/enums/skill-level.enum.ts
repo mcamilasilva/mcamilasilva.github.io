@@ -8,5 +8,5 @@ export enum SkillLevelEnum {
     THREE_AND_HALF = 3.5,
     FOUR = 4.0,
     FOUR_AND_HALF = 4.5,
-    FIVE = 5.0
+    MAX = 5.0
 }
