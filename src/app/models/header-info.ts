@@ -6,16 +6,14 @@ export class HeaderInfo {
     private _name: string;
     private _positions: PositionEnum[];
     private _photoUrl: string;
-    private _linkedinUrl: string;
     private _resumeBase64: string;
     private _resumeDownloadName: string;
 
-    constructor(name?: string, positions?: PositionEnum[], photoUrl?: string, linkedinUrl?: string, resumeBase64?: string)
-    constructor(name: string, positions: PositionEnum[], photoUrl: string, linkedinUrl: string, resumeBase64: string) {
+    constructor(name?: string, positions?: PositionEnum[], photoUrl?: string, resumeBase64?: string)
+    constructor(name: string, positions: PositionEnum[], photoUrl: string, resumeBase64: string) {
         this._name = name;
         this._positions = positions;
         this._photoUrl = photoUrl;
-        this._linkedinUrl = linkedinUrl;
         this._resumeBase64 = resumeBase64;
         this._resumeDownloadName = `${this.name} - Resume.pdf`;
     }
@@ -42,14 +40,6 @@ export class HeaderInfo {
 
     set photoUrl(photoUrl: string) {
         this._photoUrl = photoUrl;
-    }
-
-    get linkedinUrl(): string {
-        return this._linkedinUrl;
-    }
-
-    set linkedinUrl(linkedinUrl: string) {
-        this._linkedinUrl = linkedinUrl;
     }
 
     get resumeBase64(): string {

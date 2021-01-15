@@ -334,3 +334,7 @@
   .ms-skill:hover {
     cursor: pointer;
   }
+
+  ngb-tooltip-window {
+    color: black;
+  }

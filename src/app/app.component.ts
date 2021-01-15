@@ -40,8 +40,6 @@ import { SystemLanguageService } from './service/system-language.service';
 })
 export class AppComponent implements OnInit {
 
-  public currentYear = new Date().getFullYear();
-
   public menuItems: MenuItem[];
   public headerInfo: HeaderInfo;
   public aboutMeInfo: AboutMe;
@@ -61,8 +59,7 @@ export class AppComponent implements OnInit {
     ];
 
     this.headerInfo = new HeaderInfo('Manoela Silva', [PositionEnum.SENIOR_SOFTWARE_DEVELOPER, PositionEnum.TECH_LEAD],
-      'assets/images/me.jpeg', 'https://www.linkedin.com/in/mcbsilva/?locale=en_US',
-      'https://drive.google.com/uc?export=download&id=15Jvl7DESK0ieoPxH-vCqz-NcAHK-eU9J');
+      'assets/images/me.jpeg', 'https://drive.google.com/uc?export=download&id=15Jvl7DESK0ieoPxH-vCqz-NcAHK-eU9J');
 
     let aboutMeParagraphs: string[] = [
       `I am a Senior Software Developer who is passionate about technology. Seeing an idea getting off the ground and becoming something that improves people's lives brings me real joy.`,
