@@ -51,6 +51,14 @@
   .btn-linkedin:active i {
     background-color: #008bd4 !important;
   }
+
+  .btn-info:not(:disabled):not(.disabled):active,
+  .btn-info:not(:disabled):not(.disabled):active:focus {
+    background-color: #4bb5ff;
+    color: #FFF;
+    box-shadow: none;
+    border-color: #4bb5ff;
+  }
   
   /* Icons */
   

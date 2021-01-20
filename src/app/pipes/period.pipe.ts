@@ -32,7 +32,7 @@ export class PeriodPipe implements PipeTransform {
    */
   private formatMonthYear(date: MonthYear): string {
 
-    let formatter = new Intl.DateTimeFormat(this.languageService.language, {
+    let formatter = new Intl.DateTimeFormat(this.languageService.format, {
       year: 'numeric',
       month: "short"
     });

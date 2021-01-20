@@ -27,6 +27,7 @@ import { MsHardSkillsComponent } from './components/skills/ms-hard-skills/ms-har
 import { MsHardSkillsItemComponent } from './components/skills/ms-hard-skills-item/ms-hard-skills-item.component';
 import { MsFooterComponent } from './components/ms-footer/ms-footer.component';
 import { MsBtnLinkedinComponent } from './components/ms-btn-linkedin/ms-btn-linkedin.component';
+import { MsSystemLanguageModalComponent } from './components/ms-system-language-modal/ms-system-language-modal.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +52,7 @@ import { MsBtnLinkedinComponent } from './components/ms-btn-linkedin/ms-btn-link
     MsHardSkillsItemComponent,
     MsFooterComponent,
     MsBtnLinkedinComponent,
+    MsSystemLanguageModalComponent,
 
     // Pipes
     PeriodPipe,

@@ -15,7 +15,7 @@ export class DatePipe implements PipeTransform {
       return value;
     }
 
-    let formatter = new Intl.DateTimeFormat(this.systemLanguageService.language, {
+    let formatter = new Intl.DateTimeFormat(this.systemLanguageService.format, {
       year: 'numeric',
       month: "short"
     });
