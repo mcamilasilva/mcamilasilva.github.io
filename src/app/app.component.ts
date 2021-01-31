@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 
 import * as AOS from 'aos';
 
@@ -35,13 +35,17 @@ import { SystemLanguageService } from './service/system-language.service';
 import { WorkExperienceEnum } from './models/enums/work-experience.enum';
 import { CompanyEnum } from './models/enums/company.enum';
 import { WorkExperienceTechnologyEnum } from './models/enums/work-experience-technology.enum';
+import { TranslationService } from './service/translation.service';
+import { SystemLanguageEnum } from './models/enums/system-language.enum';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit, OnDestroy {
+
+  public systemLanguage: SystemLanguageEnum;
 
   public menuItems: MenuItem[];
   public headerInfo: HeaderInfo;
@@ -51,7 +55,10 @@ export class AppComponent implements OnInit {
   public certifications: Certification[];
   public skills: Skills;
 
-  constructor(private systemLanguageService: SystemLanguageService) {
+  constructor(private systemLanguageService: SystemLanguageService,
+    private translationService: TranslationService) {
+
+    this.systemLanguage = this.systemLanguageService.language;
 
     this.menuItems = [
       new MenuItem(MenuItemEnum.ABOUT_ME, '#about'),
@@ -80,27 +87,27 @@ export class AppComponent implements OnInit {
     this.workExperiences = [
       (new WorkExperience(WorkExperienceEnum.OPUS_SENIOR_TECH_LEAD, [PositionEnum.SENIOR_SOFTWARE_DEVELOPER, PositionEnum.TECH_LEAD], CompanyEnum.OPUS,
         new Period(new MonthYear(MonthEnum.NOV, 2019)), [
-          WorkExperienceTechnologyEnum.JAVA_11, WorkExperienceTechnologyEnum.SPRING_BOOT, WorkExperienceTechnologyEnum.ANGULAR_6, WorkExperienceTechnologyEnum.POSTGRESQL, 
-          WorkExperienceTechnologyEnum.AWS, WorkExperienceTechnologyEnum.GIT, WorkExperienceTechnologyEnum.JIRA, WorkExperienceTechnologyEnum.SCRUM, 
-          WorkExperienceTechnologyEnum.JENKINS, WorkExperienceTechnologyEnum.SONAR_QUBE
-        ])),
+        WorkExperienceTechnologyEnum.JAVA_11, WorkExperienceTechnologyEnum.SPRING_BOOT, WorkExperienceTechnologyEnum.ANGULAR_6, WorkExperienceTechnologyEnum.POSTGRESQL,
+        WorkExperienceTechnologyEnum.AWS, WorkExperienceTechnologyEnum.GIT, WorkExperienceTechnologyEnum.JIRA, WorkExperienceTechnologyEnum.SCRUM,
+        WorkExperienceTechnologyEnum.JENKINS, WorkExperienceTechnologyEnum.SONAR_QUBE
+      ])),
       (new WorkExperience(WorkExperienceEnum.OPUS_INTERMEDIATE_DEVELOPER, [PositionEnum.INTERMEDIATE_SOFTWARE_DEVELOPER], CompanyEnum.OPUS,
         new Period(new MonthYear(MonthEnum.NOV, 2017), new MonthYear(MonthEnum.NOV, 2019)), [
-          WorkExperienceTechnologyEnum.JAVA_8, WorkExperienceTechnologyEnum.SPRING_BOOT, WorkExperienceTechnologyEnum.ANGULAR_2, WorkExperienceTechnologyEnum.MY_SQL, 
-          WorkExperienceTechnologyEnum.AWS, WorkExperienceTechnologyEnum.GIT, WorkExperienceTechnologyEnum.JIRA, WorkExperienceTechnologyEnum.SCRUM, 
-          WorkExperienceTechnologyEnum.JENKINS, WorkExperienceTechnologyEnum.SONAR_QUBE
-        ])),
+        WorkExperienceTechnologyEnum.JAVA_8, WorkExperienceTechnologyEnum.SPRING_BOOT, WorkExperienceTechnologyEnum.ANGULAR_2, WorkExperienceTechnologyEnum.MY_SQL,
+        WorkExperienceTechnologyEnum.AWS, WorkExperienceTechnologyEnum.GIT, WorkExperienceTechnologyEnum.JIRA, WorkExperienceTechnologyEnum.SCRUM,
+        WorkExperienceTechnologyEnum.JENKINS, WorkExperienceTechnologyEnum.SONAR_QUBE
+      ])),
       (new WorkExperience(WorkExperienceEnum.AUDAXWARE, [PositionEnum.WEB_DEVELOPER], CompanyEnum.AUDAXWARE,
         new Period(new MonthYear(MonthEnum.NOV, 2015), new MonthYear(MonthEnum.APR, 2020)), [
-          WorkExperienceTechnologyEnum.C_SHARP, WorkExperienceTechnologyEnum.SQL_SERVER, WorkExperienceTechnologyEnum.ANGULAR_JS, WorkExperienceTechnologyEnum.KENDO_UI, 
-          WorkExperienceTechnologyEnum.MATERIAL, WorkExperienceTechnologyEnum.AZURE, WorkExperienceTechnologyEnum.WEB_JOB, WorkExperienceTechnologyEnum.TFS, 
-          WorkExperienceTechnologyEnum.KANBAN
-        ])),
+        WorkExperienceTechnologyEnum.C_SHARP, WorkExperienceTechnologyEnum.SQL_SERVER, WorkExperienceTechnologyEnum.ANGULAR_JS, WorkExperienceTechnologyEnum.KENDO_UI,
+        WorkExperienceTechnologyEnum.MATERIAL, WorkExperienceTechnologyEnum.AZURE, WorkExperienceTechnologyEnum.WEB_JOB, WorkExperienceTechnologyEnum.TFS,
+        WorkExperienceTechnologyEnum.KANBAN
+      ])),
       (new WorkExperience(WorkExperienceEnum.OPUS_JR_SYSTEM_ANALYST, [PositionEnum.SYSTEM_ANALYST], CompanyEnum.OPUS,
         new Period(new MonthYear(MonthEnum.JAN, 2015), new MonthYear(MonthEnum.NOV, 2015)), [
-          WorkExperienceTechnologyEnum.C_SHARP, WorkExperienceTechnologyEnum.SQL_SERVER, WorkExperienceTechnologyEnum.ANGULAR_JS, 
-          WorkExperienceTechnologyEnum.KNOCKOUT, WorkExperienceTechnologyEnum.BOOTSTRAP, WorkExperienceTechnologyEnum.SCRUM
-        ])),
+        WorkExperienceTechnologyEnum.C_SHARP, WorkExperienceTechnologyEnum.SQL_SERVER, WorkExperienceTechnologyEnum.ANGULAR_JS,
+        WorkExperienceTechnologyEnum.KNOCKOUT, WorkExperienceTechnologyEnum.BOOTSTRAP, WorkExperienceTechnologyEnum.SCRUM
+      ])),
     ]
 
     this.education = [
@@ -172,5 +179,13 @@ export class AppComponent implements OnInit {
     AOS.init({
       disable: 'mobile'
     }); // initialize animate on scroll library
+
+    this.systemLanguageService.languageObservable.subscribe((language) => {
+      this.systemLanguage = language;
+    });
+  }
+
+  ngOnDestroy(): void {
+    this.systemLanguageService.languageObservable.unsubscribe();
   }
 }

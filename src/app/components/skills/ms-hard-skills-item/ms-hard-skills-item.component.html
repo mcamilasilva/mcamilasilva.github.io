@@ -1,5 +1,5 @@
 <div class="row ms-skill">
-    <p class="col-7">{{ skill.skill | translate: 'hardSkill' }}</p>
+    <p class="col-7">{{ skill.skill | translate: 'HARD_SKILL':language }}</p>
     <div class="col-5 ms-level">
         <span *ngFor="let class of levelClasses" class="fa" [ngClass]="class"></span>
     </div>

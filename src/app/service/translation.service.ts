@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { AboutMeInfoDictionary } from '../dictionaries/about-me-info.dictionary';
+import { HardSkillsDictionary } from '../dictionaries/hard-skills.dictionary';
 import { LanguageDictionary } from '../dictionaries/language.dictionary';
 import { LocaleDictionary } from '../dictionaries/locale.dictionary';
 import { MajorDegreeDictionary } from '../dictionaries/major-degree.dictionary';
@@ -55,7 +56,7 @@ export class TranslationService {
         translatedValue = SoftSkillsDictionary[language][value];
         break;
       case TranslationTypeEnum.HARD_SKILL:
-        translatedValue = SoftSkillsDictionary[language][value];
+        translatedValue = HardSkillsDictionary[language][value];
         break;
       case TranslationTypeEnum.POSITION:
         translatedValue = PositionDictionary[language][value];

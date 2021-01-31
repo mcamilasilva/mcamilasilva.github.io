@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { SoftSkillEnum } from 'src/app/models/enums/soft-skill.enum';
+import { SystemLanguageEnum } from 'src/app/models/enums/system-language.enum';
 
 @Component({
   selector: 'ms-soft-skills',
@@ -9,6 +10,7 @@ import { SoftSkillEnum } from 'src/app/models/enums/soft-skill.enum';
 export class MsSoftSkillsComponent implements OnInit {
 
   @Input() skills: SoftSkillEnum[] = [];
+  @Input() language: SystemLanguageEnum = SystemLanguageEnum.EN_US;
 
   public skillPairs: SoftSkillEnum[][] = [];
 

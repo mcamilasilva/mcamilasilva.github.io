@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { SkillLevelEnum } from 'src/app/models/enums/skill-level.enum';
+import { SystemLanguageEnum } from 'src/app/models/enums/system-language.enum';
 import { HardSkill } from 'src/app/models/hard-skill';
 
 @Component({
@@ -10,6 +11,7 @@ import { HardSkill } from 'src/app/models/hard-skill';
 export class MsHardSkillsItemComponent implements OnInit {
 
   @Input() skill: HardSkill = new HardSkill();
+  @Input() language: SystemLanguageEnum = SystemLanguageEnum.EN_US;
 
   public levelClasses: string[] = new Array<string>(SkillLevelEnum.MAX);
 
