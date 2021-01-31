@@ -2,9 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import * as AOS from 'aos';
 
-import { AboutMeInfoDictionary } from './dictionaries/about-me-info.dictionary';
 import { ThesisInfoDictionary } from './dictionaries/thesis-info.dictionary';
-import { WorkExperiencesDictionary } from './dictionaries/work-experiences.dictionary';
 import { AboutMe } from './models/about-me';
 import { Certification } from './models/certification';
 import { AboutMeDetailItem } from './models/about-me-detail-item';
@@ -34,6 +32,9 @@ import { Period } from './models/period';
 import { Skills } from './models/skills';
 import { WorkExperience } from './models/work-experience';
 import { SystemLanguageService } from './service/system-language.service';
+import { WorkExperienceEnum } from './models/enums/work-experience.enum';
+import { CompanyEnum } from './models/enums/company.enum';
+import { WorkExperienceTechnologyEnum } from './models/enums/work-experience-technology.enum';
 
 @Component({
   selector: 'app-root',
@@ -76,7 +77,31 @@ export class AppComponent implements OnInit {
       ]
     )
 
-    this.workExperiences = WorkExperiencesDictionary[this.systemLanguageService.language];
+    this.workExperiences = [
+      (new WorkExperience(WorkExperienceEnum.OPUS_SENIOR_TECH_LEAD, [PositionEnum.SENIOR_SOFTWARE_DEVELOPER, PositionEnum.TECH_LEAD], CompanyEnum.OPUS,
+        new Period(new MonthYear(MonthEnum.NOV, 2019)), [
+          WorkExperienceTechnologyEnum.JAVA_11, WorkExperienceTechnologyEnum.SPRING_BOOT, WorkExperienceTechnologyEnum.ANGULAR_6, WorkExperienceTechnologyEnum.POSTGRESQL, 
+          WorkExperienceTechnologyEnum.AWS, WorkExperienceTechnologyEnum.GIT, WorkExperienceTechnologyEnum.JIRA, WorkExperienceTechnologyEnum.SCRUM, 
+          WorkExperienceTechnologyEnum.JENKINS, WorkExperienceTechnologyEnum.SONAR_QUBE
+        ])),
+      (new WorkExperience(WorkExperienceEnum.OPUS_INTERMEDIATE_DEVELOPER, [PositionEnum.INTERMEDIATE_SOFTWARE_DEVELOPER], CompanyEnum.OPUS,
+        new Period(new MonthYear(MonthEnum.NOV, 2017), new MonthYear(MonthEnum.NOV, 2019)), [
+          WorkExperienceTechnologyEnum.JAVA_8, WorkExperienceTechnologyEnum.SPRING_BOOT, WorkExperienceTechnologyEnum.ANGULAR_2, WorkExperienceTechnologyEnum.MY_SQL, 
+          WorkExperienceTechnologyEnum.AWS, WorkExperienceTechnologyEnum.GIT, WorkExperienceTechnologyEnum.JIRA, WorkExperienceTechnologyEnum.SCRUM, 
+          WorkExperienceTechnologyEnum.JENKINS, WorkExperienceTechnologyEnum.SONAR_QUBE
+        ])),
+      (new WorkExperience(WorkExperienceEnum.AUDAXWARE, [PositionEnum.WEB_DEVELOPER], CompanyEnum.AUDAXWARE,
+        new Period(new MonthYear(MonthEnum.NOV, 2015), new MonthYear(MonthEnum.APR, 2020)), [
+          WorkExperienceTechnologyEnum.C_SHARP, WorkExperienceTechnologyEnum.SQL_SERVER, WorkExperienceTechnologyEnum.ANGULAR_JS, WorkExperienceTechnologyEnum.KENDO_UI, 
+          WorkExperienceTechnologyEnum.MATERIAL, WorkExperienceTechnologyEnum.AZURE, WorkExperienceTechnologyEnum.WEB_JOB, WorkExperienceTechnologyEnum.TFS, 
+          WorkExperienceTechnologyEnum.KANBAN
+        ])),
+      (new WorkExperience(WorkExperienceEnum.OPUS_JR_SYSTEM_ANALYST, [PositionEnum.SYSTEM_ANALYST], CompanyEnum.OPUS,
+        new Period(new MonthYear(MonthEnum.JAN, 2015), new MonthYear(MonthEnum.NOV, 2015)), [
+          WorkExperienceTechnologyEnum.C_SHARP, WorkExperienceTechnologyEnum.SQL_SERVER, WorkExperienceTechnologyEnum.ANGULAR_JS, 
+          WorkExperienceTechnologyEnum.KNOCKOUT, WorkExperienceTechnologyEnum.BOOTSTRAP, WorkExperienceTechnologyEnum.SCRUM
+        ])),
+    ]
 
     this.education = [
       new EducationItem(SchoolEnum.UFSCAR, MajorDegreeEnum.MASTER, [MajorEnum.COMPUTER_SCIENCE, MajorEnum.BUSINESS_INTELLIGENCE],

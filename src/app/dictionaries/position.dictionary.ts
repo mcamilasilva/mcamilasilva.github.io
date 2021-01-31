@@ -6,7 +6,7 @@ const english = <{ [id: string]: string }> {
     [PositionEnum.SENIOR_SOFTWARE_DEVELOPER]: 'Senior Software Developer',
     [PositionEnum.INTERMEDIATE_SOFTWARE_DEVELOPER]: 'Software Developer',
     [PositionEnum.WEB_DEVELOPER]: 'Web Developer',
-    [PositionEnum.SYSTEM_ANALYST]: 'System Analyst'
+    [PositionEnum.SYSTEM_ANALYST]: 'Jr. System Analyst'
 };
 
 const portuguese = <{ [id: string]: string }> {
@@ -14,7 +14,7 @@ const portuguese = <{ [id: string]: string }> {
     [PositionEnum.SENIOR_SOFTWARE_DEVELOPER]: 'Desenvolvedora de Software Sênior',
     [PositionEnum.INTERMEDIATE_SOFTWARE_DEVELOPER]: 'Desenvolvedora de Software Pleno',
     [PositionEnum.WEB_DEVELOPER]: 'Desenvolvedora Web',
-    [PositionEnum.SYSTEM_ANALYST]: 'Analista de Sistemas'
+    [PositionEnum.SYSTEM_ANALYST]: 'Analista de Sistemas Jr.'
 };
 
 export const PositionDictionary = <{ [id: string]: { [id: string]: string } }>{

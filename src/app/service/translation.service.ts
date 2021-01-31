@@ -10,6 +10,8 @@ import { SchoolDictionary } from '../dictionaries/school.dictionary';
 import { SoftSkillsDictionary } from '../dictionaries/soft-skill.dictionary';
 import { SystemLanguageDictionary } from '../dictionaries/system-language.dictionary';
 import { TitleDictionary } from '../dictionaries/title.dictionary';
+import { WorkExperienceActivitiesDictionary } from '../dictionaries/work-experience-activities.dictionary';
+import { WorkExperienceDescriptionDictionary } from '../dictionaries/work-experience-description.dictionary';
 import { SystemLanguageEnum } from '../models/enums/system-language.enum';
 import { TranslationTypeEnum } from '../models/enums/translation-type.enum';
 
@@ -64,6 +66,12 @@ export class TranslationService {
       case TranslationTypeEnum.ABOUT_ME_INFO:
         translatedValue = AboutMeInfoDictionary[language][value];
         break;
+        case TranslationTypeEnum.WORK_EXPERIENCE_DESCRIPTION:
+          translatedValue = WorkExperienceDescriptionDictionary[language][value];
+          break;
+        case TranslationTypeEnum.WORK_EXPERIENCE_ACTIVITY:
+          translatedValue = WorkExperienceActivitiesDictionary[language][value];
+          break;
       default:
         return value;
     }

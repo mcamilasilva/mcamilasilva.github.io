@@ -1,28 +1,28 @@
 <div class="timeline-card-title">
     <div class="position">
-        <span class="h5">{{ info.positions | translate: 'position'}}</span>
+        <span class="h5">{{ positions | positions }}</span>
     </div>
     <div class="company">
-        <span>{{ info.company }}</span>
+        <span>{{ company }}</span>
     </div>
     <div class="period">
-        <ms-btn-period [period]="info.period"></ms-btn-period>
+        <ms-btn-period [period]="period"></ms-btn-period>
     </div>
 </div>
 <div class="timeline-card-body">
-    <p>{{info.description}}</p>
+    <p>{{ description }}</p>
 
     <ul class="list-unstyled ms-main-projects">
-        <li *ngFor="let activity of info.activities">
+        <li *ngFor="let activity of activities">
             <i class="fa ms-bullet" [ngClass]="activity.iconClass" aria-hidden="true"></i>
-            {{activity.description}}
+            {{ activity.description }}
         </li>
     </ul>
 </div>
 
 <div class="timeline-footer">
-    <span class="text-info">{{info.technologies}}
-        <a *ngIf="info.showMoreTechnologiesIcon" class="scroll-behavior-smooth" href="#mySkills">
+    <span class="text-info">{{ technologies }}
+        <a *ngIf="showMoreTechnologiesIcon" class="scroll-behavior-smooth" href="#mySkills">
             <i class="fa fa-plus-circle"></i>
         </a>
     </span>
