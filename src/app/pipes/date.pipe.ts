@@ -8,10 +8,10 @@ export class DatePipe implements PipeTransform {
 
   constructor() {}
 
-  transform(value: MonthYear, format: string): any {
+  transform(date: MonthYear, format: string): any {
     
-    if (!value || !format) {
-      return value;
+    if (!date || !format) {
+      return date;
     }
 
     let formatter = new Intl.DateTimeFormat(format, {
@@ -19,7 +19,8 @@ export class DatePipe implements PipeTransform {
       month: "short"
     });
     
-    return formatter.format(new Date(value.year, value.month));
+    // The replace it's necessary due to the default pt-BR format
+    return formatter.format(new Date(date.year, date.month)).replace('. de', '');
 
   }
 

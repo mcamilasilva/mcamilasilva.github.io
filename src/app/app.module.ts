@@ -68,7 +68,7 @@ import { MajorsPipe } from './pipes/majors.pipe';
     ScrollToModule.forRoot(),
     NgbModule
   ],
-  providers: [],
+  providers: [DatePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

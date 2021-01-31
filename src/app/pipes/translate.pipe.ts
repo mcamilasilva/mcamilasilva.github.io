@@ -13,8 +13,8 @@ import { TranslationService } from '../service/translation.service';
 })
 export class TranslatePipe implements PipeTransform {
 
-  constructor(private languageService: SystemLanguageService,
-    private translationService: TranslationService) { }
+  constructor(private translationService: TranslationService, 
+    private languageService: SystemLanguageService) { }
 
   transform(value: any, ...args: any[]): unknown {
 

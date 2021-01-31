@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-sm-3 bg-info ms-certification-header card-body" data-aos="fade-right" data-aos-offset="50"
             data-aos-duration="700">
-            <p class="date">{{ info.date | date: format }}</p>
+            <p class="date">{{ info.date | date: format | titlecase }}</p>
             <p class="provider">{{ info.provider }}</p>
         </div>
         <div class="col-sm-9 ms-certification-body card-body" data-aos="fade-left" data-aos-offset="50"
