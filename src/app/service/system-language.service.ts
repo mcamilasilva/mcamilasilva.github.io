@@ -17,7 +17,6 @@ export class SystemLanguageService {
   set language(language: SystemLanguageEnum) {
     this.storage.set(this.LANGUAGE_KEY, language);
     this.languageSubject$.next(language);
-    console.log(`set`);
   }
 
   get language(): SystemLanguageEnum {

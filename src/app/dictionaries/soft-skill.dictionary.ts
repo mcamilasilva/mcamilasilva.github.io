@@ -27,7 +27,7 @@ const portuguese = <{ [id: string]: string }> {
     [SoftSkillEnum.LEADERSHIP]: 'Liderança',
     [SoftSkillEnum.PROBLEM_SOLVING]: 'Resolução de Problemas',
     [SoftSkillEnum.RESILIENCE]: 'Resiliência',
-    [SoftSkillEnum.SELF_LEARNING]: 'Auto-aprendizagem',
+    [SoftSkillEnum.SELF_LEARNING]: 'Autoaprendizagem',
     [SoftSkillEnum.TEAM_WORK]: 'Trabalho em Equipe',
     [SoftSkillEnum.TIME_MANAGEMENT]: 'Gerenciamento de Tempo'
 };

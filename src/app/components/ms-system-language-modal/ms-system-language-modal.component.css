@@ -9,3 +9,7 @@
     cursor: pointer;
     transform: scale(1.2, 1.2);
 }
+
+.modal-footer {
+    display: none;
+}

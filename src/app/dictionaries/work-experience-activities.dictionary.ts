@@ -35,7 +35,7 @@ const portuguese = <{ [id: string]: ActivityItem[] }>{
     ],
     [WorkExperienceEnum.OPUS_INTERMEDIATE_DEVELOPER]: [
         new ActivityItem(ActivityTypeEnum.CODING, "Desenvolvimento de uma Open API e plataforma web responsiva que fornecem empréstimo bancários para indivíduos, a qual rapidamente atingiu a marca de R$1M em empréstimos e permitiu ao nosso cliente realizar o fechamento de diversas lojas físicas, diminuindo custos"),
-        new ActivityItem(ActivityTypeEnum.CODING, "Remodelagem da base de dados e API de uma grande FoodTech brasileira, o que resultou na criação de um processo de ETL bem definido e aumento de performance da API na grandeza de 10x"),
+        new ActivityItem(ActivityTypeEnum.CODING, "Remodelagem da base de dados e API da principal FoodTech brasileira, o que resultou na criação de um processo de ETL bem definido e aumento de performance da API na grandeza de 10x"),
         new ActivityItem(ActivityTypeEnum.CODING, "Desenvolvimento de uma plataforma web para consórcio de imóveis, automóveis e/ou serviços")
     ],
     [WorkExperienceEnum.AUDAXWARE]: [

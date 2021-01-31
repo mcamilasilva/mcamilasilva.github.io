@@ -1,6 +1,10 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
+
 import { SystemLanguageEnum } from 'src/app/models/enums/system-language.enum';
 import { SystemLanguageService } from 'src/app/service/system-language.service';
+
+
+
 @Component({
   selector: 'ms-system-language-modal',
   templateUrl: './ms-system-language-modal.component.html',
@@ -11,6 +15,9 @@ export class MsSystemLanguageModalComponent implements OnInit {
   @Input() id: string = '';
   @Input() language: SystemLanguageEnum = SystemLanguageEnum.EN_US;
 
+  @ViewChild('closeModalBtn') closeModalBtn!: ElementRef;
+
+
   public options: any;
 
   constructor(private systemLanguageService: SystemLanguageService) {
@@ -20,7 +27,10 @@ export class MsSystemLanguageModalComponent implements OnInit {
   ngOnInit(): void { }
 
   public changeSystemLanguage(language: SystemLanguageEnum): void {
-    this.systemLanguageService.language = language;
+    if (language !== this.systemLanguageService.language) {
+      this.systemLanguageService.language = language;
+    }
+    this.closeModalBtn.nativeElement.click();
   }
 
 }
