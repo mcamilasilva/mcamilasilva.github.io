@@ -1,27 +1,26 @@
 import { Pipe, PipeTransform } from '@angular/core';
 import { MonthYear } from '../models/month-year';
 import { Period } from '../models/period';
-import { SystemLanguageService } from '../service/system-language.service';
 
 @Pipe({
   name: 'period'
 })
 export class PeriodPipe implements PipeTransform {
 
-  constructor(private languageService: SystemLanguageService) {}
+  constructor() {}
 
-  transform(value: Period, ...args: unknown[]): any {
+  transform(value: Period, format: string): any {
 
-    if (!value) {
+    if (!value || !format) {
       return value;
     }
 
     if (value.end != null) {
-      return this.formatMonthYear(value.start) + " - " + this.formatMonthYear(value.end);
+      return this.formatMonthYear(value.start, format) + " - " + this.formatMonthYear(value.end, format);
     }
 
     //TODO: Ajustar o current
-    return this.formatMonthYear(value.start) + " - Current";
+    return this.formatMonthYear(value.start, format) + " - Current";
   }
 
 
@@ -30,9 +29,9 @@ export class PeriodPipe implements PipeTransform {
    * 
    * @param date 
    */
-  private formatMonthYear(date: MonthYear): string {
+  private formatMonthYear(date: MonthYear, format: string): string {
 
-    let formatter = new Intl.DateTimeFormat(this.languageService.format, {
+    let formatter = new Intl.DateTimeFormat(format, {
       year: 'numeric',
       month: "short"
     });

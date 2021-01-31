@@ -1,17 +1,10 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { HardSkillsDictionary } from '../dictionaries/hard-skills.dictionary';
-import { LanguageDictionary } from '../dictionaries/language.dictionary';
-import { LocaleDictionary } from '../dictionaries/locale.dictionary';
-import { MajorDegreeDictionary } from '../dictionaries/major-degree.dictionary';
 import { MajorDictionary } from '../dictionaries/major.dictionary';
-import { MenuItemDictionary } from '../dictionaries/menu-item.dictionary';
 import { PositionDictionary } from '../dictionaries/position.dictionary';
-import { SchoolDictionary } from '../dictionaries/school.dictionary';
-import { SoftSkillsDictionary } from '../dictionaries/soft-skill.dictionary';
-import { SystemLanguageDictionary } from '../dictionaries/system-language.dictionary';
-import { TitleDictionary } from '../dictionaries/title.dictionary';
 import { MajorEnum } from '../models/enums/major.enum';
 import { PositionEnum } from '../models/enums/position.enum';
+import { SystemLanguageEnum } from '../models/enums/system-language.enum';
+import { TranslationTypeEnum } from '../models/enums/translation-type.enum';
 import { SystemLanguageService } from '../service/system-language.service';
 import { TranslationService } from '../service/translation.service';
 
@@ -23,56 +16,16 @@ export class TranslatePipe implements PipeTransform {
   constructor(private languageService: SystemLanguageService,
     private translationService: TranslationService) { }
 
-  transform(value: any, type: string): unknown {
+  transform(value: any, ...args: any[]): unknown {
 
     if (value == null || value == undefined) {
       return value;
     }
 
-    let translatedValue: any;
-    switch (type) {
-      case 'majorDegree':
-        translatedValue = MajorDegreeDictionary[this.languageService.language][value];
-        break;
-      case 'major':
-        translatedValue = this.transformMajors(value);
-        break;
-      case 'locale':
-        translatedValue = LocaleDictionary[this.languageService.language][value];
-        break;
-      case 'school':
-        translatedValue = SchoolDictionary[this.languageService.language][value];
-        break;
-      case 'language':
-        translatedValue = LanguageDictionary[this.languageService.language][value];
-        break;
-      case 'title':
-        translatedValue = TitleDictionary[this.languageService.language][value];
-        break;
-      case 'menuItem':
-        translatedValue = MenuItemDictionary[this.languageService.language][value];
-        break;
-      case 'softSkill':
-        translatedValue = SoftSkillsDictionary[this.languageService.language][value];
-        break;
-      case 'hardSkill':
-        translatedValue = HardSkillsDictionary[this.languageService.language][value];
-        break;
-      case 'position':
-        translatedValue = this.transformPositions(value);
-        break;
-      case 'systemLanguage':
-        translatedValue = SystemLanguageDictionary[this.languageService.language][value];
-        break;
-      default:
-        return value;
-    }
+    let type: TranslationTypeEnum = args[0];
+    let language: SystemLanguageEnum = args[1];
 
-    if (translatedValue == null) {
-      return value;
-    }
-
-    return translatedValue;
+    return this.translationService.translate(language, type, value);
   }
 
   /**

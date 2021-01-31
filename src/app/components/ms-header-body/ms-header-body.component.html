@@ -8,7 +8,7 @@
         <div class="content-center">
           <div class="ms-personal-photo"><img [src]="info.photoUrl" alt="me" /></div>
           <div class="h2 title">{{ info.name }}</div>
-          <p class="category text-white">{{ info.positions | translate: 'position' }}</p>
+          <p class="category text-white">{{ info.positions | positions: language }}</p>
           <ms-btn-linkedin [position]="'bottom'"></ms-btn-linkedin>
         </div>
       </div>
