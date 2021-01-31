@@ -1,21 +1,20 @@
 import { Pipe, PipeTransform } from '@angular/core';
 import { MonthYear } from '../models/month-year';
-import { SystemLanguageService } from '../service/system-language.service';
 
 @Pipe({
   name: 'date'
 })
 export class DatePipe implements PipeTransform {
 
-  constructor(private systemLanguageService: SystemLanguageService) {}
+  constructor() {}
 
-  transform(value: MonthYear, ...args: unknown[]): any {
+  transform(value: MonthYear, format: string): any {
     
-    if (!value) {
+    if (!value || !format) {
       return value;
     }
 
-    let formatter = new Intl.DateTimeFormat(this.systemLanguageService.format, {
+    let formatter = new Intl.DateTimeFormat(format, {
       year: 'numeric',
       month: "short"
     });
