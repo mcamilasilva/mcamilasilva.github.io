@@ -15,8 +15,8 @@
       <div class="section pb-0">
         <div class="container">
           <div class="button-container">
-            <a class="btn btn-info btn-round" [href]="info.resumeBase64" data-aos="zoom-in"
-              data-aos-anchor="data-aos-anchor" [download]="info.resumeDownloadName">Download CV</a>
+            <a class="btn btn-info btn-round" href="{{ resumeURI | translate: 'RESUME_INFO':language }}" data-aos="zoom-in"
+              data-aos-anchor="data-aos-anchor" download="{{ resumeDownloadInfo | translate: 'RESUME_INFO':language }}">Download CV</a>
           </div>
         </div>
       </div>

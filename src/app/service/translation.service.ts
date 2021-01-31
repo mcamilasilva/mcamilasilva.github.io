@@ -9,6 +9,7 @@ import { MajorDegreeDictionary } from '../dictionaries/major-degree.dictionary';
 import { MajorDictionary } from '../dictionaries/major.dictionary';
 import { MenuItemDictionary } from '../dictionaries/menu-item.dictionary';
 import { PositionDictionary } from '../dictionaries/position.dictionary';
+import { ResumeInfoDictionary } from '../dictionaries/resume-info.dictionary';
 import { SchoolDictionary } from '../dictionaries/school.dictionary';
 import { SoftSkillsDictionary } from '../dictionaries/soft-skill.dictionary';
 import { SystemLanguageDictionary } from '../dictionaries/system-language.dictionary';
@@ -84,6 +85,9 @@ export class TranslationService {
         break;
       case TranslationTypeEnum.FIXED_LABELS_AND_TOOLTIPS:
         translatedValue = FixedLabelsAndTooltipsDictionary[language][value];
+        break;
+      case TranslationTypeEnum.RESUME_INFO:
+        translatedValue = ResumeInfoDictionary[language][value];
         break;
       default:
         return value;

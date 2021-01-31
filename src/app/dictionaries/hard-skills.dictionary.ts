@@ -35,7 +35,8 @@ const commons = <{ [id: string]: string }> {
     [HardSkillEnum.TDD]: 'TDD',
     [HardSkillEnum.TFS]: 'TFS',
     [HardSkillEnum.XML]: 'XML',
-    [HardSkillEnum.SONAR_QUBE]: 'SonarQube'
+    [HardSkillEnum.SONAR_QUBE]: 'SonarQube',
+    [HardSkillEnum.CI_CD]: 'CI/CD'
 }
 
 const english = <{ [id: string]: string }> {

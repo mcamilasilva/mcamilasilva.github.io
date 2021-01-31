@@ -14,7 +14,7 @@ export class MsSystemLanguageModalComponent implements OnInit {
   public options: any;
 
   constructor(private systemLanguageService: SystemLanguageService) {
-    this.options = Object.values(SystemLanguageEnum).filter(k => typeof SystemLanguageEnum[k as any] !== "number");
+    this.options = Object.keys(SystemLanguageEnum);
   }
 
   ngOnInit(): void { }

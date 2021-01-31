@@ -37,8 +37,7 @@ export class AppComponent implements OnInit, OnDestroy {
       new MenuItem(MenuItemEnum.CERTIFICATION, '#certifications')
     ];
 
-    this.headerInfo = new HeaderInfo('Manoela Silva', [PositionEnum.SENIOR_SOFTWARE_DEVELOPER, PositionEnum.TECH_LEAD],
-      'assets/images/me.jpeg', 'https://drive.google.com/uc?export=download&id=15Jvl7DESK0ieoPxH-vCqz-NcAHK-eU9J');
+    this.headerInfo = new HeaderInfo('Manoela Silva', [PositionEnum.SENIOR_SOFTWARE_DEVELOPER, PositionEnum.TECH_LEAD], 'assets/images/me.jpeg');
 
     this.resume = this.resumeService.get();
 

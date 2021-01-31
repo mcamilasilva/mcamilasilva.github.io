@@ -129,7 +129,6 @@ export class ResumeService {
       new HardSkill(HardSkillEnum.POSTGRESQL, SkillLevelEnum.FOUR_AND_HALF),
       new HardSkill(HardSkillEnum.MY_SQL, SkillLevelEnum.THREE_AND_HALF),
       new HardSkill(HardSkillEnum.MONGO_DB, SkillLevelEnum.FOUR),
-      new HardSkill(HardSkillEnum.NEO4J, SkillLevelEnum.THREE),
       new HardSkill(HardSkillEnum.SCRUM_KANBAN, SkillLevelEnum.MAX),
       new HardSkill(HardSkillEnum.JIRA_CONFLUENCE, SkillLevelEnum.FOUR),
       new HardSkill(HardSkillEnum.DDD, SkillLevelEnum.THREE_AND_HALF),
@@ -139,6 +138,8 @@ export class ResumeService {
       new HardSkill(HardSkillEnum.SWAGGER, SkillLevelEnum.FOUR),
       new HardSkill(HardSkillEnum.POSTMAN, SkillLevelEnum.FOUR),
       new HardSkill(HardSkillEnum.SOAPUI, SkillLevelEnum.TWO_AND_HALF),
+      new HardSkill(HardSkillEnum.GIT, SkillLevelEnum.FOUR),
+      new HardSkill(HardSkillEnum.TFS, SkillLevelEnum.THREE),
       new HardSkill(HardSkillEnum.JAVA, SkillLevelEnum.MAX),
       new HardSkill(HardSkillEnum.SPRING_BOOT, SkillLevelEnum.FOUR),
       new HardSkill(HardSkillEnum.HIBERNATE, SkillLevelEnum.THREE_AND_HALF),
@@ -152,12 +153,11 @@ export class ResumeService {
       new HardSkill(HardSkillEnum.XML, SkillLevelEnum.THREE),
       new HardSkill(HardSkillEnum.FRONT_TECHNOLOGIES, SkillLevelEnum.THREE),
       new HardSkill(HardSkillEnum.REST, SkillLevelEnum.FOUR_AND_HALF),
-      new HardSkill(HardSkillEnum.GIT, SkillLevelEnum.FOUR),
       new HardSkill(HardSkillEnum.MAVEN, SkillLevelEnum.FOUR),
       new HardSkill(HardSkillEnum.JENKINS, SkillLevelEnum.THREE),
       new HardSkill(HardSkillEnum.SONAR_QUBE, SkillLevelEnum.FOUR_AND_HALF),
       new HardSkill(HardSkillEnum.AWS, SkillLevelEnum.THREE_AND_HALF),
-      new HardSkill(HardSkillEnum.TFS, SkillLevelEnum.THREE)
+      new HardSkill(HardSkillEnum.CI_CD, SkillLevelEnum.THREE_AND_HALF)
     ];
   }
 

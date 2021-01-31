@@ -12,14 +12,14 @@ const english = <{ [id: string]: ActivityItem[] }>{
     ],
     [WorkExperienceEnum.OPUS_INTERMEDIATE_DEVELOPER]: [
         new ActivityItem(ActivityTypeEnum.CODING, "Development of an Open API architecture and responsive web app that provide bank loans for individuals, which soon achieved the mark of R$1M in loans granted and allowed the client to close several loan dedicated branches reducing their expenses"),
-        new ActivityItem(ActivityTypeEnum.CODING, "Remodelling of the database and API structure of a big brazilian FoodTech, creating a well-defined ETL process and increasing their code-efficiency by 10x"),
-        new ActivityItem(ActivityTypeEnum.CODING, "Development of an platform that allows individuals and companies to join consortiums of real estate, vehicles and/or services")
+        new ActivityItem(ActivityTypeEnum.CODING, "Remodelling of the database and API structure of the main Brazilian FoodTech company, creating a well-defined ETL process and increasing their code-efficiency by 10x"),
+        new ActivityItem(ActivityTypeEnum.CODING, "Development of a platform that allows individuals and companies to join consortiums of real estate, vehicles and/or services")
     ],
     [WorkExperienceEnum.AUDAXWARE]: [
-        new ActivityItem(ActivityTypeEnum.CODING, "Rewrite of the old system using the technologies above mentioned and evolution of the system, which not only improved the user experience, but also the code efficiency, allowing the onboarding of two new big companies to the software"),
+        new ActivityItem(ActivityTypeEnum.CODING, "Rewrite of the legacy system by using the technologies above mentioned and improvement of it after it was released, which not only improved the user experience, but also the code efficiency, allowing the onboarding of two new big companies to the software"),
         new ActivityItem(ActivityTypeEnum.DATABASE, "Data migration from PostgreSQL to SQL Server"),
         new ActivityItem(ActivityTypeEnum.CODING, "Support to the old system until the new one was ready to be released and the data migration was done"),
-        new ActivityItem(ActivityTypeEnum.SUPPORT, "Support to the clients on how to use the system"),
+        new ActivityItem(ActivityTypeEnum.SUPPORT, "Support to clients on how to use the system"),
     ],
     [WorkExperienceEnum.OPUS_JR_SYSTEM_ANALYST]: [
         new ActivityItem(ActivityTypeEnum.CODING, "Development of an online learning responsive webapp for an English school"),
