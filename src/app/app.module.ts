@@ -29,6 +29,7 @@ import { MsFooterComponent } from './components/ms-footer/ms-footer.component';
 import { MsBtnLinkedinComponent } from './components/ms-btn-linkedin/ms-btn-linkedin.component';
 import { MsSystemLanguageModalComponent } from './components/ms-system-language-modal/ms-system-language-modal.component';
 import { PositionsPipe } from './pipes/positions.pipe';
+import { MajorsPipe } from './pipes/majors.pipe';
 
 @NgModule({
   declarations: [
@@ -59,7 +60,8 @@ import { PositionsPipe } from './pipes/positions.pipe';
     PeriodPipe,
     TranslatePipe,
     DatePipe,
-    PositionsPipe
+    PositionsPipe,
+    MajorsPipe
   ],
   imports: [
     BrowserModule,

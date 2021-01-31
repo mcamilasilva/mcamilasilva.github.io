@@ -4,24 +4,24 @@ import { TranslationTypeEnum } from '../models/enums/translation-type.enum';
 import { TranslationService } from '../service/translation.service';
 
 @Pipe({
-  name: 'positions'
+  name: 'majors'
 })
-export class PositionsPipe implements PipeTransform {
+export class MajorsPipe implements PipeTransform {
 
   constructor(private translationService: TranslationService) {}
 
-  transform(positions: any[], language: SystemLanguageEnum): string | null {
-
-    if (!positions || positions.length <= 0) {
+  transform(majors: any[], language: SystemLanguageEnum): unknown {
+    
+    if (!majors || majors.length <= 0) {
       return null;
     }
 
     if (language !== undefined) {
-      positions = positions.map(position => this.translationService.translate(language, TranslationTypeEnum.POSITION, position));
+      majors = majors.map(major => this.translationService.translate(language, TranslationTypeEnum.MAJOR, major));
       
     }
 
-    return positions.join(" / ");
+    return majors.join(" / ");
   }
 
 }
