@@ -23,7 +23,7 @@ export class SystemLanguageService {
   get language(): SystemLanguageEnum {
     let currentLanguage = this.storage.get(this.LANGUAGE_KEY);
 
-    if (!Object.keys(SystemLanguageEnum).includes(currentLanguage)) {
+    if (!Object.values(SystemLanguageEnum).includes(currentLanguage)) {
       currentLanguage = SystemLanguageEnum.EN_US;
       this.language = currentLanguage;
     }

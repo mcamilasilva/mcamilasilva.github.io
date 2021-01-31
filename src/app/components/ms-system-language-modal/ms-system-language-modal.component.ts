@@ -17,7 +17,7 @@ export class MsSystemLanguageModalComponent implements OnInit {
 
   constructor(private systemLanguageService: SystemLanguageService,
     private translationService: TranslationService) {
-    this.options = Object.keys(SystemLanguageEnum).filter(k => typeof SystemLanguageEnum[k as any] !== "number")
+    this.options = Object.values(SystemLanguageEnum).filter(k => typeof SystemLanguageEnum[k as any] !== "number")
       .map(option => {
         return { value: option, name: this.translationService.translate(this.systemLanguageService.language, TranslationTypeEnum.SYSTEM_LANGUAGE, option) }
       });
