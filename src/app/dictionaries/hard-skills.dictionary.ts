@@ -34,7 +34,8 @@ const commons = <{ [id: string]: string }> {
     [HardSkillEnum.SWAGGER]: 'Swagger',
     [HardSkillEnum.TDD]: 'TDD',
     [HardSkillEnum.TFS]: 'TFS',
-    [HardSkillEnum.XML]: 'XML'    
+    [HardSkillEnum.XML]: 'XML',
+    [HardSkillEnum.SONAR_QUBE]: 'SonarQube'
 }
 
 const english = <{ [id: string]: string }> {

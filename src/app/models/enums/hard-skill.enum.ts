@@ -35,6 +35,7 @@ export enum HardSkillEnum {
     MAVEN,
     JENKINS,
     AWS,
-    TFS
+    TFS,
+    SONAR_QUBE
 
 }

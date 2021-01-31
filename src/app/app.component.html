@@ -4,27 +4,27 @@
 <div class="page-content">
   <ms-header-body [info]="headerInfo" [language]="systemLanguage"></ms-header-body>
   <div class="section pb-0" id="about">
-    <ms-about-me [info]="aboutMeInfo" [language]="systemLanguage"></ms-about-me>
+    <ms-about-me [info]="resume.aboutMe" [language]="systemLanguage"></ms-about-me>
   </div>
   <div class="section pb-0" id="experience">
     <div class="container">
-      <ms-work-experience [experiences]="workExperiences" [language]="systemLanguage"></ms-work-experience>
+      <ms-work-experience [experiences]="resume.workExperiences" [language]="systemLanguage"></ms-work-experience>
     </div>
   </div>
   <div class="section pb-0" id="education">
     <div class="container">
-      <ms-education [items]="education" [language]="systemLanguage"></ms-education>      
+      <ms-education [items]="resume.education" [language]="systemLanguage"></ms-education>      
     </div>
   </div>
 
   <div class="section pb-0" id="mySkills">
     <div class="container">
-      <ms-skills [skills]="skills" [language]="systemLanguage"></ms-skills>
+      <ms-skills [skills]="resume.skills" [language]="systemLanguage"></ms-skills>
     </div>
   </div>
   <div class="section pb-0" id="certifications">
     <div class="container">
-      <ms-certifications [items]="certifications" [language]="systemLanguage"></ms-certifications>
+      <ms-certifications [items]="resume.certifications" [language]="systemLanguage"></ms-certifications>
     </div>
   </div>
   <ms-back-to-top-button [language]="systemLanguage"></ms-back-to-top-button>
