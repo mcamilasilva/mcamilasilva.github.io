@@ -4,7 +4,7 @@
             <div class="modal-body text-center">
                 <div *ngFor="let option of options">
                     <div class="dropdown-divider"></div>
-                    <div class="option" (click)="changeSystemLanguage(option.value)">{{ option.name }}</div>
+                    <div class="option" (click)="changeSystemLanguage(option)">{{ option | translate: 'SYSTEM_LANGUAGE':language }}</div>
                 </div>
                 <div class="dropdown-divider"></div>
             </div>

@@ -1,7 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { SystemLanguageEnum } from 'src/app/models/enums/system-language.enum';
 import { HeaderInfo } from 'src/app/models/header-info';
-import { SystemLanguageService } from 'src/app/service/system-language.service';
 
 @Component({
   selector: 'ms-header-body',
@@ -11,14 +10,10 @@ import { SystemLanguageService } from 'src/app/service/system-language.service';
 export class MsHeaderBodyComponent implements OnInit {
 
   @Input() info: HeaderInfo = new HeaderInfo();
+  @Input() language: SystemLanguageEnum = SystemLanguageEnum.EN_US;
 
-  constructor(private systemLanguageService: SystemLanguageService) { }
+  constructor() { }
 
-  ngOnInit(): void {
-  }
-
-  get language(): SystemLanguageEnum {
-    return this.systemLanguageService.language;
-  }
+  ngOnInit(): void { }
 
 }

@@ -1,7 +1,9 @@
 import { Injectable } from '@angular/core';
 import { AboutMeInfoDictionary } from '../dictionaries/about-me-info.dictionary';
+import { FixedLabelsAndTooltipsDictionary } from '../dictionaries/fixed-labels-and-tooltips.dictionary';
 import { HardSkillsDictionary } from '../dictionaries/hard-skills.dictionary';
 import { LanguageDictionary } from '../dictionaries/language.dictionary';
+import { LinkedinInfoDictionary } from '../dictionaries/linkedin-info.dictionary';
 import { LocaleDictionary } from '../dictionaries/locale.dictionary';
 import { MajorDegreeDictionary } from '../dictionaries/major-degree.dictionary';
 import { MajorDictionary } from '../dictionaries/major.dictionary';
@@ -10,6 +12,7 @@ import { PositionDictionary } from '../dictionaries/position.dictionary';
 import { SchoolDictionary } from '../dictionaries/school.dictionary';
 import { SoftSkillsDictionary } from '../dictionaries/soft-skill.dictionary';
 import { SystemLanguageDictionary } from '../dictionaries/system-language.dictionary';
+import { ThesisInfoDictionary } from '../dictionaries/thesis-info.dictionary';
 import { TitleDictionary } from '../dictionaries/title.dictionary';
 import { WorkExperienceActivitiesDictionary } from '../dictionaries/work-experience-activities.dictionary';
 import { WorkExperienceDescriptionDictionary } from '../dictionaries/work-experience-description.dictionary';
@@ -67,12 +70,21 @@ export class TranslationService {
       case TranslationTypeEnum.ABOUT_ME_INFO:
         translatedValue = AboutMeInfoDictionary[language][value];
         break;
-        case TranslationTypeEnum.WORK_EXPERIENCE_DESCRIPTION:
-          translatedValue = WorkExperienceDescriptionDictionary[language][value];
-          break;
-        case TranslationTypeEnum.WORK_EXPERIENCE_ACTIVITY:
-          translatedValue = WorkExperienceActivitiesDictionary[language][value];
-          break;
+      case TranslationTypeEnum.WORK_EXPERIENCE_DESCRIPTION:
+        translatedValue = WorkExperienceDescriptionDictionary[language][value];
+        break;
+      case TranslationTypeEnum.WORK_EXPERIENCE_ACTIVITY:
+        translatedValue = WorkExperienceActivitiesDictionary[language][value];
+        break;
+      case TranslationTypeEnum.THESIS_INFO:
+        translatedValue = ThesisInfoDictionary[language][value];
+        break;
+      case TranslationTypeEnum.LINKEDIN_INFO:
+        translatedValue = LinkedinInfoDictionary[language][value];
+        break;
+      case TranslationTypeEnum.FIXED_LABELS_AND_TOOLTIPS:
+        translatedValue = FixedLabelsAndTooltipsDictionary[language][value];
+        break;
       default:
         return value;
     }

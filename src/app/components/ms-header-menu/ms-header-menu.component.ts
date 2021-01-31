@@ -2,7 +2,6 @@ import { Component, Input, OnInit } from '@angular/core';
 import { ScrollToConfigOptions, ScrollToService } from '@nicky-lenaers/ngx-scroll-to';
 import { SystemLanguageEnum } from 'src/app/models/enums/system-language.enum';
 import { MenuItem } from 'src/app/models/menu-item';
-import { SystemLanguageService } from 'src/app/service/system-language.service';
 
 @Component({
   selector: 'ms-header-menu',
@@ -11,21 +10,10 @@ import { SystemLanguageService } from 'src/app/service/system-language.service';
 })
 export class MsHeaderMenuComponent implements OnInit {
 
-  private _items: MenuItem[];
+  @Input() items: MenuItem[] = [];
+  @Input() language: SystemLanguageEnum = SystemLanguageEnum.EN_US;
 
-  @Input("items")
-  set items(items: MenuItem[]) {
-    this._items = items;
-  }
-
-  get items(): MenuItem[] {
-    return this._items;
-  }
-
-  constructor(private scrollToService: ScrollToService,
-    private systemLanguageService: SystemLanguageService) {
-    this._items = [];
-  }
+  constructor(private scrollToService: ScrollToService) { }
 
   ngOnInit(): void {
   }
@@ -41,13 +29,4 @@ export class MsHeaderMenuComponent implements OnInit {
 
     this.scrollToService.scrollTo(config);
   }
-
-  get language(): SystemLanguageEnum {
-    return this.systemLanguageService.language;
-  }
-
-
-
-
-
 }

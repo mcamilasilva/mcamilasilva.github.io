@@ -5,6 +5,6 @@
     <span class="progress-right">
         <span class="progress-bar"></span>
     </span>
-    <div class="progress-value">{{ level }}%</div>
+    <div class="progress-value">{{ info.level }}%</div>
 </div>
-<p class="text-center">{{ language }}</p>
+<p class="text-center">{{ info.language | translate: 'LANGUAGE':systemLanguage }}</p>

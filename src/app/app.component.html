@@ -1,19 +1,19 @@
 <header>
-  <ms-header-menu [items]="menuItems"></ms-header-menu>
+  <ms-header-menu [items]="menuItems" [language]="systemLanguage"></ms-header-menu>
 </header>
 <div class="page-content">
-  <ms-header-body [info]="headerInfo"></ms-header-body>
+  <ms-header-body [info]="headerInfo" [language]="systemLanguage"></ms-header-body>
   <div class="section pb-0" id="about">
-    <ms-about-me [info]="aboutMeInfo"></ms-about-me>
+    <ms-about-me [info]="aboutMeInfo" [language]="systemLanguage"></ms-about-me>
   </div>
   <div class="section pb-0" id="experience">
     <div class="container">
-      <ms-work-experience [experiences]="workExperiences"></ms-work-experience>
+      <ms-work-experience [experiences]="workExperiences" [language]="systemLanguage"></ms-work-experience>
     </div>
   </div>
   <div class="section pb-0" id="education">
     <div class="container">
-      <ms-education [items]="education"></ms-education>      
+      <ms-education [items]="education" [language]="systemLanguage"></ms-education>      
     </div>
   </div>
 
@@ -27,6 +27,6 @@
       <ms-certifications [items]="certifications" [language]="systemLanguage"></ms-certifications>
     </div>
   </div>
-  <ms-back-to-top-button></ms-back-to-top-button>
+  <ms-back-to-top-button [language]="systemLanguage"></ms-back-to-top-button>
 </div>
-<ms-footer></ms-footer>
+<ms-footer [language]="systemLanguage"></ms-footer>

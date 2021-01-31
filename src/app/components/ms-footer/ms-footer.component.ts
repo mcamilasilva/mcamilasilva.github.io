@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { SystemLanguageEnum } from 'src/app/models/enums/system-language.enum';
 
 @Component({
   selector: 'ms-footer',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ms-footer.component.css']
 })
 export class MsFooterComponent implements OnInit {
+
+  @Input() language: SystemLanguageEnum = SystemLanguageEnum.EN_US;
 
   public currentYear = new Date().getFullYear();
 

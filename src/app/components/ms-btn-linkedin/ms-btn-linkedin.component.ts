@@ -1,38 +1,29 @@
-import { Component, Input, OnInit, OnDestroy } from '@angular/core';
-import { LinkedinInfoDictionary } from 'src/app/dictionaries/linkedin-info.dictionary';
+import { Component, Input, OnInit } from '@angular/core';
 import { LinkedinInfoEnum } from 'src/app/models/enums/linkedin-info.enum';
 import { SystemLanguageEnum } from 'src/app/models/enums/system-language.enum';
-import { SystemLanguageService } from 'src/app/service/system-language.service';
+import { TranslationTypeEnum } from 'src/app/models/enums/translation-type.enum';
+import { TranslationService } from 'src/app/service/translation.service';
 
 @Component({
   selector: 'ms-btn-linkedin',
   templateUrl: './ms-btn-linkedin.component.html',
   styleUrls: ['./ms-btn-linkedin.component.css']
 })
-export class MsBtnLinkedinComponent implements OnInit, OnDestroy {
+export class MsBtnLinkedinComponent implements OnInit {
 
   @Input() position: string = 'right'; // Default
+  @Input() language: SystemLanguageEnum = SystemLanguageEnum.EN_US;
 
-  public uri!: string;
-  public tooltip!: string;
-
-  constructor(private systemLanguageService: SystemLanguageService) { 
-    this.translateInfo(this.systemLanguageService.language);
-  }
+  constructor(private translationService: TranslationService) { }
 
   ngOnInit(): void {
-    this.systemLanguageService.languageObservable.subscribe((language) => {
-      this.translateInfo(language);
-    })
   }
 
-  private translateInfo(language: SystemLanguageEnum): void {
-    this.uri = LinkedinInfoDictionary[language][LinkedinInfoEnum.LINK];
-    this.tooltip = LinkedinInfoDictionary[language][LinkedinInfoEnum.TOOLTIP];
+  get tooltip(): string {
+    return this.translationService.translate(this.language, TranslationTypeEnum.LINKEDIN_INFO, LinkedinInfoEnum.TOOLTIP);
   }
 
-  ngOnDestroy(): void {
-    this.systemLanguageService.languageObservable.unsubscribe();
+  get uri(): string {
+    return this.translationService.translate(this.language, TranslationTypeEnum.LINKEDIN_INFO, LinkedinInfoEnum.LINK);
   }
-
 }

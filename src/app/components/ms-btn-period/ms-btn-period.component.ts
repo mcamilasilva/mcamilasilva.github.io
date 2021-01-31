@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { SystemLanguageEnum } from 'src/app/models/enums/system-language.enum';
 import { Period } from 'src/app/models/period';
 import { SystemLanguageService } from 'src/app/service/system-language.service';
 
@@ -18,6 +19,10 @@ export class MsBtnPeriodComponent implements OnInit {
 
   get format(): string {
     return this.SystemLanguageService.format;
+  }
+
+  get language(): SystemLanguageEnum {
+    return this.SystemLanguageService.language;
   }
 
 }

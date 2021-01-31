@@ -12,10 +12,11 @@ import { SystemLanguageService } from 'src/app/service/system-language.service';
 export class MsEducationComponent implements OnInit {
 
   @Input() items: EducationItem[] = []
+  @Input() language: SystemLanguageEnum = SystemLanguageEnum.EN_US;
 
   public title: TitleEnum = TitleEnum.EDUCATION;
 
-  constructor(private systemLanguageService: SystemLanguageService) { }
+  constructor() { }
 
   ngOnInit(): void {}
 
@@ -26,10 +27,6 @@ export class MsEducationComponent implements OnInit {
    */
   public isInvertedCard(index: number): boolean {
     return (index % 2) > 0;
-  }
-
-  get language(): SystemLanguageEnum {
-    return this.systemLanguageService.language;
   }
 
 }

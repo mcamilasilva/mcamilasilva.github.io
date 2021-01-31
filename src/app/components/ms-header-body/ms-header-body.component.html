@@ -9,7 +9,7 @@
           <div class="ms-personal-photo"><img [src]="info.photoUrl" alt="me" /></div>
           <div class="h2 title">{{ info.name }}</div>
           <p class="category text-white">{{ info.positions | positions: language }}</p>
-          <ms-btn-linkedin [position]="'bottom'"></ms-btn-linkedin>
+          <ms-btn-linkedin [position]="'bottom'" [language]="language"></ms-btn-linkedin>
         </div>
       </div>
       <div class="section pb-0">
@@ -22,4 +22,4 @@
       </div>
     </div>
   </div>
-</div>
+</div> 

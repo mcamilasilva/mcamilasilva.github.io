@@ -2,7 +2,6 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 
 import * as AOS from 'aos';
 
-import { ThesisInfoDictionary } from './dictionaries/thesis-info.dictionary';
 import { AboutMe } from './models/about-me';
 import { Certification } from './models/certification';
 import { AboutMeDetailItem } from './models/about-me-detail-item';
@@ -37,6 +36,7 @@ import { CompanyEnum } from './models/enums/company.enum';
 import { WorkExperienceTechnologyEnum } from './models/enums/work-experience-technology.enum';
 import { TranslationService } from './service/translation.service';
 import { SystemLanguageEnum } from './models/enums/system-language.enum';
+import { TranslationTypeEnum } from './models/enums/translation-type.enum';
 
 @Component({
   selector: 'app-root',
@@ -113,8 +113,12 @@ export class AppComponent implements OnInit, OnDestroy {
     this.education = [
       new EducationItem(SchoolEnum.UFSCAR, MajorDegreeEnum.MASTER, [MajorEnum.COMPUTER_SCIENCE, MajorEnum.BUSINESS_INTELLIGENCE],
         new Period(new MonthYear(MonthEnum.AUG, 2015), new MonthYear(MonthEnum.AUG, 2017)), LocaleEnum.SOROCABA,
-        new ExternalLink('https://repositorio.ufscar.br/handle/ufscar/9154', ThesisInfoDictionary[this.systemLanguageService.language][ThesisInfoEnum.LINK_LABEL]),
-        new EducationAdditionalInfo(ThesisInfoDictionary[this.systemLanguageService.language][ThesisInfoEnum.TITLE_LABEL], ThesisInfoDictionary[this.systemLanguageService.language][ThesisInfoEnum.THESIS_TITLE])),
+        new ExternalLink('https://repositorio.ufscar.br/handle/ufscar/9154', this.translationService.translate(this.systemLanguage, TranslationTypeEnum.THESIS_INFO, ThesisInfoEnum.LINK_LABEL)),
+        new EducationAdditionalInfo(
+          this.translationService.translate(this.systemLanguage, TranslationTypeEnum.THESIS_INFO, ThesisInfoEnum.TITLE_LABEL),
+          this.translationService.translate(this.systemLanguage, TranslationTypeEnum.THESIS_INFO, ThesisInfoEnum.THESIS_TITLE)
+        )
+      ),
       new EducationItem(SchoolEnum.UFSCAR, MajorDegreeEnum.BACHELOR, [MajorEnum.COMPUTER_SCIENCE],
         new Period(new MonthYear(MonthEnum.FEB, 2011), new MonthYear(MonthEnum.JUL, 2015)), LocaleEnum.SOROCABA),
       new EducationItem(SchoolEnum.SAPIENZA, MajorDegreeEnum.ACADEMIC_EXCHANGE, [MajorEnum.COMPUTER_SCIENCE],
