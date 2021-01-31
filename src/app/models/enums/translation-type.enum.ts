@@ -1,0 +1,16 @@
+export enum TranslationTypeEnum {
+
+    MAJOR_DEGREE = 'MAJOR_DEGREE',
+    MAJOR = 'MAJOR',
+    LOCALE = 'LOCALE',
+    SCHOOL = 'SCHOOL',
+    LANGUAGE = 'LANGUAGE',
+    TITLE = 'TITLE',
+    MENU_ITEM = 'MENU_ITEM',
+    SOFT_SKILL = 'SOFT_SKILL',
+    HARD_SKILL = 'HARD_SKILL',
+    POSITION = 'POSITION',
+    SYSTEM_LANGUAGE = 'SYSTEM_LANGUAGE',
+    ABOUT_ME_INFO = 'ABOUT_ME_INFO'
+
+}

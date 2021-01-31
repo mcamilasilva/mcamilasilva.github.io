@@ -1,6 +1,6 @@
 export enum AboutMeInfoEnum {
 
-    DESCRIPTION,
+    BIO,
     AGE,
     PHONE,
     EMAIL,

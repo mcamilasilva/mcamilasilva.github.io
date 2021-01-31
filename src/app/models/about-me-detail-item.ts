@@ -1,12 +1,13 @@
+import { AboutMeInfoEnum } from "./enums/about-me-info.enum";
 import { TitleEnum } from "./enums/title.enum";
 
-export class DetailItem {
+export class AboutMeDetailItem {
 
     private _title: TitleEnum;
-    private _info: string;
+    private _info: AboutMeInfoEnum;
 
-    constructor(title?: TitleEnum, info?: string)
-    constructor(title: TitleEnum, info: string) {
+    constructor(title?: TitleEnum, info?: AboutMeInfoEnum)
+    constructor(title: TitleEnum, info: AboutMeInfoEnum) {
         this._title = title;
         this._info = info;
     }
@@ -19,11 +20,11 @@ export class DetailItem {
         this._title = title;
     }
 
-    get info(): string {
+    get info(): AboutMeInfoEnum {
         return this._info;
     }
 
-    set info(info: string) {
+    set info(info: AboutMeInfoEnum) {
         this._info = info;
     }
 

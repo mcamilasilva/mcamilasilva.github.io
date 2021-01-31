@@ -13,13 +13,15 @@ import { TitleDictionary } from '../dictionaries/title.dictionary';
 import { MajorEnum } from '../models/enums/major.enum';
 import { PositionEnum } from '../models/enums/position.enum';
 import { SystemLanguageService } from '../service/system-language.service';
+import { TranslationService } from '../service/translation.service';
 
 @Pipe({
   name: 'translate'
 })
 export class TranslatePipe implements PipeTransform {
 
-  constructor(private languageService: SystemLanguageService) { }
+  constructor(private languageService: SystemLanguageService,
+    private translationService: TranslationService) { }
 
   transform(value: any, type: string): unknown {
 

@@ -1,32 +1,32 @@
-import { DetailItem } from './detail-item';
+import { AboutMeDetailItem } from './about-me-detail-item';
 import { LanguageLevel } from './language-level';
 
 export class AboutMe {
-
-    private _bioParagraphs: string[];
-    private _details: DetailItem[];
+   
+    private _details: AboutMeDetailItem[];
     private _languages: LanguageLevel[];
+    private _bioParagraphs: string[] | undefined;
     
-    constructor(bioParagraphs?: string[], details?: DetailItem[], languages?: LanguageLevel[])
-    constructor(bioParagraphs: string[], details: DetailItem[], languages: LanguageLevel[]) {
+    constructor(details?: AboutMeDetailItem[], languages?: LanguageLevel[], bioParagraphs?: string[], )
+    constructor(details: AboutMeDetailItem[], languages: LanguageLevel[], bioParagraphs: string[]) {
         this._bioParagraphs = bioParagraphs;
         this._details = details;
         this._languages = languages;
     }
 
-    get bioParagraphs(): string[] {
+    get bioParagraphs(): string[] | undefined {
         return this._bioParagraphs;
     }
 
-    set bioParagraphs(bioParagraphs: string[]) {
+    set bioParagraphs(bioParagraphs: string[] | undefined) {
         this._bioParagraphs = bioParagraphs;
     }
 
-    get details(): DetailItem[] {
+    get details(): AboutMeDetailItem[] {
         return this._details;
     }
 
-    set details(details: DetailItem[]) {
+    set details(details: AboutMeDetailItem[]) {
         this._details = details;
     }
 

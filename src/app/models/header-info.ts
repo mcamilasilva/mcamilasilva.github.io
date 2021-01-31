@@ -1,8 +1,7 @@
 import { PositionEnum } from "./enums/position.enum";
 
 export class HeaderInfo {
-
-
+    
     private _name: string;
     private _positions: PositionEnum[];
     private _photoUrl: string;

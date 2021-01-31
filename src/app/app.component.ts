@@ -7,7 +7,7 @@ import { ThesisInfoDictionary } from './dictionaries/thesis-info.dictionary';
 import { WorkExperiencesDictionary } from './dictionaries/work-experiences.dictionary';
 import { AboutMe } from './models/about-me';
 import { Certification } from './models/certification';
-import { DetailItem } from './models/detail-item';
+import { AboutMeDetailItem } from './models/about-me-detail-item';
 import { EducationAdditionalInfo } from './models/education-additional-info';
 import { EducationItem } from './models/education-item';
 import { AboutMeInfoEnum } from './models/enums/about-me-info.enum';
@@ -63,12 +63,12 @@ export class AppComponent implements OnInit {
     this.headerInfo = new HeaderInfo('Manoela Silva', [PositionEnum.SENIOR_SOFTWARE_DEVELOPER, PositionEnum.TECH_LEAD],
       'assets/images/me.jpeg', 'https://drive.google.com/uc?export=download&id=15Jvl7DESK0ieoPxH-vCqz-NcAHK-eU9J');
 
-    this.aboutMeInfo = new AboutMe(AboutMeInfoDictionary[this.systemLanguageService.language][AboutMeInfoEnum.DESCRIPTION],
+    this.aboutMeInfo = new AboutMe(
       [
-        new DetailItem(TitleEnum.AGE, AboutMeInfoDictionary[this.systemLanguageService.language][AboutMeInfoEnum.AGE]),
-        new DetailItem(TitleEnum.EMAIL, AboutMeInfoDictionary[this.systemLanguageService.language][AboutMeInfoEnum.EMAIL]),
-        new DetailItem(TitleEnum.PHONE, AboutMeInfoDictionary[this.systemLanguageService.language][AboutMeInfoEnum.PHONE]),
-        new DetailItem(TitleEnum.LOCATION, AboutMeInfoDictionary[this.systemLanguageService.language][AboutMeInfoEnum.LOCATION])
+        new AboutMeDetailItem(TitleEnum.AGE, AboutMeInfoEnum.AGE),
+        new AboutMeDetailItem(TitleEnum.EMAIL, AboutMeInfoEnum.EMAIL),
+        new AboutMeDetailItem(TitleEnum.PHONE, AboutMeInfoEnum.PHONE),
+        new AboutMeDetailItem(TitleEnum.LOCATION, AboutMeInfoEnum.LOCATION)
       ],
       [
         new LanguageLevel(LanguageEnum.ENGLISH, 90), new LanguageLevel(LanguageEnum.PORTUGUESE, 100),
