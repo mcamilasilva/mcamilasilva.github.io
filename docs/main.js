@@ -457,7 +457,7 @@ class MsAboutMeComponent {
     }
 }
 MsAboutMeComponent.ɵfac = function MsAboutMeComponent_Factory(t) { return new (t || MsAboutMeComponent)(); };
-MsAboutMeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: MsAboutMeComponent, selectors: [["ms-about-me"]], inputs: { info: "info", language: "language" }, decls: 22, vars: 18, consts: [[1, "container"], ["data-aos", "zoom-in", "data-aos-offset", "10", 1, "card"], [1, "row"], [1, "col-lg-6", "col-md-12"], [1, "card-body"], [1, "h5", "mt-0", "title"], [1, "text-justify"], [4, "ngFor", "ngForOf"], [3, "info", "language", 4, "ngFor", "ngForOf"], [1, "row", "languages"], ["class", "col-4", 4, "ngFor", "ngForOf"], [3, "info", "language"], [1, "col-4"], [3, "info", "system-language"]], template: function MsAboutMeComponent_Template(rf, ctx) { if (rf & 1) {
+MsAboutMeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: MsAboutMeComponent, selectors: [["ms-about-me"]], inputs: { info: "info", language: "language" }, decls: 22, vars: 18, consts: [[1, "container"], [1, "card"], [1, "row"], [1, "col-lg-6", "col-md-12"], [1, "card-body"], [1, "h5", "mt-0", "title"], [1, "text-justify"], [4, "ngFor", "ngForOf"], [3, "info", "language", 4, "ngFor", "ngForOf"], [1, "row", "languages"], ["class", "col-4", 4, "ngFor", "ngForOf"], [3, "info", "language"], [1, "col-4"], [3, "info", "system-language"]], template: function MsAboutMeComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
@@ -895,9 +895,7 @@ function MsEducationComponent_li_4_Template(rf, ctx) { if (rf & 1) {
     const i_r2 = ctx.index;
     const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("timeline-inverted", ctx_r0.isInvertedCard(i_r2));
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵattribute"]("data-aos", ctx_r0.isInvertedCard(i_r2) ? "fade-left" : "fade-right");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("info", item_r1)("language", ctx_r0.language);
 } }
 class MsEducationComponent {
@@ -917,13 +915,13 @@ class MsEducationComponent {
     }
 }
 MsEducationComponent.ɵfac = function MsEducationComponent_Factory(t) { return new (t || MsEducationComponent)(); };
-MsEducationComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: MsEducationComponent, selectors: [["ms-education"]], inputs: { items: "items", language: "language" }, decls: 6, vars: 6, consts: [[1, "h4", "text-center", "mb-4", "title"], [1, "timeline"], [3, "timeline-inverted", 4, "ngFor", "ngForOf"], [1, "clearfix", 2, "float", "none"], [1, "timeline-badge"], [1, "fa", "fa-graduation-cap"], ["data-aos-offset", "50", "data-aos-duration", "700", 1, "timeline-card"], [3, "info", "language"]], template: function MsEducationComponent_Template(rf, ctx) { if (rf & 1) {
+MsEducationComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: MsEducationComponent, selectors: [["ms-education"]], inputs: { items: "items", language: "language" }, decls: 6, vars: 6, consts: [[1, "h4", "text-center", "mb-4", "title"], [1, "timeline"], [3, "timeline-inverted", 4, "ngFor", "ngForOf"], [1, "clearfix", 2, "float", "none"], [1, "timeline-badge"], [1, "fa", "fa-graduation-cap"], [1, "timeline-card"], [3, "info", "language"]], template: function MsEducationComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](2, "translate");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "ul", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](4, MsEducationComponent_li_4_Template, 6, 5, "li", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](4, MsEducationComponent_li_4_Template, 6, 4, "li", 2);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](5, "li", 3);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } if (rf & 2) {
@@ -1621,7 +1619,7 @@ class MsCertificationItemComponent {
     }
 }
 MsCertificationItemComponent.ɵfac = function MsCertificationItemComponent_Factory(t) { return new (t || MsCertificationItemComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_service_system_language_service__WEBPACK_IMPORTED_MODULE_2__["SystemLanguageService"])); };
-MsCertificationItemComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: MsCertificationItemComponent, selectors: [["ms-certification-item"]], inputs: { info: "info" }, decls: 12, vars: 8, consts: [[1, "card", "ms-certification"], [1, "row"], ["data-aos", "fade-right", "data-aos-offset", "50", "data-aos-duration", "700", 1, "col-sm-3", "bg-info", "ms-certification-header", "card-body"], [1, "date"], [1, "provider"], ["data-aos", "fade-left", "data-aos-offset", "50", "data-aos-duration", "700", 1, "col-sm-9", "ms-certification-body", "card-body"], [1, "h5"]], template: function MsCertificationItemComponent_Template(rf, ctx) { if (rf & 1) {
+MsCertificationItemComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: MsCertificationItemComponent, selectors: [["ms-certification-item"]], inputs: { info: "info" }, decls: 12, vars: 8, consts: [[1, "card", "ms-certification"], [1, "row"], [1, "col-sm-3", "bg-info", "ms-certification-header", "card-body"], [1, "date"], [1, "provider"], [1, "col-sm-9", "ms-certification-body", "card-body"], [1, "h5"]], template: function MsCertificationItemComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
@@ -2089,24 +2087,21 @@ var ActivityTypeEnum;
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppComponent", function() { return AppComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
-/* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! aos */ "9a8T");
-/* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(aos__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _models_enums_menu_item_enum__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./models/enums/menu-item.enum */ "SNyX");
-/* harmony import */ var _models_enums_position_enum__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./models/enums/position.enum */ "bDRz");
-/* harmony import */ var _models_header_info__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./models/header-info */ "fEhN");
-/* harmony import */ var _models_menu_item__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./models/menu-item */ "lqUS");
-/* harmony import */ var _service_system_language_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./service/system-language.service */ "64Rh");
-/* harmony import */ var _service_resume_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./service/resume.service */ "zDtx");
-/* harmony import */ var _components_ms_header_menu_ms_header_menu_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/ms-header-menu/ms-header-menu.component */ "Df9M");
-/* harmony import */ var _components_ms_header_body_ms_header_body_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/ms-header-body/ms-header-body.component */ "mlED");
-/* harmony import */ var _components_about_me_ms_about_me_ms_about_me_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/about-me/ms-about-me/ms-about-me.component */ "4qPO");
-/* harmony import */ var _components_work_experience_ms_work_experience_ms_work_experience_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/work-experience/ms-work-experience/ms-work-experience.component */ "saQB");
-/* harmony import */ var _components_education_ms_education_ms_education_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/education/ms-education/ms-education.component */ "A4JV");
-/* harmony import */ var _components_skills_ms_skills_ms_skills_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/skills/ms-skills/ms-skills.component */ "sVuK");
-/* harmony import */ var _components_certifications_ms_certifications_ms_certifications_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/certifications/ms-certifications/ms-certifications.component */ "27Kp");
-/* harmony import */ var _components_ms_back_to_top_button_ms_back_to_top_button_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./components/ms-back-to-top-button/ms-back-to-top-button.component */ "6FGy");
-/* harmony import */ var _components_ms_footer_ms_footer_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./components/ms-footer/ms-footer.component */ "IGpC");
-
+/* harmony import */ var _models_enums_menu_item_enum__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./models/enums/menu-item.enum */ "SNyX");
+/* harmony import */ var _models_enums_position_enum__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./models/enums/position.enum */ "bDRz");
+/* harmony import */ var _models_header_info__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./models/header-info */ "fEhN");
+/* harmony import */ var _models_menu_item__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./models/menu-item */ "lqUS");
+/* harmony import */ var _service_system_language_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./service/system-language.service */ "64Rh");
+/* harmony import */ var _service_resume_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./service/resume.service */ "zDtx");
+/* harmony import */ var _components_ms_header_menu_ms_header_menu_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/ms-header-menu/ms-header-menu.component */ "Df9M");
+/* harmony import */ var _components_ms_header_body_ms_header_body_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/ms-header-body/ms-header-body.component */ "mlED");
+/* harmony import */ var _components_about_me_ms_about_me_ms_about_me_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/about-me/ms-about-me/ms-about-me.component */ "4qPO");
+/* harmony import */ var _components_work_experience_ms_work_experience_ms_work_experience_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/work-experience/ms-work-experience/ms-work-experience.component */ "saQB");
+/* harmony import */ var _components_education_ms_education_ms_education_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/education/ms-education/ms-education.component */ "A4JV");
+/* harmony import */ var _components_skills_ms_skills_ms_skills_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/skills/ms-skills/ms-skills.component */ "sVuK");
+/* harmony import */ var _components_certifications_ms_certifications_ms_certifications_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/certifications/ms-certifications/ms-certifications.component */ "27Kp");
+/* harmony import */ var _components_ms_back_to_top_button_ms_back_to_top_button_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/ms-back-to-top-button/ms-back-to-top-button.component */ "6FGy");
+/* harmony import */ var _components_ms_footer_ms_footer_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./components/ms-footer/ms-footer.component */ "IGpC");
 
 
 
@@ -2130,19 +2125,16 @@ class AppComponent {
         this.resumeService = resumeService;
         this.systemLanguage = this.systemLanguageService.language;
         this.menuItems = [
-            new _models_menu_item__WEBPACK_IMPORTED_MODULE_5__["MenuItem"](_models_enums_menu_item_enum__WEBPACK_IMPORTED_MODULE_2__["MenuItemEnum"].ABOUT_ME, '#about'),
-            new _models_menu_item__WEBPACK_IMPORTED_MODULE_5__["MenuItem"](_models_enums_menu_item_enum__WEBPACK_IMPORTED_MODULE_2__["MenuItemEnum"].WORK_EXPERIENCE, '#experience'),
-            new _models_menu_item__WEBPACK_IMPORTED_MODULE_5__["MenuItem"](_models_enums_menu_item_enum__WEBPACK_IMPORTED_MODULE_2__["MenuItemEnum"].EDUCATION, '#education'),
-            new _models_menu_item__WEBPACK_IMPORTED_MODULE_5__["MenuItem"](_models_enums_menu_item_enum__WEBPACK_IMPORTED_MODULE_2__["MenuItemEnum"].SKILLS, '#mySkills'),
-            new _models_menu_item__WEBPACK_IMPORTED_MODULE_5__["MenuItem"](_models_enums_menu_item_enum__WEBPACK_IMPORTED_MODULE_2__["MenuItemEnum"].CERTIFICATION, '#certifications')
+            new _models_menu_item__WEBPACK_IMPORTED_MODULE_4__["MenuItem"](_models_enums_menu_item_enum__WEBPACK_IMPORTED_MODULE_1__["MenuItemEnum"].ABOUT_ME, '#about'),
+            new _models_menu_item__WEBPACK_IMPORTED_MODULE_4__["MenuItem"](_models_enums_menu_item_enum__WEBPACK_IMPORTED_MODULE_1__["MenuItemEnum"].WORK_EXPERIENCE, '#experience'),
+            new _models_menu_item__WEBPACK_IMPORTED_MODULE_4__["MenuItem"](_models_enums_menu_item_enum__WEBPACK_IMPORTED_MODULE_1__["MenuItemEnum"].EDUCATION, '#education'),
+            new _models_menu_item__WEBPACK_IMPORTED_MODULE_4__["MenuItem"](_models_enums_menu_item_enum__WEBPACK_IMPORTED_MODULE_1__["MenuItemEnum"].SKILLS, '#mySkills'),
+            new _models_menu_item__WEBPACK_IMPORTED_MODULE_4__["MenuItem"](_models_enums_menu_item_enum__WEBPACK_IMPORTED_MODULE_1__["MenuItemEnum"].CERTIFICATION, '#certifications')
         ];
-        this.headerInfo = new _models_header_info__WEBPACK_IMPORTED_MODULE_4__["HeaderInfo"]('Manoela Silva', [_models_enums_position_enum__WEBPACK_IMPORTED_MODULE_3__["PositionEnum"].SENIOR_SOFTWARE_DEVELOPER, _models_enums_position_enum__WEBPACK_IMPORTED_MODULE_3__["PositionEnum"].TECH_LEAD], 'assets/images/me.jpeg');
+        this.headerInfo = new _models_header_info__WEBPACK_IMPORTED_MODULE_3__["HeaderInfo"]('Manoela Silva', [_models_enums_position_enum__WEBPACK_IMPORTED_MODULE_2__["PositionEnum"].SENIOR_SOFTWARE_DEVELOPER, _models_enums_position_enum__WEBPACK_IMPORTED_MODULE_2__["PositionEnum"].TECH_LEAD], 'assets/images/me.jpeg');
         this.resume = this.resumeService.get();
     }
     ngOnInit() {
-        aos__WEBPACK_IMPORTED_MODULE_1__["init"]({
-            disable: 'mobile'
-        }); // initialize animate on scroll library
         this.systemLanguageService.languageObservable.subscribe((language) => {
             this.systemLanguage = language;
             this.resume = this.resumeService.get();
@@ -2152,7 +2144,7 @@ class AppComponent {
         this.systemLanguageService.languageObservable.unsubscribe();
     }
 }
-AppComponent.ɵfac = function AppComponent_Factory(t) { return new (t || AppComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_service_system_language_service__WEBPACK_IMPORTED_MODULE_6__["SystemLanguageService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_service_resume_service__WEBPACK_IMPORTED_MODULE_7__["ResumeService"])); };
+AppComponent.ɵfac = function AppComponent_Factory(t) { return new (t || AppComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_service_system_language_service__WEBPACK_IMPORTED_MODULE_5__["SystemLanguageService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_service_resume_service__WEBPACK_IMPORTED_MODULE_6__["ResumeService"])); };
 AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AppComponent, selectors: [["app-root"]], decls: 20, vars: 16, consts: [[3, "items", "language"], [1, "page-content"], [3, "info", "language"], ["id", "about", 1, "section", "pb-0"], ["id", "experience", 1, "section", "pb-0"], [1, "container"], [3, "experiences", "language"], ["id", "education", 1, "section", "pb-0"], ["id", "mySkills", 1, "section", "pb-0"], [3, "skills", "language"], ["id", "certifications", 1, "section", "pb-0"], [3, "language"]], template: function AppComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "header");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "ms-header-menu", 0);
@@ -2204,7 +2196,7 @@ AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCompo
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("language", ctx.systemLanguage);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("language", ctx.systemLanguage);
-    } }, directives: [_components_ms_header_menu_ms_header_menu_component__WEBPACK_IMPORTED_MODULE_8__["MsHeaderMenuComponent"], _components_ms_header_body_ms_header_body_component__WEBPACK_IMPORTED_MODULE_9__["MsHeaderBodyComponent"], _components_about_me_ms_about_me_ms_about_me_component__WEBPACK_IMPORTED_MODULE_10__["MsAboutMeComponent"], _components_work_experience_ms_work_experience_ms_work_experience_component__WEBPACK_IMPORTED_MODULE_11__["MsWorkExperienceComponent"], _components_education_ms_education_ms_education_component__WEBPACK_IMPORTED_MODULE_12__["MsEducationComponent"], _components_skills_ms_skills_ms_skills_component__WEBPACK_IMPORTED_MODULE_13__["MsSkillsComponent"], _components_certifications_ms_certifications_ms_certifications_component__WEBPACK_IMPORTED_MODULE_14__["MsCertificationsComponent"], _components_ms_back_to_top_button_ms_back_to_top_button_component__WEBPACK_IMPORTED_MODULE_15__["MsBackToTopButtonComponent"], _components_ms_footer_ms_footer_component__WEBPACK_IMPORTED_MODULE_16__["MsFooterComponent"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJhcHAuY29tcG9uZW50LmNzcyJ9 */"] });
+    } }, directives: [_components_ms_header_menu_ms_header_menu_component__WEBPACK_IMPORTED_MODULE_7__["MsHeaderMenuComponent"], _components_ms_header_body_ms_header_body_component__WEBPACK_IMPORTED_MODULE_8__["MsHeaderBodyComponent"], _components_about_me_ms_about_me_ms_about_me_component__WEBPACK_IMPORTED_MODULE_9__["MsAboutMeComponent"], _components_work_experience_ms_work_experience_ms_work_experience_component__WEBPACK_IMPORTED_MODULE_10__["MsWorkExperienceComponent"], _components_education_ms_education_ms_education_component__WEBPACK_IMPORTED_MODULE_11__["MsEducationComponent"], _components_skills_ms_skills_ms_skills_component__WEBPACK_IMPORTED_MODULE_12__["MsSkillsComponent"], _components_certifications_ms_certifications_ms_certifications_component__WEBPACK_IMPORTED_MODULE_13__["MsCertificationsComponent"], _components_ms_back_to_top_button_ms_back_to_top_button_component__WEBPACK_IMPORTED_MODULE_14__["MsBackToTopButtonComponent"], _components_ms_footer_ms_footer_component__WEBPACK_IMPORTED_MODULE_15__["MsFooterComponent"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJhcHAuY29tcG9uZW50LmNzcyJ9 */"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](AppComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
@@ -2212,7 +2204,7 @@ AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCompo
                 templateUrl: './app.component.html',
                 styleUrls: ['./app.component.css']
             }]
-    }], function () { return [{ type: _service_system_language_service__WEBPACK_IMPORTED_MODULE_6__["SystemLanguageService"] }, { type: _service_resume_service__WEBPACK_IMPORTED_MODULE_7__["ResumeService"] }]; }, null); })();
+    }], function () { return [{ type: _service_system_language_service__WEBPACK_IMPORTED_MODULE_5__["SystemLanguageService"] }, { type: _service_resume_service__WEBPACK_IMPORTED_MODULE_6__["ResumeService"] }]; }, null); })();
 
 
 /***/ }),
@@ -3631,7 +3623,7 @@ MsHardSkillsItemComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵ
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind3"](3, 2, ctx.skill.skill, "HARD_SKILL", ctx.language));
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.levelClasses);
-    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_4__["NgForOf"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["NgClass"]], pipes: [_pipes_translate_pipe__WEBPACK_IMPORTED_MODULE_5__["TranslatePipe"]], styles: [".ms-skill[_ngcontent-%COMP%]:hover    > .ms-level[_ngcontent-%COMP%] {\r\n    transform: scale(1.2, 1.2);\r\n  }\r\n  \r\n  .ms-skill[_ngcontent-%COMP%]:hover {\r\n    background-color: #F4F4F4;\r\n  }\r\n  \r\n  .ms-skill[_ngcontent-%COMP%]    > .ms-level[_ngcontent-%COMP%] {\r\n    float: right;\r\n    margin-right: 0px;\r\n    text-align: right;\r\n  }\r\n  \r\n  .ms-skill[_ngcontent-%COMP%]    > .ms-level[_ngcontent-%COMP%] {\r\n    color: #2CA8FF;\r\n  }\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1zLWhhcmQtc2tpbGxzLWl0ZW0uY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUVJLDBCQUEwQjtFQUM1Qjs7RUFFQTtJQUNFLHlCQUF5QjtFQUMzQjs7RUFFQTtJQUNFLFlBQVk7SUFDWixpQkFBaUI7SUFDakIsaUJBQWlCO0VBQ25COztFQUVBO0lBQ0UsY0FBYztFQUNoQiIsImZpbGUiOiJtcy1oYXJkLXNraWxscy1pdGVtLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIubXMtc2tpbGw6aG92ZXIgPiAubXMtbGV2ZWwge1xyXG4gICAgLXdlYmtpdC10cmFuc2Zvcm06IHNjYWxlKDEuMiwgMS4yKTtcclxuICAgIHRyYW5zZm9ybTogc2NhbGUoMS4yLCAxLjIpO1xyXG4gIH1cclxuICBcclxuICAubXMtc2tpbGw6aG92ZXIge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogI0Y0RjRGNDtcclxuICB9ICBcclxuICBcclxuICAubXMtc2tpbGwgPiAubXMtbGV2ZWwge1xyXG4gICAgZmxvYXQ6IHJpZ2h0O1xyXG4gICAgbWFyZ2luLXJpZ2h0OiAwcHg7XHJcbiAgICB0ZXh0LWFsaWduOiByaWdodDtcclxuICB9XHJcbiAgXHJcbiAgLm1zLXNraWxsID4gLm1zLWxldmVsIHtcclxuICAgIGNvbG9yOiAjMkNBOEZGO1xyXG4gIH0iXX0= */"] });
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_4__["NgForOf"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["NgClass"]], pipes: [_pipes_translate_pipe__WEBPACK_IMPORTED_MODULE_5__["TranslatePipe"]], styles: [".ms-skill[_ngcontent-%COMP%]:hover    > .ms-level[_ngcontent-%COMP%] {\r\n    transform: scale(1.2, 1.2);\r\n  }\r\n  \r\n  .ms-skill[_ngcontent-%COMP%]:hover {\r\n    background-color: #F4F4F4;\r\n  }\r\n  \r\n  .ms-skill[_ngcontent-%COMP%]    > .ms-level[_ngcontent-%COMP%] {\r\n    float: right;\r\n    margin-right: 0px;\r\n    text-align: right;\r\n  }\r\n  \r\n  .ms-skill[_ngcontent-%COMP%]    > .ms-level[_ngcontent-%COMP%] {\r\n    color: #2CA8FF;\r\n  }\r\n  \r\n  .ms-skill[_ngcontent-%COMP%] {\r\n    margin-bottom: 10px;\r\n    height: 30px;\r\n    align-content: center;\r\n}\r\n  \r\n  .ms-skill[_ngcontent-%COMP%]    > p[_ngcontent-%COMP%] {\r\n  margin-bottom: 0px;\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1zLWhhcmQtc2tpbGxzLWl0ZW0uY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUVJLDBCQUEwQjtFQUM1Qjs7RUFFQTtJQUNFLHlCQUF5QjtFQUMzQjs7RUFFQTtJQUNFLFlBQVk7SUFDWixpQkFBaUI7SUFDakIsaUJBQWlCO0VBQ25COztFQUVBO0lBQ0UsY0FBYztFQUNoQjs7RUFFQTtJQUNFLG1CQUFtQjtJQUNuQixZQUFZO0lBQ1oscUJBQXFCO0FBQ3pCOztFQUVBO0VBQ0Usa0JBQWtCO0FBQ3BCIiwiZmlsZSI6Im1zLWhhcmQtc2tpbGxzLWl0ZW0uY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5tcy1za2lsbDpob3ZlciA+IC5tcy1sZXZlbCB7XHJcbiAgICAtd2Via2l0LXRyYW5zZm9ybTogc2NhbGUoMS4yLCAxLjIpO1xyXG4gICAgdHJhbnNmb3JtOiBzY2FsZSgxLjIsIDEuMik7XHJcbiAgfVxyXG4gIFxyXG4gIC5tcy1za2lsbDpob3ZlciB7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjRjRGNEY0O1xyXG4gIH0gIFxyXG4gIFxyXG4gIC5tcy1za2lsbCA+IC5tcy1sZXZlbCB7XHJcbiAgICBmbG9hdDogcmlnaHQ7XHJcbiAgICBtYXJnaW4tcmlnaHQ6IDBweDtcclxuICAgIHRleHQtYWxpZ246IHJpZ2h0O1xyXG4gIH1cclxuICBcclxuICAubXMtc2tpbGwgPiAubXMtbGV2ZWwge1xyXG4gICAgY29sb3I6ICMyQ0E4RkY7XHJcbiAgfVxyXG5cclxuICAubXMtc2tpbGwge1xyXG4gICAgbWFyZ2luLWJvdHRvbTogMTBweDtcclxuICAgIGhlaWdodDogMzBweDtcclxuICAgIGFsaWduLWNvbnRlbnQ6IGNlbnRlcjtcclxufVxyXG5cclxuLm1zLXNraWxsID4gcCB7XHJcbiAgbWFyZ2luLWJvdHRvbTogMHB4O1xyXG59Il19 */"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](MsHardSkillsItemComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
@@ -3793,7 +3785,7 @@ class MsHeaderBodyComponent {
     ngOnInit() { }
 }
 MsHeaderBodyComponent.ɵfac = function MsHeaderBodyComponent_Factory(t) { return new (t || MsHeaderBodyComponent)(); };
-MsHeaderBodyComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: MsHeaderBodyComponent, selectors: [["ms-header-body"]], inputs: { info: "info", language: "language" }, decls: 21, vars: 18, consts: [[1, "profile-page"], [1, "wrapper"], ["filter-color", "blue", 1, "page-header", "page-header-small"], ["data-parallax", "true", 1, "page-header-image", 2, "background-image", "url('assets/images/header_background.jpg')"], [1, "container"], [1, "content-center"], [1, "ms-personal-photo"], ["alt", "me", 3, "src"], [1, "h2", "title"], [1, "category", "text-white"], [3, "position", "language"], [1, "section", "pb-0"], [1, "button-container"], ["data-aos", "zoom-in", "data-aos-anchor", "data-aos-anchor", 1, "btn", "btn-info", "btn-round", 3, "href", "download"]], template: function MsHeaderBodyComponent_Template(rf, ctx) { if (rf & 1) {
+MsHeaderBodyComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: MsHeaderBodyComponent, selectors: [["ms-header-body"]], inputs: { info: "info", language: "language" }, decls: 21, vars: 18, consts: [[1, "profile-page"], [1, "wrapper"], ["filter-color", "blue", 1, "page-header", "page-header-small"], ["data-parallax", "true", 1, "page-header-image", 2, "background-image", "url('assets/images/header_background.jpg')"], [1, "container"], [1, "content-center"], [1, "ms-personal-photo"], ["alt", "me", 3, "src"], [1, "h2", "title"], [1, "category", "text-white"], [3, "position", "language"], [1, "section", "pb-0"], [1, "button-container"], [1, "btn", "btn-info", "btn-round", 3, "href", "download"]], template: function MsHeaderBodyComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
@@ -4082,7 +4074,7 @@ class MsSkillsComponent {
     }
 }
 MsSkillsComponent.ɵfac = function MsSkillsComponent_Factory(t) { return new (t || MsSkillsComponent)(); };
-MsSkillsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: MsSkillsComponent, selectors: [["ms-skills"]], inputs: { skills: "skills", language: "language" }, decls: 16, vars: 9, consts: [[1, "h4", "text-center", "mb-4", "title"], [1, "row", "justify-content-between"], [1, "card", "col-lg-9", "col-md-12", "ms-hard-skills"], [1, "card-body"], [1, "h5", "mt-0", "title"], ["data-aos", "fade-right", "data-aos-duration", "700"], [3, "skills", "language"], ["data-aos-anchor-placement", "top-bottom", 1, "card", "col-lg-3", "col-md-12", "ms-soft-skills"], ["data-aos", "fade-up", "data-aos-duration", "700"]], template: function MsSkillsComponent_Template(rf, ctx) { if (rf & 1) {
+MsSkillsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: MsSkillsComponent, selectors: [["ms-skills"]], inputs: { skills: "skills", language: "language" }, decls: 16, vars: 9, consts: [[1, "h4", "text-center", "mb-4", "title"], [1, "row", "justify-content-between", "ms-skills"], [1, "card", "col-lg-9", "col-md-12", "ms-hard-skills"], [1, "card-body"], [1, "h5", "mt-0", "title"], [3, "skills", "language"], [1, "card", "col-lg-3", "col-md-12", "ms-soft-skills"]], template: function MsSkillsComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](2, "translate");
@@ -4093,18 +4085,18 @@ MsSkillsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefine
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "div", 4);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, "Hard Skills");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "div", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](9, "ms-hard-skills", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "div");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](9, "ms-hard-skills", 5);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "div", 7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "div", 6);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "div", 3);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "div", 4);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](13, "Soft Skills");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "div", 8);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](15, "ms-soft-skills", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "div");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](15, "ms-soft-skills", 5);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -4116,7 +4108,7 @@ MsSkillsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefine
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("skills", ctx.skills.hardSkills)("language", ctx.language);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](6);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("skills", ctx.skills.softSkills)("language", ctx.language);
-    } }, directives: [_ms_hard_skills_ms_hard_skills_component__WEBPACK_IMPORTED_MODULE_4__["MsHardSkillsComponent"], _ms_soft_skills_ms_soft_skills_component__WEBPACK_IMPORTED_MODULE_5__["MsSoftSkillsComponent"]], pipes: [_pipes_translate_pipe__WEBPACK_IMPORTED_MODULE_6__["TranslatePipe"]], styles: ["@media (min-width: 992px) {\r\n  .ms-hard-skills[_ngcontent-%COMP%] {\r\n    max-width: 74%;\r\n  }\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1zLXNraWxscy5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7SUFDRSxjQUFjO0VBQ2hCO0FBQ0YiLCJmaWxlIjoibXMtc2tpbGxzLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAbWVkaWEgKG1pbi13aWR0aDogOTkycHgpIHtcclxuICAubXMtaGFyZC1za2lsbHMge1xyXG4gICAgbWF4LXdpZHRoOiA3NCU7XHJcbiAgfVxyXG59Il19 */"] });
+    } }, directives: [_ms_hard_skills_ms_hard_skills_component__WEBPACK_IMPORTED_MODULE_4__["MsHardSkillsComponent"], _ms_soft_skills_ms_soft_skills_component__WEBPACK_IMPORTED_MODULE_5__["MsSoftSkillsComponent"]], pipes: [_pipes_translate_pipe__WEBPACK_IMPORTED_MODULE_6__["TranslatePipe"]], styles: ["@media (min-width: 992px) {\r\n  .ms-hard-skills[_ngcontent-%COMP%] {\r\n    max-width: 74%;\r\n  }\r\n}\r\n\r\n.ms-skills[_ngcontent-%COMP%] {\r\n  padding-right: 15px;\r\n  padding-left: 15px;\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1zLXNraWxscy5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7SUFDRSxjQUFjO0VBQ2hCO0FBQ0Y7O0FBRUE7RUFDRSxtQkFBbUI7RUFDbkIsa0JBQWtCO0FBQ3BCIiwiZmlsZSI6Im1zLXNraWxscy5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiQG1lZGlhIChtaW4td2lkdGg6IDk5MnB4KSB7XHJcbiAgLm1zLWhhcmQtc2tpbGxzIHtcclxuICAgIG1heC13aWR0aDogNzQlO1xyXG4gIH1cclxufVxyXG5cclxuLm1zLXNraWxscyB7XHJcbiAgcGFkZGluZy1yaWdodDogMTVweDtcclxuICBwYWRkaW5nLWxlZnQ6IDE1cHg7XHJcbn0iXX0= */"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](MsSkillsComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
@@ -4172,9 +4164,7 @@ function MsWorkExperienceComponent_li_4_Template(rf, ctx) { if (rf & 1) {
     const i_r2 = ctx.index;
     const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("timeline-inverted", ctx_r0.isInvertedCard(i_r2));
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵattribute"]("data-aos", ctx_r0.isInvertedCard(i_r2) ? "fade-left" : "fade-right");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("info", experience_r1)("language", ctx_r0.language);
 } }
 class MsWorkExperienceComponent {
@@ -4195,13 +4185,13 @@ class MsWorkExperienceComponent {
     }
 }
 MsWorkExperienceComponent.ɵfac = function MsWorkExperienceComponent_Factory(t) { return new (t || MsWorkExperienceComponent)(); };
-MsWorkExperienceComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: MsWorkExperienceComponent, selectors: [["ms-work-experience"]], inputs: { experiences: "experiences", language: "language" }, decls: 6, vars: 6, consts: [[1, "h4", "text-center", "mb-4", "title"], [1, "timeline"], [3, "timeline-inverted", 4, "ngFor", "ngForOf"], [1, "clearfix", 2, "float", "none"], [1, "timeline-badge"], [1, "fa", "fa-dot-circle-o"], ["data-aos-offset", "50", "data-aos-duration", "700", 1, "timeline-card"], [3, "info", "language"]], template: function MsWorkExperienceComponent_Template(rf, ctx) { if (rf & 1) {
+MsWorkExperienceComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: MsWorkExperienceComponent, selectors: [["ms-work-experience"]], inputs: { experiences: "experiences", language: "language" }, decls: 6, vars: 6, consts: [[1, "h4", "text-center", "mb-4", "title"], [1, "timeline"], [3, "timeline-inverted", 4, "ngFor", "ngForOf"], [1, "clearfix", 2, "float", "none"], [1, "timeline-badge"], [1, "fa", "fa-dot-circle-o"], [1, "timeline-card"], [3, "info", "language"]], template: function MsWorkExperienceComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](2, "translate");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "ul", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](4, MsWorkExperienceComponent_li_4_Template, 6, 5, "li", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](4, MsWorkExperienceComponent_li_4_Template, 6, 4, "li", 2);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](5, "li", 3);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } if (rf & 2) {

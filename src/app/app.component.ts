@@ -44,10 +44,6 @@ export class AppComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
-    AOS.init({
-      disable: 'mobile'
-    }); // initialize animate on scroll library
-
     this.systemLanguageService.languageObservable.subscribe((language) => {
       this.systemLanguage = language;
       this.resume = this.resumeService.get();
