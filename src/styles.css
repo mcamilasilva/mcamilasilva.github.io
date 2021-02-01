@@ -332,6 +332,12 @@
     color: black;
   }
 
+.ms-skill {
+  margin-bottom: 10px;
+  height: 30px;
+  align-content: center;
+}
+
 /* Animations */
 .aos {
   -webkit-animation-duration: 1s;

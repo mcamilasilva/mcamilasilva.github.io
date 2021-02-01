@@ -1307,6 +1307,12 @@ ngb-tooltip-window {
     color: black;
   }
 
+.ms-skill {
+  margin-bottom: 10px;
+  height: 30px;
+  align-content: center;
+}
+
 /* Animations */
 
 .aos {
