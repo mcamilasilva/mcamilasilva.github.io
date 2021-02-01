@@ -1,0 +1,15 @@
+.modal-body .option {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+.modal-body .option:hover {
+    color: #049dff;
+    cursor: pointer;
+    transform: scale(1.2, 1.2);
+}
+
+.modal-footer {
+    display: none;
+}

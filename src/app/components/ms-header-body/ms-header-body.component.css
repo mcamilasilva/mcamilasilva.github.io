@@ -1,0 +1,22 @@
+.profile-page .button-container {
+    margin-top: -95px;
+}
+
+.ms-personal-photo img {
+    position: relative;
+    border-radius: 50%;
+    height: 180px;
+    width: 180px;
+    padding: 0;
+    margin: 0;
+    border: 15px solid transparent;
+    z-index: 9999;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+  
+.ms-personal-photo img:hover {
+    -webkit-transform: scale(1.06, 1.06);
+    transform: scale(1.06, 1.06);
+    cursor: pointer;
+}
