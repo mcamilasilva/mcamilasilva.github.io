@@ -1,0 +1,5 @@
+<div class="row">
+    <div *ngFor="let skills of skillGroups" class="col-md-6">
+        <ms-hard-skills-item *ngFor="let skill of skills" [skill]="skill" [language]="language"></ms-hard-skills-item>
+    </div>
+</div>

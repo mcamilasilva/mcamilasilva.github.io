@@ -1,0 +1,23 @@
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    width: 50px;
+    height: auto;
+    right: 20px;
+    background-color: #2CA8FF;
+  }
+  
+#back-to-top .btn {
+    position: absolute;
+    bottom: 0;
+    border-radius: 50%;
+    display: block;
+    margin-bottom: 4px;
+    width: 50px; 
+    height: 50px;
+    margin: 4px auto;
+  }
+  
+#back-to-top > .btn-icon > i.fa-2x {
+    left: 48% !important;
+  }

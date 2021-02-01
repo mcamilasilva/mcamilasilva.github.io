@@ -1,0 +1,25 @@
+<div class="profile-page">
+  <div class="wrapper">
+    <div class="page-header page-header-small" filter-color="blue">
+      <div class="page-header-image" data-parallax="true"
+        style="background-image: url('assets/images/header_background.jpg');">
+      </div>
+      <div class="container">
+        <div class="content-center">
+          <div class="ms-personal-photo"><img [src]="info.photoUrl" alt="me" /></div>
+          <div class="h2 title">{{ info.name }}</div>
+          <p class="category text-white">{{ info.positions | positions: language }}</p>
+          <ms-btn-linkedin [position]="'bottom'" [language]="language"></ms-btn-linkedin>
+        </div>
+      </div>
+      <div class="section pb-0">
+        <div class="container">
+          <div class="button-container">
+            <a class="btn btn-info btn-round" href="{{ resumeURI | translate: 'RESUME_INFO':language }}" data-aos="zoom-in"
+              data-aos-anchor="data-aos-anchor" download="{{ resumeDownloadInfo | translate: 'RESUME_INFO':language }}">Download CV</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 
