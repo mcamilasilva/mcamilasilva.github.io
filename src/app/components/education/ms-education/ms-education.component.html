@@ -2,7 +2,7 @@
 <ul class="timeline">
     <li *ngFor="let item of items; index as i" [class.timeline-inverted]="isInvertedCard(i)">
         <div class="timeline-badge"><a><i class="fa fa-graduation-cap"></i></a></div>
-        <div class="timeline-card" [attr.data-aos]="isInvertedCard(i) ? 'fade-left' : 'fade-right'" data-aos-offset="50" data-aos-duration="700">
+        <div class="timeline-card">
             <ms-education-item [info]="item" [language]="language"></ms-education-item>
         </div>
     </li>

@@ -16,3 +16,13 @@
   .ms-skill > .ms-level {
     color: #2CA8FF;
   }
+
+  .ms-skill {
+    margin-bottom: 10px;
+    height: 30px;
+    align-content: center;
+}
+
+.ms-skill > p {
+  margin-bottom: 0px;
+}

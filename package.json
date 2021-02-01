@@ -23,7 +23,6 @@
     "@nicky-lenaers/ngx-scroll-to": "^9.0.0",
     "@types/bootstrap": "^5.0.1",
     "@types/jquery": "^3.5.4",
-    "aos": "^2.3.4",
     "bootstrap": "^4.5.3",
     "jquery": "^3.5.1",
     "ngx-webstorage-service": "^4.1.0",
