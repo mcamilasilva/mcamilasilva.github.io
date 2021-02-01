@@ -1,8 +1,0 @@
-export enum WorkExperienceEnum {
-
-    OPUS_SENIOR_TECH_LEAD,
-    OPUS_INTERMEDIATE_DEVELOPER,
-    AUDAXWARE,
-    OPUS_JR_SYSTEM_ANALYST
-
-}
