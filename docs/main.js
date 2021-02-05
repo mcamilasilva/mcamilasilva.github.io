@@ -775,7 +775,7 @@ function calculateAge() {
 }
 const commons = {
     [_models_enums_about_me_info_enum__WEBPACK_IMPORTED_MODULE_1__["AboutMeInfoEnum"].AGE]: String(calculateAge()),
-    [_models_enums_about_me_info_enum__WEBPACK_IMPORTED_MODULE_1__["AboutMeInfoEnum"].EMAIL]: 'manoelacamila.silva@gamil.com',
+    [_models_enums_about_me_info_enum__WEBPACK_IMPORTED_MODULE_1__["AboutMeInfoEnum"].EMAIL]: 'manoelacamila.silva@gmail.com',
 };
 const english = {
     [_models_enums_about_me_info_enum__WEBPACK_IMPORTED_MODULE_1__["AboutMeInfoEnum"].PHONE]: '+55 11 94989-8386',

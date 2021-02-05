@@ -19,7 +19,7 @@ function calculateAge() {
 
 const commons = <{ [id: string]: string }>{
     [AboutMeInfoEnum.AGE]: String(calculateAge()),
-    [AboutMeInfoEnum.EMAIL]: 'manoelacamila.silva@gamil.com',
+    [AboutMeInfoEnum.EMAIL]: 'manoelacamila.silva@gmail.com',
 };
 
 const english = <{ [id: string]: any }>{
