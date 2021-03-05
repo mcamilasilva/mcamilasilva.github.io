@@ -1486,11 +1486,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const english = {
-    [_models_enums_linkedin_info_enum__WEBPACK_IMPORTED_MODULE_1__["LinkedinInfoEnum"].LINK]: 'https://www.linkedin.com/in/mcbsilva/?locale=en_US',
+    [_models_enums_linkedin_info_enum__WEBPACK_IMPORTED_MODULE_1__["LinkedinInfoEnum"].LINK]: 'https://www.linkedin.com/in/mcbsilva',
     [_models_enums_linkedin_info_enum__WEBPACK_IMPORTED_MODULE_1__["LinkedinInfoEnum"].TOOLTIP]: 'Profile on LinkedIn'
 };
 const portuguese = {
-    [_models_enums_linkedin_info_enum__WEBPACK_IMPORTED_MODULE_1__["LinkedinInfoEnum"].LINK]: 'https://www.linkedin.com/in/mcbsilva',
+    [_models_enums_linkedin_info_enum__WEBPACK_IMPORTED_MODULE_1__["LinkedinInfoEnum"].LINK]: 'https://www.linkedin.com/in/mcbsilva/?locale=pt_BR',
     [_models_enums_linkedin_info_enum__WEBPACK_IMPORTED_MODULE_1__["LinkedinInfoEnum"].TOOLTIP]: 'Página do LinkedIn'
 };
 const LinkedinInfoDictionary = {

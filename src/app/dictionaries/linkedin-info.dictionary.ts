@@ -2,12 +2,12 @@ import { SystemLanguageEnum } from '../models/enums/system-language.enum';
 import { LinkedinInfoEnum } from '../models/enums/linkedin-info.enum';
 
 const english = <{ [id: string]: string }> {
-    [LinkedinInfoEnum.LINK]: 'https://www.linkedin.com/in/mcbsilva/?locale=en_US',
+    [LinkedinInfoEnum.LINK]: 'https://www.linkedin.com/in/mcbsilva',
     [LinkedinInfoEnum.TOOLTIP]: 'Profile on LinkedIn'
 };
 
 const portuguese = <{ [id: string]: string }> {
-    [LinkedinInfoEnum.LINK]: 'https://www.linkedin.com/in/mcbsilva',
+    [LinkedinInfoEnum.LINK]: 'https://www.linkedin.com/in/mcbsilva/?locale=pt_BR',
     [LinkedinInfoEnum.TOOLTIP]: 'Página do LinkedIn'
 };
 
