@@ -18,10 +18,10 @@ const portuguese = <{ [id: string]: string }>{
 
 const english = <{ [id: string]: string }>{
     [WorkExperienceEnum.OPUS_SENIOR_TECH_LEAD]: `OPUS Software is a software development consulting company based in São Paulo - Brazil. As Tech Lead and Senior 
-        Developer, my responsabilities consist mostly of designing solutions, coding, performing code review and assisting my colleagues in order to come out 
-        with the best solutions and practices. Currently, I am part of a team that develops and mantains a white label platform that provides bank loans for 
+        Developer, my responsibilities consist mostly of designing solutions, coding, performing code review and assisting my colleagues in order to come out 
+        with the best solutions and practices. Currently, I am part of a team that develops and maintains a white label platform that provides bank loans for 
         individuals. Some of the activities I have been involved are given as follows:`,
-    [WorkExperienceEnum.OPUS_INTERMEDIATE_DEVELOPER]: `Due to the fact that OPUS Sotware is a consulting company, I have the opportunity of working in many different 
+    [WorkExperienceEnum.OPUS_INTERMEDIATE_DEVELOPER]: `Due to the fact that OPUS Software is a consulting company, I have the opportunity of working in many different 
         projects and with a variety of technologies. As a Software Developer, the main projects I was involved to were:`,
     [WorkExperienceEnum.AUDAXWARE]: `Audaxware is a startup based in Austin - Texas whose product is a project planning system. Back in 2015 they had legacy system 
         which was developed using ASP.Net with a PostgreSQL database, and they wanted to change it to C#, AngularJS and SQL Server. My main activities were:`,

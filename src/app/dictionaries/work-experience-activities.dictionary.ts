@@ -6,13 +6,13 @@ import { WorkExperienceEnum } from '../models/enums/work-experience.enum';
 
 const english = <{ [id: string]: ActivityItem[] }>{
     [WorkExperienceEnum.OPUS_SENIOR_TECH_LEAD]: [
-        new ActivityItem(ActivityTypeEnum.CODING, "Evolution of a bank loan application into a white label plataform which allowed the client to offer the platform to key partners with minimal effort and profit from the loans provided by the partners"),
+        new ActivityItem(ActivityTypeEnum.CODING, "Evolution of a bank loan application into a white label platform which allowed the client to offer the platform to key partners with minimal effort and profit from the loans provided by the partners"),
         new ActivityItem(ActivityTypeEnum.CODING, "Study and initiation of the use of AWS Batch for batch processing"),
-        new ActivityItem(ActivityTypeEnum.SUPPORT, "Recording of a training on how the white label platform works, in both technical and user's experience levels, to facilitate the onboarding of new members to the team. Before that, a member of the team had to give the same training over and over again every time a new person would ome along")
+        new ActivityItem(ActivityTypeEnum.SUPPORT, "Recording of a training on how the white label platform works, in both technical and user's experience levels, to facilitate the onboarding of new members to the team. Before that, a member of the team had to give the same training over and over again every time a new person would come along")
     ],
     [WorkExperienceEnum.OPUS_INTERMEDIATE_DEVELOPER]: [
         new ActivityItem(ActivityTypeEnum.CODING, "Development of an Open API architecture and responsive web app that provide bank loans for individuals, which soon achieved the mark of R$1M in loans granted and allowed the client to close several loan dedicated branches reducing their expenses"),
-        new ActivityItem(ActivityTypeEnum.CODING, "Remodelling of the database and API structure of the main Brazilian FoodTech company, creating a well-defined ETL process and increasing their code-efficiency by 10x"),
+        new ActivityItem(ActivityTypeEnum.CODING, "Remodeling of the database and API structure of the main Brazilian FoodTech company, creating a well-defined ETL process and increasing their code-efficiency by 10x"),
         new ActivityItem(ActivityTypeEnum.CODING, "Development of a platform that allows individuals and companies to join consortiums of real estate, vehicles and/or services")
     ],
     [WorkExperienceEnum.AUDAXWARE]: [
@@ -22,7 +22,7 @@ const english = <{ [id: string]: ActivityItem[] }>{
         new ActivityItem(ActivityTypeEnum.SUPPORT, "Support to clients on how to use the system"),
     ],
     [WorkExperienceEnum.OPUS_JR_SYSTEM_ANALYST]: [
-        new ActivityItem(ActivityTypeEnum.CODING, "Development of an online learning responsive webapp for an English school"),
+        new ActivityItem(ActivityTypeEnum.CODING, "Development of an online learning responsive web app for an English school"),
         new ActivityItem(ActivityTypeEnum.CODING, "Development of a repository containing front-end components to be used internally on new projects. The idea here was to have something like a internal bootstrap to optimize developers' time when initiating new projects")
     ]
 };

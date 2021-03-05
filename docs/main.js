@@ -975,10 +975,10 @@ const portuguese = {
 };
 const english = {
     [_models_enums_work_experience_enum__WEBPACK_IMPORTED_MODULE_1__["WorkExperienceEnum"].OPUS_SENIOR_TECH_LEAD]: `OPUS Software is a software development consulting company based in São Paulo - Brazil. As Tech Lead and Senior 
-        Developer, my responsabilities consist mostly of designing solutions, coding, performing code review and assisting my colleagues in order to come out 
-        with the best solutions and practices. Currently, I am part of a team that develops and mantains a white label platform that provides bank loans for 
+        Developer, my responsibilities consist mostly of designing solutions, coding, performing code review and assisting my colleagues in order to come out 
+        with the best solutions and practices. Currently, I am part of a team that develops and maintains a white label platform that provides bank loans for 
         individuals. Some of the activities I have been involved are given as follows:`,
-    [_models_enums_work_experience_enum__WEBPACK_IMPORTED_MODULE_1__["WorkExperienceEnum"].OPUS_INTERMEDIATE_DEVELOPER]: `Due to the fact that OPUS Sotware is a consulting company, I have the opportunity of working in many different 
+    [_models_enums_work_experience_enum__WEBPACK_IMPORTED_MODULE_1__["WorkExperienceEnum"].OPUS_INTERMEDIATE_DEVELOPER]: `Due to the fact that OPUS Software is a consulting company, I have the opportunity of working in many different 
         projects and with a variety of technologies. As a Software Developer, the main projects I was involved to were:`,
     [_models_enums_work_experience_enum__WEBPACK_IMPORTED_MODULE_1__["WorkExperienceEnum"].AUDAXWARE]: `Audaxware is a startup based in Austin - Texas whose product is a project planning system. Back in 2015 they had legacy system 
         which was developed using ASP.Net with a PostgreSQL database, and they wanted to change it to C#, AngularJS and SQL Server. My main activities were:`,
@@ -3904,13 +3904,13 @@ __webpack_require__.r(__webpack_exports__);
 
 const english = {
     [_models_enums_work_experience_enum__WEBPACK_IMPORTED_MODULE_3__["WorkExperienceEnum"].OPUS_SENIOR_TECH_LEAD]: [
-        new _models_activity_item__WEBPACK_IMPORTED_MODULE_0__["ActivityItem"](_models_enums_activity_type_enum__WEBPACK_IMPORTED_MODULE_1__["ActivityTypeEnum"].CODING, "Evolution of a bank loan application into a white label plataform which allowed the client to offer the platform to key partners with minimal effort and profit from the loans provided by the partners"),
+        new _models_activity_item__WEBPACK_IMPORTED_MODULE_0__["ActivityItem"](_models_enums_activity_type_enum__WEBPACK_IMPORTED_MODULE_1__["ActivityTypeEnum"].CODING, "Evolution of a bank loan application into a white label platform which allowed the client to offer the platform to key partners with minimal effort and profit from the loans provided by the partners"),
         new _models_activity_item__WEBPACK_IMPORTED_MODULE_0__["ActivityItem"](_models_enums_activity_type_enum__WEBPACK_IMPORTED_MODULE_1__["ActivityTypeEnum"].CODING, "Study and initiation of the use of AWS Batch for batch processing"),
-        new _models_activity_item__WEBPACK_IMPORTED_MODULE_0__["ActivityItem"](_models_enums_activity_type_enum__WEBPACK_IMPORTED_MODULE_1__["ActivityTypeEnum"].SUPPORT, "Recording of a training on how the white label platform works, in both technical and user's experience levels, to facilitate the onboarding of new members to the team. Before that, a member of the team had to give the same training over and over again every time a new person would ome along")
+        new _models_activity_item__WEBPACK_IMPORTED_MODULE_0__["ActivityItem"](_models_enums_activity_type_enum__WEBPACK_IMPORTED_MODULE_1__["ActivityTypeEnum"].SUPPORT, "Recording of a training on how the white label platform works, in both technical and user's experience levels, to facilitate the onboarding of new members to the team. Before that, a member of the team had to give the same training over and over again every time a new person would come along")
     ],
     [_models_enums_work_experience_enum__WEBPACK_IMPORTED_MODULE_3__["WorkExperienceEnum"].OPUS_INTERMEDIATE_DEVELOPER]: [
         new _models_activity_item__WEBPACK_IMPORTED_MODULE_0__["ActivityItem"](_models_enums_activity_type_enum__WEBPACK_IMPORTED_MODULE_1__["ActivityTypeEnum"].CODING, "Development of an Open API architecture and responsive web app that provide bank loans for individuals, which soon achieved the mark of R$1M in loans granted and allowed the client to close several loan dedicated branches reducing their expenses"),
-        new _models_activity_item__WEBPACK_IMPORTED_MODULE_0__["ActivityItem"](_models_enums_activity_type_enum__WEBPACK_IMPORTED_MODULE_1__["ActivityTypeEnum"].CODING, "Remodelling of the database and API structure of the main Brazilian FoodTech company, creating a well-defined ETL process and increasing their code-efficiency by 10x"),
+        new _models_activity_item__WEBPACK_IMPORTED_MODULE_0__["ActivityItem"](_models_enums_activity_type_enum__WEBPACK_IMPORTED_MODULE_1__["ActivityTypeEnum"].CODING, "Remodeling of the database and API structure of the main Brazilian FoodTech company, creating a well-defined ETL process and increasing their code-efficiency by 10x"),
         new _models_activity_item__WEBPACK_IMPORTED_MODULE_0__["ActivityItem"](_models_enums_activity_type_enum__WEBPACK_IMPORTED_MODULE_1__["ActivityTypeEnum"].CODING, "Development of a platform that allows individuals and companies to join consortiums of real estate, vehicles and/or services")
     ],
     [_models_enums_work_experience_enum__WEBPACK_IMPORTED_MODULE_3__["WorkExperienceEnum"].AUDAXWARE]: [
@@ -3920,7 +3920,7 @@ const english = {
         new _models_activity_item__WEBPACK_IMPORTED_MODULE_0__["ActivityItem"](_models_enums_activity_type_enum__WEBPACK_IMPORTED_MODULE_1__["ActivityTypeEnum"].SUPPORT, "Support to clients on how to use the system"),
     ],
     [_models_enums_work_experience_enum__WEBPACK_IMPORTED_MODULE_3__["WorkExperienceEnum"].OPUS_JR_SYSTEM_ANALYST]: [
-        new _models_activity_item__WEBPACK_IMPORTED_MODULE_0__["ActivityItem"](_models_enums_activity_type_enum__WEBPACK_IMPORTED_MODULE_1__["ActivityTypeEnum"].CODING, "Development of an online learning responsive webapp for an English school"),
+        new _models_activity_item__WEBPACK_IMPORTED_MODULE_0__["ActivityItem"](_models_enums_activity_type_enum__WEBPACK_IMPORTED_MODULE_1__["ActivityTypeEnum"].CODING, "Development of an online learning responsive web app for an English school"),
         new _models_activity_item__WEBPACK_IMPORTED_MODULE_0__["ActivityItem"](_models_enums_activity_type_enum__WEBPACK_IMPORTED_MODULE_1__["ActivityTypeEnum"].CODING, "Development of a repository containing front-end components to be used internally on new projects. The idea here was to have something like a internal bootstrap to optimize developers' time when initiating new projects")
     ]
 };
