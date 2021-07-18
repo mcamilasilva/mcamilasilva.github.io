@@ -89,6 +89,7 @@ var WorkExperienceEnum;
     WorkExperienceEnum[WorkExperienceEnum["OPUS_INTERMEDIATE_DEVELOPER"] = 1] = "OPUS_INTERMEDIATE_DEVELOPER";
     WorkExperienceEnum[WorkExperienceEnum["AUDAXWARE"] = 2] = "AUDAXWARE";
     WorkExperienceEnum[WorkExperienceEnum["OPUS_JR_SYSTEM_ANALYST"] = 3] = "OPUS_JR_SYSTEM_ANALYST";
+    WorkExperienceEnum[WorkExperienceEnum["UBER_SOFTWARE_ENGINEER"] = 4] = "UBER_SOFTWARE_ENGINEER";
 })(WorkExperienceEnum || (WorkExperienceEnum = {}));
 
 
@@ -337,14 +338,16 @@ const english = {
     [_models_enums_position_enum__WEBPACK_IMPORTED_MODULE_0__["PositionEnum"].SENIOR_SOFTWARE_DEVELOPER]: 'Senior Software Developer',
     [_models_enums_position_enum__WEBPACK_IMPORTED_MODULE_0__["PositionEnum"].INTERMEDIATE_SOFTWARE_DEVELOPER]: 'Software Developer',
     [_models_enums_position_enum__WEBPACK_IMPORTED_MODULE_0__["PositionEnum"].WEB_DEVELOPER]: 'Web Developer',
-    [_models_enums_position_enum__WEBPACK_IMPORTED_MODULE_0__["PositionEnum"].SYSTEM_ANALYST]: 'Jr. System Analyst'
+    [_models_enums_position_enum__WEBPACK_IMPORTED_MODULE_0__["PositionEnum"].SYSTEM_ANALYST]: 'Jr. System Analyst',
+    [_models_enums_position_enum__WEBPACK_IMPORTED_MODULE_0__["PositionEnum"].SOFTWARE_ENGINEER]: "Software Engineer"
 };
 const portuguese = {
     [_models_enums_position_enum__WEBPACK_IMPORTED_MODULE_0__["PositionEnum"].TECH_LEAD]: 'Tech Lead',
     [_models_enums_position_enum__WEBPACK_IMPORTED_MODULE_0__["PositionEnum"].SENIOR_SOFTWARE_DEVELOPER]: 'Desenvolvedora de Software Sênior',
     [_models_enums_position_enum__WEBPACK_IMPORTED_MODULE_0__["PositionEnum"].INTERMEDIATE_SOFTWARE_DEVELOPER]: 'Desenvolvedora de Software Pleno',
     [_models_enums_position_enum__WEBPACK_IMPORTED_MODULE_0__["PositionEnum"].WEB_DEVELOPER]: 'Desenvolvedora Web',
-    [_models_enums_position_enum__WEBPACK_IMPORTED_MODULE_0__["PositionEnum"].SYSTEM_ANALYST]: 'Analista de Sistemas Jr.'
+    [_models_enums_position_enum__WEBPACK_IMPORTED_MODULE_0__["PositionEnum"].SYSTEM_ANALYST]: 'Analista de Sistemas Jr.',
+    [_models_enums_position_enum__WEBPACK_IMPORTED_MODULE_0__["PositionEnum"].SOFTWARE_ENGINEER]: "Engenheira de Software"
 };
 const PositionDictionary = {
     [_models_enums_system_language_enum__WEBPACK_IMPORTED_MODULE_1__["SystemLanguageEnum"].EN_US]: english,
@@ -961,11 +964,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const portuguese = {
+    [_models_enums_work_experience_enum__WEBPACK_IMPORTED_MODULE_1__["WorkExperienceEnum"].UBER_SOFTWARE_ENGINEER]: `Uber é uma empresa de tecnologia americana multinacional com foco em mobilidade urbana, cujo os serviços incluem: 
+        transporte privado, entrega de comida, entrega de pacotes, transporte de carga, entre outros. Como recém membro do Tech Center de São Paulo, eu irei:`,
     [_models_enums_work_experience_enum__WEBPACK_IMPORTED_MODULE_1__["WorkExperienceEnum"].OPUS_SENIOR_TECH_LEAD]: `A OPUS Software é uma consultoria localizada em São Paulo - SP. Como Tech Lead e Desenvolvedor Sênior, minhas 
-        responsabilidades consistem principalmente do design de soluções, codificação, realização de code review and assistência aos meus colegas no intuito de 
-        atingir as melhores soluções utilizando-se das melhores práticas. Atualmente, eu sou parte de um time que desenvolve uma plataforma white label que fornece 
-        empréstimos bancários para indivíduos. Alguma das atividades que eu tenho estado envolvida são:`,
-    [_models_enums_work_experience_enum__WEBPACK_IMPORTED_MODULE_1__["WorkExperienceEnum"].OPUS_INTERMEDIATE_DEVELOPER]: `Devido ao fato de que a OPUS é uma empresa de consultoria, eu tenho a oportunidade de trabalhar em diversos 
+        responsabilidades consistiam principalmente do design de soluções, codificação, realização de code review and assistência aos meus colegas no intuito de 
+        atingir as melhores soluções utilizando-se das melhores práticas. Alguma das atividades que eu estive envolvida foram:`,
+    [_models_enums_work_experience_enum__WEBPACK_IMPORTED_MODULE_1__["WorkExperienceEnum"].OPUS_INTERMEDIATE_DEVELOPER]: `Devido ao fato de que a OPUS é uma empresa de consultoria, eu tive a oportunidade de trabalhar em diversos 
         projetos e com uma ampla variedade de tecnologias. Os principais projetos que eu trabalhei durante meu tempo como desenvolvedor pleno foram:`,
     [_models_enums_work_experience_enum__WEBPACK_IMPORTED_MODULE_1__["WorkExperienceEnum"].AUDAXWARE]: `A Audaxware é uma startup localizada em Austin, Texas cujo produto é um sistema de planejamento de projeto. Em 2015, quando eu 
         fui contratada, eles possuíam um sistema legado que estava desenvolvido em ASP.Net com PostgreSQL e eles queriam construir um novo em C#, AngularJS e SQL 
@@ -974,11 +978,13 @@ const portuguese = {
         fornecido um excelente ambiente para aprender e crescer como profissional. Os principais projetos que eu participei durante esse tempo foram:`
 };
 const english = {
+    [_models_enums_work_experience_enum__WEBPACK_IMPORTED_MODULE_1__["WorkExperienceEnum"].UBER_SOFTWARE_ENGINEER]: `Uber is a multinational American technology company focused on urban mobility and transportation, whose services include,
+        but are not limited to: ride-sharing, food delivery, package delivery, couriers and freight transportation. As a newly member of the Tech Center located in São Paulo,
+        I am going to:`,
     [_models_enums_work_experience_enum__WEBPACK_IMPORTED_MODULE_1__["WorkExperienceEnum"].OPUS_SENIOR_TECH_LEAD]: `OPUS Software is a software development consulting company based in São Paulo - Brazil. As Tech Lead and Senior 
-        Developer, my responsibilities consist mostly of designing solutions, coding, performing code review and assisting my colleagues in order to come out 
-        with the best solutions and practices. Currently, I am part of a team that develops and maintains a white label platform that provides bank loans for 
-        individuals. Some of the activities I have been involved are given as follows:`,
-    [_models_enums_work_experience_enum__WEBPACK_IMPORTED_MODULE_1__["WorkExperienceEnum"].OPUS_INTERMEDIATE_DEVELOPER]: `Due to the fact that OPUS Software is a consulting company, I have the opportunity of working in many different 
+        Developer, my responsibilities consisted mostly of designing solutions, coding, performing code review and assisting my colleagues in order to come out 
+        with the best solutions and practices. Some of the activities I was involved are given as follows:`,
+    [_models_enums_work_experience_enum__WEBPACK_IMPORTED_MODULE_1__["WorkExperienceEnum"].OPUS_INTERMEDIATE_DEVELOPER]: `Due to the fact that OPUS Software is a consulting company, I had the opportunity of working in many different 
         projects and with a variety of technologies. As a Software Developer, the main projects I was involved to were:`,
     [_models_enums_work_experience_enum__WEBPACK_IMPORTED_MODULE_1__["WorkExperienceEnum"].AUDAXWARE]: `Audaxware is a startup based in Austin - Texas whose product is a project planning system. Back in 2015 they had legacy system 
         which was developed using ASP.Net with a PostgreSQL database, and they wanted to change it to C#, AngularJS and SQL Server. My main activities were:`,
@@ -1906,6 +1912,7 @@ var WorkExperienceTechnologyEnum;
     WorkExperienceTechnologyEnum["KANBAN"] = "Kanban";
     WorkExperienceTechnologyEnum["KNOCKOUT"] = "Knockout";
     WorkExperienceTechnologyEnum["BOOTSTRAP"] = "Bootstrap";
+    WorkExperienceTechnologyEnum["GO"] = "Golang";
 })(WorkExperienceTechnologyEnum || (WorkExperienceTechnologyEnum = {}));
 
 
@@ -2272,6 +2279,8 @@ var TranslationTypeEnum;
     TranslationTypeEnum["LINKEDIN_INFO"] = "LINKEDIN_INFO";
     TranslationTypeEnum["FIXED_LABELS_AND_TOOLTIPS"] = "FIXED_LABELS_AND_TOOLTIPS";
     TranslationTypeEnum["RESUME_INFO"] = "RESUME_INFO";
+    TranslationTypeEnum["COMPANY_WEBSITE"] = "COMPANY_WEBSITE";
+    TranslationTypeEnum["SCHOOL_WEBSITE"] = "SCHOOL_WEBSITE";
 })(TranslationTypeEnum || (TranslationTypeEnum = {}));
 
 
@@ -2289,24 +2298,28 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TranslationService", function() { return TranslationService; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
 /* harmony import */ var _dictionaries_about_me_info_dictionary__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../dictionaries/about-me-info.dictionary */ "8Mqy");
-/* harmony import */ var _dictionaries_fixed_labels_and_tooltips_dictionary__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../dictionaries/fixed-labels-and-tooltips.dictionary */ "BzGd");
-/* harmony import */ var _dictionaries_hard_skills_dictionary__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../dictionaries/hard-skills.dictionary */ "Boz4");
-/* harmony import */ var _dictionaries_language_dictionary__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../dictionaries/language.dictionary */ "GIsv");
-/* harmony import */ var _dictionaries_linkedin_info_dictionary__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../dictionaries/linkedin-info.dictionary */ "G+Xz");
-/* harmony import */ var _dictionaries_locale_dictionary__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../dictionaries/locale.dictionary */ "/Gfa");
-/* harmony import */ var _dictionaries_major_degree_dictionary__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../dictionaries/major-degree.dictionary */ "HTrS");
-/* harmony import */ var _dictionaries_major_dictionary__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../dictionaries/major.dictionary */ "hrcU");
-/* harmony import */ var _dictionaries_menu_item_dictionary__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../dictionaries/menu-item.dictionary */ "mwU9");
-/* harmony import */ var _dictionaries_position_dictionary__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../dictionaries/position.dictionary */ "2W8z");
-/* harmony import */ var _dictionaries_resume_info_dictionary__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../dictionaries/resume-info.dictionary */ "z6Ts");
-/* harmony import */ var _dictionaries_school_dictionary__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../dictionaries/school.dictionary */ "CYLe");
-/* harmony import */ var _dictionaries_soft_skill_dictionary__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../dictionaries/soft-skill.dictionary */ "dFk/");
-/* harmony import */ var _dictionaries_system_language_dictionary__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../dictionaries/system-language.dictionary */ "i7Io");
-/* harmony import */ var _dictionaries_thesis_info_dictionary__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../dictionaries/thesis-info.dictionary */ "tSEg");
-/* harmony import */ var _dictionaries_title_dictionary__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../dictionaries/title.dictionary */ "dHpg");
-/* harmony import */ var _dictionaries_work_experience_activities_dictionary__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../dictionaries/work-experience-activities.dictionary */ "q0iP");
-/* harmony import */ var _dictionaries_work_experience_description_dictionary__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../dictionaries/work-experience-description.dictionary */ "ArwO");
-/* harmony import */ var _models_enums_translation_type_enum__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../models/enums/translation-type.enum */ "U3m8");
+/* harmony import */ var _dictionaries_company_website_dictionary__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../dictionaries/company-website.dictionary */ "V7Ze");
+/* harmony import */ var _dictionaries_fixed_labels_and_tooltips_dictionary__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../dictionaries/fixed-labels-and-tooltips.dictionary */ "BzGd");
+/* harmony import */ var _dictionaries_hard_skills_dictionary__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../dictionaries/hard-skills.dictionary */ "Boz4");
+/* harmony import */ var _dictionaries_language_dictionary__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../dictionaries/language.dictionary */ "GIsv");
+/* harmony import */ var _dictionaries_linkedin_info_dictionary__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../dictionaries/linkedin-info.dictionary */ "G+Xz");
+/* harmony import */ var _dictionaries_locale_dictionary__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../dictionaries/locale.dictionary */ "/Gfa");
+/* harmony import */ var _dictionaries_major_degree_dictionary__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../dictionaries/major-degree.dictionary */ "HTrS");
+/* harmony import */ var _dictionaries_major_dictionary__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../dictionaries/major.dictionary */ "hrcU");
+/* harmony import */ var _dictionaries_menu_item_dictionary__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../dictionaries/menu-item.dictionary */ "mwU9");
+/* harmony import */ var _dictionaries_position_dictionary__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../dictionaries/position.dictionary */ "2W8z");
+/* harmony import */ var _dictionaries_resume_info_dictionary__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../dictionaries/resume-info.dictionary */ "z6Ts");
+/* harmony import */ var _dictionaries_school_website_dictionary__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../dictionaries/school-website.dictionary */ "ezFT");
+/* harmony import */ var _dictionaries_school_dictionary__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../dictionaries/school.dictionary */ "CYLe");
+/* harmony import */ var _dictionaries_soft_skill_dictionary__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../dictionaries/soft-skill.dictionary */ "dFk/");
+/* harmony import */ var _dictionaries_system_language_dictionary__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../dictionaries/system-language.dictionary */ "i7Io");
+/* harmony import */ var _dictionaries_thesis_info_dictionary__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../dictionaries/thesis-info.dictionary */ "tSEg");
+/* harmony import */ var _dictionaries_title_dictionary__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../dictionaries/title.dictionary */ "dHpg");
+/* harmony import */ var _dictionaries_work_experience_activities_dictionary__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../dictionaries/work-experience-activities.dictionary */ "q0iP");
+/* harmony import */ var _dictionaries_work_experience_description_dictionary__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../dictionaries/work-experience-description.dictionary */ "ArwO");
+/* harmony import */ var _models_enums_translation_type_enum__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../models/enums/translation-type.enum */ "U3m8");
+
+
 
 
 
@@ -2336,59 +2349,65 @@ class TranslationService {
         }
         let translatedValue;
         switch (type) {
-            case _models_enums_translation_type_enum__WEBPACK_IMPORTED_MODULE_19__["TranslationTypeEnum"].MAJOR_DEGREE:
-                translatedValue = _dictionaries_major_degree_dictionary__WEBPACK_IMPORTED_MODULE_7__["MajorDegreeDictionary"][language][value];
+            case _models_enums_translation_type_enum__WEBPACK_IMPORTED_MODULE_21__["TranslationTypeEnum"].MAJOR_DEGREE:
+                translatedValue = _dictionaries_major_degree_dictionary__WEBPACK_IMPORTED_MODULE_8__["MajorDegreeDictionary"][language][value];
                 break;
-            case _models_enums_translation_type_enum__WEBPACK_IMPORTED_MODULE_19__["TranslationTypeEnum"].MAJOR:
-                translatedValue = _dictionaries_major_dictionary__WEBPACK_IMPORTED_MODULE_8__["MajorDictionary"][language][value];
+            case _models_enums_translation_type_enum__WEBPACK_IMPORTED_MODULE_21__["TranslationTypeEnum"].MAJOR:
+                translatedValue = _dictionaries_major_dictionary__WEBPACK_IMPORTED_MODULE_9__["MajorDictionary"][language][value];
                 break;
-            case _models_enums_translation_type_enum__WEBPACK_IMPORTED_MODULE_19__["TranslationTypeEnum"].LOCALE:
-                translatedValue = _dictionaries_locale_dictionary__WEBPACK_IMPORTED_MODULE_6__["LocaleDictionary"][language][value];
+            case _models_enums_translation_type_enum__WEBPACK_IMPORTED_MODULE_21__["TranslationTypeEnum"].LOCALE:
+                translatedValue = _dictionaries_locale_dictionary__WEBPACK_IMPORTED_MODULE_7__["LocaleDictionary"][language][value];
                 break;
-            case _models_enums_translation_type_enum__WEBPACK_IMPORTED_MODULE_19__["TranslationTypeEnum"].SCHOOL:
-                translatedValue = _dictionaries_school_dictionary__WEBPACK_IMPORTED_MODULE_12__["SchoolDictionary"][language][value];
+            case _models_enums_translation_type_enum__WEBPACK_IMPORTED_MODULE_21__["TranslationTypeEnum"].SCHOOL:
+                translatedValue = _dictionaries_school_dictionary__WEBPACK_IMPORTED_MODULE_14__["SchoolDictionary"][language][value];
                 break;
-            case _models_enums_translation_type_enum__WEBPACK_IMPORTED_MODULE_19__["TranslationTypeEnum"].LANGUAGE:
-                translatedValue = _dictionaries_language_dictionary__WEBPACK_IMPORTED_MODULE_4__["LanguageDictionary"][language][value];
+            case _models_enums_translation_type_enum__WEBPACK_IMPORTED_MODULE_21__["TranslationTypeEnum"].LANGUAGE:
+                translatedValue = _dictionaries_language_dictionary__WEBPACK_IMPORTED_MODULE_5__["LanguageDictionary"][language][value];
                 break;
-            case _models_enums_translation_type_enum__WEBPACK_IMPORTED_MODULE_19__["TranslationTypeEnum"].TITLE:
-                translatedValue = _dictionaries_title_dictionary__WEBPACK_IMPORTED_MODULE_16__["TitleDictionary"][language][value];
+            case _models_enums_translation_type_enum__WEBPACK_IMPORTED_MODULE_21__["TranslationTypeEnum"].TITLE:
+                translatedValue = _dictionaries_title_dictionary__WEBPACK_IMPORTED_MODULE_18__["TitleDictionary"][language][value];
                 break;
-            case _models_enums_translation_type_enum__WEBPACK_IMPORTED_MODULE_19__["TranslationTypeEnum"].MENU_ITEM:
-                translatedValue = _dictionaries_menu_item_dictionary__WEBPACK_IMPORTED_MODULE_9__["MenuItemDictionary"][language][value];
+            case _models_enums_translation_type_enum__WEBPACK_IMPORTED_MODULE_21__["TranslationTypeEnum"].MENU_ITEM:
+                translatedValue = _dictionaries_menu_item_dictionary__WEBPACK_IMPORTED_MODULE_10__["MenuItemDictionary"][language][value];
                 break;
-            case _models_enums_translation_type_enum__WEBPACK_IMPORTED_MODULE_19__["TranslationTypeEnum"].SOFT_SKILL:
-                translatedValue = _dictionaries_soft_skill_dictionary__WEBPACK_IMPORTED_MODULE_13__["SoftSkillsDictionary"][language][value];
+            case _models_enums_translation_type_enum__WEBPACK_IMPORTED_MODULE_21__["TranslationTypeEnum"].SOFT_SKILL:
+                translatedValue = _dictionaries_soft_skill_dictionary__WEBPACK_IMPORTED_MODULE_15__["SoftSkillsDictionary"][language][value];
                 break;
-            case _models_enums_translation_type_enum__WEBPACK_IMPORTED_MODULE_19__["TranslationTypeEnum"].HARD_SKILL:
-                translatedValue = _dictionaries_hard_skills_dictionary__WEBPACK_IMPORTED_MODULE_3__["HardSkillsDictionary"][language][value];
+            case _models_enums_translation_type_enum__WEBPACK_IMPORTED_MODULE_21__["TranslationTypeEnum"].HARD_SKILL:
+                translatedValue = _dictionaries_hard_skills_dictionary__WEBPACK_IMPORTED_MODULE_4__["HardSkillsDictionary"][language][value];
                 break;
-            case _models_enums_translation_type_enum__WEBPACK_IMPORTED_MODULE_19__["TranslationTypeEnum"].POSITION:
-                translatedValue = _dictionaries_position_dictionary__WEBPACK_IMPORTED_MODULE_10__["PositionDictionary"][language][value];
+            case _models_enums_translation_type_enum__WEBPACK_IMPORTED_MODULE_21__["TranslationTypeEnum"].POSITION:
+                translatedValue = _dictionaries_position_dictionary__WEBPACK_IMPORTED_MODULE_11__["PositionDictionary"][language][value];
                 break;
-            case _models_enums_translation_type_enum__WEBPACK_IMPORTED_MODULE_19__["TranslationTypeEnum"].SYSTEM_LANGUAGE:
-                translatedValue = _dictionaries_system_language_dictionary__WEBPACK_IMPORTED_MODULE_14__["SystemLanguageDictionary"][language][value];
+            case _models_enums_translation_type_enum__WEBPACK_IMPORTED_MODULE_21__["TranslationTypeEnum"].SYSTEM_LANGUAGE:
+                translatedValue = _dictionaries_system_language_dictionary__WEBPACK_IMPORTED_MODULE_16__["SystemLanguageDictionary"][language][value];
                 break;
-            case _models_enums_translation_type_enum__WEBPACK_IMPORTED_MODULE_19__["TranslationTypeEnum"].ABOUT_ME_INFO:
+            case _models_enums_translation_type_enum__WEBPACK_IMPORTED_MODULE_21__["TranslationTypeEnum"].ABOUT_ME_INFO:
                 translatedValue = _dictionaries_about_me_info_dictionary__WEBPACK_IMPORTED_MODULE_1__["AboutMeInfoDictionary"][language][value];
                 break;
-            case _models_enums_translation_type_enum__WEBPACK_IMPORTED_MODULE_19__["TranslationTypeEnum"].WORK_EXPERIENCE_DESCRIPTION:
-                translatedValue = _dictionaries_work_experience_description_dictionary__WEBPACK_IMPORTED_MODULE_18__["WorkExperienceDescriptionDictionary"][language][value];
+            case _models_enums_translation_type_enum__WEBPACK_IMPORTED_MODULE_21__["TranslationTypeEnum"].WORK_EXPERIENCE_DESCRIPTION:
+                translatedValue = _dictionaries_work_experience_description_dictionary__WEBPACK_IMPORTED_MODULE_20__["WorkExperienceDescriptionDictionary"][language][value];
                 break;
-            case _models_enums_translation_type_enum__WEBPACK_IMPORTED_MODULE_19__["TranslationTypeEnum"].WORK_EXPERIENCE_ACTIVITY:
-                translatedValue = _dictionaries_work_experience_activities_dictionary__WEBPACK_IMPORTED_MODULE_17__["WorkExperienceActivitiesDictionary"][language][value];
+            case _models_enums_translation_type_enum__WEBPACK_IMPORTED_MODULE_21__["TranslationTypeEnum"].WORK_EXPERIENCE_ACTIVITY:
+                translatedValue = _dictionaries_work_experience_activities_dictionary__WEBPACK_IMPORTED_MODULE_19__["WorkExperienceActivitiesDictionary"][language][value];
                 break;
-            case _models_enums_translation_type_enum__WEBPACK_IMPORTED_MODULE_19__["TranslationTypeEnum"].THESIS_INFO:
-                translatedValue = _dictionaries_thesis_info_dictionary__WEBPACK_IMPORTED_MODULE_15__["ThesisInfoDictionary"][language][value];
+            case _models_enums_translation_type_enum__WEBPACK_IMPORTED_MODULE_21__["TranslationTypeEnum"].THESIS_INFO:
+                translatedValue = _dictionaries_thesis_info_dictionary__WEBPACK_IMPORTED_MODULE_17__["ThesisInfoDictionary"][language][value];
                 break;
-            case _models_enums_translation_type_enum__WEBPACK_IMPORTED_MODULE_19__["TranslationTypeEnum"].LINKEDIN_INFO:
-                translatedValue = _dictionaries_linkedin_info_dictionary__WEBPACK_IMPORTED_MODULE_5__["LinkedinInfoDictionary"][language][value];
+            case _models_enums_translation_type_enum__WEBPACK_IMPORTED_MODULE_21__["TranslationTypeEnum"].LINKEDIN_INFO:
+                translatedValue = _dictionaries_linkedin_info_dictionary__WEBPACK_IMPORTED_MODULE_6__["LinkedinInfoDictionary"][language][value];
                 break;
-            case _models_enums_translation_type_enum__WEBPACK_IMPORTED_MODULE_19__["TranslationTypeEnum"].FIXED_LABELS_AND_TOOLTIPS:
-                translatedValue = _dictionaries_fixed_labels_and_tooltips_dictionary__WEBPACK_IMPORTED_MODULE_2__["FixedLabelsAndTooltipsDictionary"][language][value];
+            case _models_enums_translation_type_enum__WEBPACK_IMPORTED_MODULE_21__["TranslationTypeEnum"].FIXED_LABELS_AND_TOOLTIPS:
+                translatedValue = _dictionaries_fixed_labels_and_tooltips_dictionary__WEBPACK_IMPORTED_MODULE_3__["FixedLabelsAndTooltipsDictionary"][language][value];
                 break;
-            case _models_enums_translation_type_enum__WEBPACK_IMPORTED_MODULE_19__["TranslationTypeEnum"].RESUME_INFO:
-                translatedValue = _dictionaries_resume_info_dictionary__WEBPACK_IMPORTED_MODULE_11__["ResumeInfoDictionary"][language][value];
+            case _models_enums_translation_type_enum__WEBPACK_IMPORTED_MODULE_21__["TranslationTypeEnum"].RESUME_INFO:
+                translatedValue = _dictionaries_resume_info_dictionary__WEBPACK_IMPORTED_MODULE_12__["ResumeInfoDictionary"][language][value];
+                break;
+            case _models_enums_translation_type_enum__WEBPACK_IMPORTED_MODULE_21__["TranslationTypeEnum"].COMPANY_WEBSITE:
+                translatedValue = _dictionaries_company_website_dictionary__WEBPACK_IMPORTED_MODULE_2__["CompanyWebsiteDictionary"][language][value];
+                break;
+            case _models_enums_translation_type_enum__WEBPACK_IMPORTED_MODULE_21__["TranslationTypeEnum"].SCHOOL_WEBSITE:
+                translatedValue = _dictionaries_school_website_dictionary__WEBPACK_IMPORTED_MODULE_13__["SchoolWebsiteDictionary"][language][value];
                 break;
             default:
                 return value;
@@ -2407,6 +2426,38 @@ TranslationService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefi
                 providedIn: 'root'
             }]
     }], function () { return []; }, null); })();
+
+
+/***/ }),
+
+/***/ "V7Ze":
+/*!************************************************************!*\
+  !*** ./src/app/dictionaries/company-website.dictionary.ts ***!
+  \************************************************************/
+/*! exports provided: CompanyWebsiteDictionary */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CompanyWebsiteDictionary", function() { return CompanyWebsiteDictionary; });
+/* harmony import */ var _models_enums_system_language_enum__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../models/enums/system-language.enum */ "LFmQ");
+/* harmony import */ var _models_enums_company_enum__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../models/enums/company.enum */ "udzz");
+
+
+const english = {
+    [_models_enums_company_enum__WEBPACK_IMPORTED_MODULE_1__["CompanyEnum"].AUDAXWARE]: 'https://www.audaxware.com',
+    [_models_enums_company_enum__WEBPACK_IMPORTED_MODULE_1__["CompanyEnum"].OPUS]: 'https://www.opus-software.com.br/en/better-for-enus',
+    [_models_enums_company_enum__WEBPACK_IMPORTED_MODULE_1__["CompanyEnum"].UBER]: 'https://www.uber.com'
+};
+const portuguese = {
+    [_models_enums_company_enum__WEBPACK_IMPORTED_MODULE_1__["CompanyEnum"].AUDAXWARE]: 'https://www.audaxware.com',
+    [_models_enums_company_enum__WEBPACK_IMPORTED_MODULE_1__["CompanyEnum"].OPUS]: 'https://www.opus-software.com.br',
+    [_models_enums_company_enum__WEBPACK_IMPORTED_MODULE_1__["CompanyEnum"].UBER]: 'https://www.uber.com/br/pt-br'
+};
+const CompanyWebsiteDictionary = {
+    [_models_enums_system_language_enum__WEBPACK_IMPORTED_MODULE_0__["SystemLanguageEnum"].EN_US]: english,
+    [_models_enums_system_language_enum__WEBPACK_IMPORTED_MODULE_0__["SystemLanguageEnum"].PT_BR]: portuguese
+};
 
 
 /***/ }),
@@ -2597,7 +2648,7 @@ __webpack_require__.r(__webpack_exports__);
 
 function MsWorkExperienceItemComponent_li_14_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "li");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "i", 12);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "i", 13);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } if (rf & 2) {
@@ -2608,8 +2659,8 @@ function MsWorkExperienceItemComponent_li_14_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", activity_r2.description, " ");
 } }
 function MsWorkExperienceItemComponent_a_18_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "a", 13);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "i", 14);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "a", 14);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "i", 15);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } }
 class MsWorkExperienceItemComponent {
@@ -2641,9 +2692,12 @@ class MsWorkExperienceItemComponent {
     get activities() {
         return this.translationService.translate(this.language, src_app_models_enums_translation_type_enum__WEBPACK_IMPORTED_MODULE_2__["TranslationTypeEnum"].WORK_EXPERIENCE_ACTIVITY, this.info.identifier);
     }
+    get companyWebsite() {
+        return this.translationService.translate(this.language, src_app_models_enums_translation_type_enum__WEBPACK_IMPORTED_MODULE_2__["TranslationTypeEnum"].COMPANY_WEBSITE, this.info.company);
+    }
 }
 MsWorkExperienceItemComponent.ɵfac = function MsWorkExperienceItemComponent_Factory(t) { return new (t || MsWorkExperienceItemComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_service_translation_service__WEBPACK_IMPORTED_MODULE_4__["TranslationService"])); };
-MsWorkExperienceItemComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: MsWorkExperienceItemComponent, selectors: [["ms-work-experience-item"]], inputs: { info: "info", language: "language" }, decls: 19, vars: 10, consts: [[1, "timeline-card-title"], [1, "position"], [1, "h5"], [1, "company"], [1, "period"], [3, "period"], [1, "timeline-card-body"], [1, "list-unstyled", "ms-main-projects"], [4, "ngFor", "ngForOf"], [1, "timeline-footer"], [1, "text-info"], ["class", "scroll-behavior-smooth", "href", "#mySkills", 4, "ngIf"], ["aria-hidden", "true", 1, "fa", "ms-bullet", 3, "ngClass"], ["href", "#mySkills", 1, "scroll-behavior-smooth"], [1, "fa", "fa-plus-circle"]], template: function MsWorkExperienceItemComponent_Template(rf, ctx) { if (rf & 1) {
+MsWorkExperienceItemComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: MsWorkExperienceItemComponent, selectors: [["ms-work-experience-item"]], inputs: { info: "info", language: "language" }, decls: 19, vars: 11, consts: [[1, "timeline-card-title"], [1, "position"], [1, "h5"], [1, "company"], ["target", "_blank", 3, "href"], [1, "period"], [3, "period"], [1, "timeline-card-body"], [1, "list-unstyled", "ms-main-projects"], [4, "ngFor", "ngForOf"], [1, "timeline-footer"], [1, "text-info"], ["class", "scroll-behavior-smooth", "href", "#mySkills", 4, "ngIf"], ["aria-hidden", "true", 1, "fa", "ms-bullet", 3, "ngClass"], ["href", "#mySkills", 1, "scroll-behavior-smooth"], [1, "fa", "fa-plus-circle"]], template: function MsWorkExperienceItemComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "span", 2);
@@ -2652,32 +2706,34 @@ MsWorkExperienceItemComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "div", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "span");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "a", 4);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "div", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](9, "ms-btn-period", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "div", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](9, "ms-btn-period", 6);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "div", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "div", 7);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "p");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "ul", 7);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](14, MsWorkExperienceItemComponent_li_14_Template, 3, 2, "li", 8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "ul", 8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](14, MsWorkExperienceItemComponent_li_14_Template, 3, 2, "li", 9);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "div", 9);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "span", 10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "div", 10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "span", 11);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](17);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](18, MsWorkExperienceItemComponent_a_18_Template, 2, 0, "a", 11);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](18, MsWorkExperienceItemComponent_a_18_Template, 2, 0, "a", 12);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](4, 7, ctx.info.positions, ctx.language));
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](4, 8, ctx.info.positions, ctx.language));
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"]("href", ctx.companyWebsite, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.info.company);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("period", ctx.info.period);
@@ -3207,6 +3263,7 @@ var PositionEnum;
     PositionEnum[PositionEnum["INTERMEDIATE_SOFTWARE_DEVELOPER"] = 2] = "INTERMEDIATE_SOFTWARE_DEVELOPER";
     PositionEnum[PositionEnum["WEB_DEVELOPER"] = 3] = "WEB_DEVELOPER";
     PositionEnum[PositionEnum["SYSTEM_ANALYST"] = 4] = "SYSTEM_ANALYST";
+    PositionEnum[PositionEnum["SOFTWARE_ENGINEER"] = 5] = "SOFTWARE_ENGINEER";
 })(PositionEnum || (PositionEnum = {}));
 
 
@@ -3374,6 +3431,32 @@ class LanguageLevel {
 
 /***/ }),
 
+/***/ "ezFT":
+/*!***********************************************************!*\
+  !*** ./src/app/dictionaries/school-website.dictionary.ts ***!
+  \***********************************************************/
+/*! exports provided: SchoolWebsiteDictionary */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SchoolWebsiteDictionary", function() { return SchoolWebsiteDictionary; });
+/* harmony import */ var _models_enums_school_enum__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../models/enums/school.enum */ "vrTo");
+/* harmony import */ var _models_enums_system_language_enum__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../models/enums/system-language.enum */ "LFmQ");
+
+
+const websites = {
+    [_models_enums_school_enum__WEBPACK_IMPORTED_MODULE_0__["SchoolEnum"].SAPIENZA]: 'https://www.uniroma1.it/it/pagina-strutturale/home',
+    [_models_enums_school_enum__WEBPACK_IMPORTED_MODULE_0__["SchoolEnum"].UFSCAR]: 'https://www.sorocaba.ufscar.br'
+};
+const SchoolWebsiteDictionary = {
+    [_models_enums_system_language_enum__WEBPACK_IMPORTED_MODULE_1__["SystemLanguageEnum"].EN_US]: websites,
+    [_models_enums_system_language_enum__WEBPACK_IMPORTED_MODULE_1__["SystemLanguageEnum"].PT_BR]: websites
+};
+
+
+/***/ }),
+
 /***/ "fEhN":
 /*!***************************************!*\
   !*** ./src/app/models/header-info.ts ***!
@@ -3423,10 +3506,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
 /* harmony import */ var src_app_models_education_item__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/models/education-item */ "Xkib");
 /* harmony import */ var src_app_models_enums_system_language_enum__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/models/enums/system-language.enum */ "LFmQ");
-/* harmony import */ var _ms_btn_period_ms_btn_period_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../ms-btn-period/ms-btn-period.component */ "WZ0R");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ "ofXK");
-/* harmony import */ var _pipes_translate_pipe__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../pipes/translate.pipe */ "Eioz");
-/* harmony import */ var _pipes_majors_pipe__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../pipes/majors.pipe */ "WFQj");
+/* harmony import */ var src_app_models_enums_translation_type_enum__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/models/enums/translation-type.enum */ "U3m8");
+/* harmony import */ var src_app_service_translation_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/app/service/translation.service */ "UXmV");
+/* harmony import */ var _ms_btn_period_ms_btn_period_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../ms-btn-period/ms-btn-period.component */ "WZ0R");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/common */ "ofXK");
+/* harmony import */ var _pipes_translate_pipe__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../pipes/translate.pipe */ "Eioz");
+/* harmony import */ var _pipes_majors_pipe__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../pipes/majors.pipe */ "WFQj");
+
+
 
 
 
@@ -3436,9 +3523,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function MsEducationItemComponent_div_15_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 14);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 15);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "p", 15);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "p", 16);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "strong");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -3456,10 +3543,10 @@ function MsEducationItemComponent_div_15_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx_r0.info.additionalInfo.info);
 } }
 function MsEducationItemComponent_div_18_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 16);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "a", 17);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 17);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "a", 18);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "i", 18);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "i", 19);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } if (rf & 2) {
@@ -3470,14 +3557,18 @@ function MsEducationItemComponent_div_18_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", ctx_r1.info.externalLink.label, " ");
 } }
 class MsEducationItemComponent {
-    constructor() {
+    constructor(translationService) {
+        this.translationService = translationService;
         this.info = new src_app_models_education_item__WEBPACK_IMPORTED_MODULE_1__["EducationItem"]();
         this.language = src_app_models_enums_system_language_enum__WEBPACK_IMPORTED_MODULE_2__["SystemLanguageEnum"].EN_US;
     }
     ngOnInit() { }
+    get schoolWebsite() {
+        return this.translationService.translate(this.language, src_app_models_enums_translation_type_enum__WEBPACK_IMPORTED_MODULE_3__["TranslationTypeEnum"].SCHOOL_WEBSITE, this.info.school);
+    }
 }
-MsEducationItemComponent.ɵfac = function MsEducationItemComponent_Factory(t) { return new (t || MsEducationItemComponent)(); };
-MsEducationItemComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: MsEducationItemComponent, selectors: [["ms-education-item"]], inputs: { info: "info", language: "language" }, decls: 24, vars: 26, consts: [[1, "timeline-card-title"], [1, "title"], [1, "h5"], [1, "major"], [1, "h6"], [1, "school"], [1, "period"], [3, "period"], ["class", "timeline-card-body", 4, "ngIf"], [1, "timeline-footer"], [1, "row"], ["class", "ms-external-link col-5", 4, "ngIf"], [1, "text-right"], [1, "fa", "fa-map-marker", "text-info"], [1, "timeline-card-body"], [1, "mb-2"], [1, "ms-external-link", "col-5"], ["rel", "external", "target", "_blank", 3, "href"], [1, "fa", "fa-external-link", "text-info"]], template: function MsEducationItemComponent_Template(rf, ctx) { if (rf & 1) {
+MsEducationItemComponent.ɵfac = function MsEducationItemComponent_Factory(t) { return new (t || MsEducationItemComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_service_translation_service__WEBPACK_IMPORTED_MODULE_4__["TranslationService"])); };
+MsEducationItemComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: MsEducationItemComponent, selectors: [["ms-education-item"]], inputs: { info: "info", language: "language" }, decls: 24, vars: 27, consts: [[1, "timeline-card-title"], [1, "title"], [1, "h5"], [1, "major"], [1, "h6"], [1, "school"], ["target", "_blank", 3, "href"], [1, "period"], [3, "period"], ["class", "timeline-card-body", 4, "ngIf"], [1, "timeline-footer"], [1, "row"], ["class", "ms-external-link col-5", 4, "ngIf"], [1, "text-right"], [1, "fa", "fa-map-marker", "text-info"], [1, "timeline-card-body"], [1, "mb-2"], [1, "ms-external-link", "col-5"], ["rel", "external", "target", "_blank", 3, "href"], [1, "fa", "fa-external-link", "text-info"]], template: function MsEducationItemComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "span", 2);
@@ -3492,35 +3583,37 @@ MsEducationItemComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵ�
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "div", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "span");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "a", 6);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](12, "translate");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "div", 6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](14, "ms-btn-period", 7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "div", 7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](14, "ms-btn-period", 8);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](15, MsEducationItemComponent_div_15_Template, 7, 2, "div", 8);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "div", 9);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "div", 10);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](18, MsEducationItemComponent_div_18_Template, 4, 2, "div", 11);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "div", 12);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](15, MsEducationItemComponent_div_15_Template, 7, 2, "div", 9);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "div", 10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "div", 11);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](18, MsEducationItemComponent_div_18_Template, 4, 2, "div", 12);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "div", 13);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "span");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](21);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](22, "translate");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](23, "i", 13);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](23, "i", 14);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind3"](4, 11, ctx.info.degree, "MAJOR_DEGREE", ctx.language));
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind3"](4, 12, ctx.info.degree, "MAJOR_DEGREE", ctx.language));
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](8, 15, ctx.info.major, ctx.language));
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind3"](12, 18, ctx.info.school, "SCHOOL", ctx.language));
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](8, 16, ctx.info.major, ctx.language));
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"]("href", ctx.schoolWebsite, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind3"](12, 19, ctx.info.school, "SCHOOL", ctx.language));
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("period", ctx.info.period);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
@@ -3530,8 +3623,8 @@ MsEducationItemComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵ�
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("col-7", ctx.info.externalLink)("col-12", !ctx.info.externalLink);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind3"](22, 22, ctx.info.locale, "LOCALE", ctx.language));
-    } }, directives: [_ms_btn_period_ms_btn_period_component__WEBPACK_IMPORTED_MODULE_3__["MsBtnPeriodComponent"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["NgIf"]], pipes: [_pipes_translate_pipe__WEBPACK_IMPORTED_MODULE_5__["TranslatePipe"], _pipes_majors_pipe__WEBPACK_IMPORTED_MODULE_6__["MajorsPipe"]], styles: [".ms-external-link[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\r\n    text-decoration: none;\r\n    outline: none;\r\n}\r\n  \r\n.timeline-card-title[_ngcontent-%COMP%]   .school[_ngcontent-%COMP%]    > span[_ngcontent-%COMP%], .timeline-card-title[_ngcontent-%COMP%]   .school[_ngcontent-%COMP%]    > p[_ngcontent-%COMP%] {\r\n    font-style: italic;\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1zLWVkdWNhdGlvbi1pdGVtLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxxQkFBcUI7SUFDckIsYUFBYTtBQUNqQjs7QUFFQTtJQUNJLGtCQUFrQjtBQUN0QiIsImZpbGUiOiJtcy1lZHVjYXRpb24taXRlbS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLm1zLWV4dGVybmFsLWxpbmsgYSB7XHJcbiAgICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XHJcbiAgICBvdXRsaW5lOiBub25lO1xyXG59XHJcbiAgXHJcbi50aW1lbGluZS1jYXJkLXRpdGxlIC5zY2hvb2wgPiBzcGFuLCAudGltZWxpbmUtY2FyZC10aXRsZSAuc2Nob29sID4gcCB7XHJcbiAgICBmb250LXN0eWxlOiBpdGFsaWM7XHJcbn0iXX0= */"] });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind3"](22, 23, ctx.info.locale, "LOCALE", ctx.language));
+    } }, directives: [_ms_btn_period_ms_btn_period_component__WEBPACK_IMPORTED_MODULE_5__["MsBtnPeriodComponent"], _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgIf"]], pipes: [_pipes_translate_pipe__WEBPACK_IMPORTED_MODULE_7__["TranslatePipe"], _pipes_majors_pipe__WEBPACK_IMPORTED_MODULE_8__["MajorsPipe"]], styles: [".ms-external-link[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\r\n    text-decoration: none;\r\n    outline: none;\r\n}\r\n  \r\n.timeline-card-title[_ngcontent-%COMP%]   .school[_ngcontent-%COMP%]    > span[_ngcontent-%COMP%], .timeline-card-title[_ngcontent-%COMP%]   .school[_ngcontent-%COMP%]    > p[_ngcontent-%COMP%] {\r\n    font-style: italic;\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1zLWVkdWNhdGlvbi1pdGVtLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxxQkFBcUI7SUFDckIsYUFBYTtBQUNqQjs7QUFFQTtJQUNJLGtCQUFrQjtBQUN0QiIsImZpbGUiOiJtcy1lZHVjYXRpb24taXRlbS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLm1zLWV4dGVybmFsLWxpbmsgYSB7XHJcbiAgICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XHJcbiAgICBvdXRsaW5lOiBub25lO1xyXG59XHJcbiAgXHJcbi50aW1lbGluZS1jYXJkLXRpdGxlIC5zY2hvb2wgPiBzcGFuLCAudGltZWxpbmUtY2FyZC10aXRsZSAuc2Nob29sID4gcCB7XHJcbiAgICBmb250LXN0eWxlOiBpdGFsaWM7XHJcbn0iXX0= */"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](MsEducationItemComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
@@ -3539,7 +3632,7 @@ MsEducationItemComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵ�
                 templateUrl: './ms-education-item.component.html',
                 styleUrls: ['./ms-education-item.component.css']
             }]
-    }], function () { return []; }, { info: [{
+    }], function () { return [{ type: src_app_service_translation_service__WEBPACK_IMPORTED_MODULE_4__["TranslationService"] }]; }, { info: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
         }], language: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
@@ -3682,17 +3775,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SystemLanguageDictionary", function() { return SystemLanguageDictionary; });
 /* harmony import */ var _models_enums_system_language_enum__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../models/enums/system-language.enum */ "LFmQ");
 
-const english = {
+const languages = {
     [_models_enums_system_language_enum__WEBPACK_IMPORTED_MODULE_0__["SystemLanguageEnum"].EN_US]: 'English',
-    [_models_enums_system_language_enum__WEBPACK_IMPORTED_MODULE_0__["SystemLanguageEnum"].PT_BR]: 'Portuguese'
-};
-const portuguese = {
-    [_models_enums_system_language_enum__WEBPACK_IMPORTED_MODULE_0__["SystemLanguageEnum"].EN_US]: 'Inglês',
     [_models_enums_system_language_enum__WEBPACK_IMPORTED_MODULE_0__["SystemLanguageEnum"].PT_BR]: 'Português'
 };
 const SystemLanguageDictionary = {
-    [_models_enums_system_language_enum__WEBPACK_IMPORTED_MODULE_0__["SystemLanguageEnum"].EN_US]: english,
-    [_models_enums_system_language_enum__WEBPACK_IMPORTED_MODULE_0__["SystemLanguageEnum"].PT_BR]: portuguese
+    [_models_enums_system_language_enum__WEBPACK_IMPORTED_MODULE_0__["SystemLanguageEnum"].EN_US]: languages,
+    [_models_enums_system_language_enum__WEBPACK_IMPORTED_MODULE_0__["SystemLanguageEnum"].PT_BR]: languages
 };
 
 
@@ -3903,7 +3992,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const english = {
+    [_models_enums_work_experience_enum__WEBPACK_IMPORTED_MODULE_3__["WorkExperienceEnum"].UBER_SOFTWARE_ENGINEER]: [
+        new _models_activity_item__WEBPACK_IMPORTED_MODULE_0__["ActivityItem"](_models_enums_activity_type_enum__WEBPACK_IMPORTED_MODULE_1__["ActivityTypeEnum"].CODING, `Work as Software Engineer on Identity Customer team, which is responsible for developing Identity SaaS, some of which includes sign-up, login, and identity management
+            which are used by Uber and its partners`)
+    ],
     [_models_enums_work_experience_enum__WEBPACK_IMPORTED_MODULE_3__["WorkExperienceEnum"].OPUS_SENIOR_TECH_LEAD]: [
+        new _models_activity_item__WEBPACK_IMPORTED_MODULE_0__["ActivityItem"](_models_enums_activity_type_enum__WEBPACK_IMPORTED_MODULE_1__["ActivityTypeEnum"].CODING, "Development of one of the company's first own products in many years, which is a Open Banking solution, following all of Brazil's Central Bank regulations and specifications, to be offered to banks and financial institutions, be it on the client's cloud infraestructure or as SaaS"),
         new _models_activity_item__WEBPACK_IMPORTED_MODULE_0__["ActivityItem"](_models_enums_activity_type_enum__WEBPACK_IMPORTED_MODULE_1__["ActivityTypeEnum"].CODING, "Evolution of a bank loan application into a white label platform which allowed the client to offer the platform to key partners with minimal effort and profit from the loans provided by the partners"),
         new _models_activity_item__WEBPACK_IMPORTED_MODULE_0__["ActivityItem"](_models_enums_activity_type_enum__WEBPACK_IMPORTED_MODULE_1__["ActivityTypeEnum"].CODING, "Study and initiation of the use of AWS Batch for batch processing"),
         new _models_activity_item__WEBPACK_IMPORTED_MODULE_0__["ActivityItem"](_models_enums_activity_type_enum__WEBPACK_IMPORTED_MODULE_1__["ActivityTypeEnum"].SUPPORT, "Recording of a training on how the white label platform works, in both technical and user's experience levels, to facilitate the onboarding of new members to the team. Before that, a member of the team had to give the same training over and over again every time a new person would come along")
@@ -3925,7 +4019,12 @@ const english = {
     ]
 };
 const portuguese = {
+    [_models_enums_work_experience_enum__WEBPACK_IMPORTED_MODULE_3__["WorkExperienceEnum"].UBER_SOFTWARE_ENGINEER]: [
+        new _models_activity_item__WEBPACK_IMPORTED_MODULE_0__["ActivityItem"](_models_enums_activity_type_enum__WEBPACK_IMPORTED_MODULE_1__["ActivityTypeEnum"].CODING, `Atuar como Software Engineer no time de Identity Customer, o qual é responsável por desenvolver soluções de sign-up, login e gerenciamento de identidade 
+            a serem utilizadas por todos os sistemas da Uber e parceiros`)
+    ],
     [_models_enums_work_experience_enum__WEBPACK_IMPORTED_MODULE_3__["WorkExperienceEnum"].OPUS_SENIOR_TECH_LEAD]: [
+        new _models_activity_item__WEBPACK_IMPORTED_MODULE_0__["ActivityItem"](_models_enums_activity_type_enum__WEBPACK_IMPORTED_MODULE_1__["ActivityTypeEnum"].CODING, "Criação de uma solução pronta de Open Banking, conforme resoluções e especificações do Banco Central, como um produto próprio da empresa a ser oferecido para bancos e instuições financeiras"),
         new _models_activity_item__WEBPACK_IMPORTED_MODULE_0__["ActivityItem"](_models_enums_activity_type_enum__WEBPACK_IMPORTED_MODULE_1__["ActivityTypeEnum"].CODING, "Evolução de uma plataforma de empréstimo bancário para transformá-la em white label, permitindo que o nosso cliente possa oferecer a plataforma para parceiros chave com mínimo esforço e obter lucro a partir disso"),
         new _models_activity_item__WEBPACK_IMPORTED_MODULE_0__["ActivityItem"](_models_enums_activity_type_enum__WEBPACK_IMPORTED_MODULE_1__["ActivityTypeEnum"].CODING, "Estudo e implementação do uso do AWS Batch para processamentos em lote"),
         new _models_activity_item__WEBPACK_IMPORTED_MODULE_0__["ActivityItem"](_models_enums_activity_type_enum__WEBPACK_IMPORTED_MODULE_1__["ActivityTypeEnum"].SUPPORT, "Gravação de um treinamento sobre a plataforma white label, tanto em nível técnico quanto de experiência do usuário. Antes disso, membros do time precisavam dar esse mesmo treinamento toda vez que algum colaborador novo se juntava ao time")
@@ -4262,6 +4361,7 @@ var CompanyEnum;
 (function (CompanyEnum) {
     CompanyEnum["OPUS"] = "OPUS Software Ltda.";
     CompanyEnum["AUDAXWARE"] = "Audaxware LLC";
+    CompanyEnum["UBER"] = "Uber Technologies Inc";
 })(CompanyEnum || (CompanyEnum = {}));
 
 
@@ -4507,7 +4607,10 @@ class ResumeService {
     }
     get workExperiences() {
         return [
-            (new _models_work_experience__WEBPACK_IMPORTED_MODULE_30__["WorkExperience"](_models_enums_work_experience_enum__WEBPACK_IMPORTED_MODULE_22__["WorkExperienceEnum"].OPUS_SENIOR_TECH_LEAD, [_models_enums_position_enum__WEBPACK_IMPORTED_MODULE_14__["PositionEnum"].SENIOR_SOFTWARE_DEVELOPER, _models_enums_position_enum__WEBPACK_IMPORTED_MODULE_14__["PositionEnum"].TECH_LEAD], _models_enums_company_enum__WEBPACK_IMPORTED_MODULE_7__["CompanyEnum"].OPUS, new _models_period__WEBPACK_IMPORTED_MODULE_27__["Period"](new _models_month_year__WEBPACK_IMPORTED_MODULE_26__["MonthYear"](_models_enums_month_enum__WEBPACK_IMPORTED_MODULE_13__["MonthEnum"].NOV, 2019)), [
+            (new _models_work_experience__WEBPACK_IMPORTED_MODULE_30__["WorkExperience"](_models_enums_work_experience_enum__WEBPACK_IMPORTED_MODULE_22__["WorkExperienceEnum"].UBER_SOFTWARE_ENGINEER, [_models_enums_position_enum__WEBPACK_IMPORTED_MODULE_14__["PositionEnum"].SOFTWARE_ENGINEER], _models_enums_company_enum__WEBPACK_IMPORTED_MODULE_7__["CompanyEnum"].UBER, new _models_period__WEBPACK_IMPORTED_MODULE_27__["Period"](new _models_month_year__WEBPACK_IMPORTED_MODULE_26__["MonthYear"](_models_enums_month_enum__WEBPACK_IMPORTED_MODULE_13__["MonthEnum"].JUL, 2021)), [
+                _models_enums_work_experience_technology_enum__WEBPACK_IMPORTED_MODULE_21__["WorkExperienceTechnologyEnum"].GO, _models_enums_work_experience_technology_enum__WEBPACK_IMPORTED_MODULE_21__["WorkExperienceTechnologyEnum"].SCRUM, _models_enums_work_experience_technology_enum__WEBPACK_IMPORTED_MODULE_21__["WorkExperienceTechnologyEnum"].GIT
+            ])),
+            (new _models_work_experience__WEBPACK_IMPORTED_MODULE_30__["WorkExperience"](_models_enums_work_experience_enum__WEBPACK_IMPORTED_MODULE_22__["WorkExperienceEnum"].OPUS_SENIOR_TECH_LEAD, [_models_enums_position_enum__WEBPACK_IMPORTED_MODULE_14__["PositionEnum"].SENIOR_SOFTWARE_DEVELOPER, _models_enums_position_enum__WEBPACK_IMPORTED_MODULE_14__["PositionEnum"].TECH_LEAD], _models_enums_company_enum__WEBPACK_IMPORTED_MODULE_7__["CompanyEnum"].OPUS, new _models_period__WEBPACK_IMPORTED_MODULE_27__["Period"](new _models_month_year__WEBPACK_IMPORTED_MODULE_26__["MonthYear"](_models_enums_month_enum__WEBPACK_IMPORTED_MODULE_13__["MonthEnum"].NOV, 2019), new _models_month_year__WEBPACK_IMPORTED_MODULE_26__["MonthYear"](_models_enums_month_enum__WEBPACK_IMPORTED_MODULE_13__["MonthEnum"].JUL, 2021)), [
                 _models_enums_work_experience_technology_enum__WEBPACK_IMPORTED_MODULE_21__["WorkExperienceTechnologyEnum"].JAVA_11, _models_enums_work_experience_technology_enum__WEBPACK_IMPORTED_MODULE_21__["WorkExperienceTechnologyEnum"].SPRING_BOOT, _models_enums_work_experience_technology_enum__WEBPACK_IMPORTED_MODULE_21__["WorkExperienceTechnologyEnum"].ANGULAR_6, _models_enums_work_experience_technology_enum__WEBPACK_IMPORTED_MODULE_21__["WorkExperienceTechnologyEnum"].POSTGRESQL,
                 _models_enums_work_experience_technology_enum__WEBPACK_IMPORTED_MODULE_21__["WorkExperienceTechnologyEnum"].AWS, _models_enums_work_experience_technology_enum__WEBPACK_IMPORTED_MODULE_21__["WorkExperienceTechnologyEnum"].GIT, _models_enums_work_experience_technology_enum__WEBPACK_IMPORTED_MODULE_21__["WorkExperienceTechnologyEnum"].JIRA, _models_enums_work_experience_technology_enum__WEBPACK_IMPORTED_MODULE_21__["WorkExperienceTechnologyEnum"].SCRUM,
                 _models_enums_work_experience_technology_enum__WEBPACK_IMPORTED_MODULE_21__["WorkExperienceTechnologyEnum"].JENKINS, _models_enums_work_experience_technology_enum__WEBPACK_IMPORTED_MODULE_21__["WorkExperienceTechnologyEnum"].SONAR_QUBE

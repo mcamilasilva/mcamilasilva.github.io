@@ -1191,6 +1191,12 @@
     font-weight: 600;
   }
 
+.timeline-card .company > a,
+  .timeline-card-title .school > a {
+    font-style: italic;
+    color: black;
+  }
+
 .timeline-footer {
     padding: 20px;
     background-color: #f4f4f4;
@@ -1220,17 +1226,16 @@
   }
 
 @media (min-width: 768px) {
-    #experience .timeline>li:nth-child(2) {
-      margin-top: 250px;
+    .timeline>li {
+      margin-top: 50px;
     }
+
+    #experience .timeline>li:nth-child(2) {
+      margin-top: 150px;
+    }
+
     #education .timeline>li:nth-child(2) {
       margin-top: 230px;
-    }
-    .timeline>li:nth-child(3) {
-      margin-top: 30px;
-    }
-    .timeline>li:nth-child(4) {
-      margin-top: 130px;
     }
   }
 
