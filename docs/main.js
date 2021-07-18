@@ -2138,7 +2138,7 @@ class AppComponent {
             new _models_menu_item__WEBPACK_IMPORTED_MODULE_4__["MenuItem"](_models_enums_menu_item_enum__WEBPACK_IMPORTED_MODULE_1__["MenuItemEnum"].SKILLS, '#mySkills'),
             new _models_menu_item__WEBPACK_IMPORTED_MODULE_4__["MenuItem"](_models_enums_menu_item_enum__WEBPACK_IMPORTED_MODULE_1__["MenuItemEnum"].CERTIFICATION, '#certifications')
         ];
-        this.headerInfo = new _models_header_info__WEBPACK_IMPORTED_MODULE_3__["HeaderInfo"]('Manoela Silva', [_models_enums_position_enum__WEBPACK_IMPORTED_MODULE_2__["PositionEnum"].SENIOR_SOFTWARE_DEVELOPER, _models_enums_position_enum__WEBPACK_IMPORTED_MODULE_2__["PositionEnum"].TECH_LEAD], 'assets/images/me.jpeg');
+        this.headerInfo = new _models_header_info__WEBPACK_IMPORTED_MODULE_3__["HeaderInfo"]('Manoela Silva', [_models_enums_position_enum__WEBPACK_IMPORTED_MODULE_2__["PositionEnum"].SOFTWARE_ENGINEER], 'assets/images/me.jpeg');
         this.resume = this.resumeService.get();
     }
     ngOnInit() {
