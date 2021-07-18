@@ -26,7 +26,7 @@ const english = <{ [id: string]: any }>{
     [AboutMeInfoEnum.PHONE]: '+55 11 94989-8386',
     [AboutMeInfoEnum.LOCATION]: LocaleDictionary[SystemLanguageEnum.EN_US][LocaleEnum.SAO_PAULO],
     [AboutMeInfoEnum.BIO]: [
-        `I am a Senior Software Developer who is passionate about technology. Seeing an idea getting off the ground and becoming something that improves people's lives brings me real joy.`,
+        `I am a Software Engineer/Developer who is passionate about technology. Seeing an idea getting off the ground and becoming something that improves people's lives brings me real joy.`,
         `Although I have a proper knowledge of front-end techniques, my inclination is towards back-end. I am also really fond of good development techniques, such as clean code, design patterns, and so on, and I try to apply them as much as possible.`,
         `Additionally, I have a strong can-do, hands-on attitude, and I am a true believer of teamwork. I am from the opinion that "two heads are better than one" and knowledge can always be improved. I just love learning new things and acquiring new skills.`
     ]
@@ -36,7 +36,7 @@ const portuguese = <{ [id: string]: any }>{
     [AboutMeInfoEnum.PHONE]: '(11) 94989-8386',
     [AboutMeInfoEnum.LOCATION]: LocaleDictionary[SystemLanguageEnum.PT_BR][LocaleEnum.SAO_PAULO],
     [AboutMeInfoEnum.BIO]: [
-        'Desenvolvedora de Software apaixonada por tecnologia. Ver uma ideia sair do papel e virar algo que melhora a vida das pessoas, direta ou indiretamente, me traz imensa satisfação.',
+        'Engenheira/Desenvolvedora de Software apaixonada por tecnologia. Ver uma ideia sair do papel e virar algo que melhora a vida das pessoas, direta ou indiretamente, me traz imensa satisfação.',
         'Embora eu possua um conhecimento apropriado de front-end, minha paixão encontra-se no back-end. Também sou adepta de técnicas de boas práticas de desenvolvimento, tais como código limpo, design patterns e similares, e me empenho em aplicá-las sempre que possível.',
         `Além disso, eu tenho uma atitude prática e positiva, além de ser uma verdadeira entusiasta de traballho em equipe. Eu sou da opnião de que "duas cabeças pensam melhor do que uma" e conhecimento pode sempre ser aprimorado. Basicamente, eu amo aprender assuntos novos e adquirir novas habilidades.`
     ]
