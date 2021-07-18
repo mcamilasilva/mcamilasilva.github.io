@@ -48,4 +48,7 @@ export class MsWorkExperienceItemComponent implements OnInit {
     return this.translationService.translate(this.language, TranslationTypeEnum.WORK_EXPERIENCE_ACTIVITY, this.info.identifier);
   }
 
+  get companyWebsite(): String {
+    return this.translationService.translate(this.language, TranslationTypeEnum.COMPANY_WEBSITE, this.info.company);
+  }
 }

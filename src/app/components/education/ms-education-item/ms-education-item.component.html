@@ -6,7 +6,7 @@
         <span class="h6">{{ info.major | majors: language }}</span>
     </div>
     <div class="school">
-        <span>{{ info.school | translate: 'SCHOOL':language }}</span>
+        <a href="{{schoolWebsite}}" target="_blank">{{ info.school | translate: 'SCHOOL':language }}</a>
     </div>
     <div class="period">
         <ms-btn-period [period]="info.period"></ms-btn-period>

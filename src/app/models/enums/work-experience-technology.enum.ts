@@ -23,6 +23,6 @@ export enum WorkExperienceTechnologyEnum {
     TFS = "TFS",
     KANBAN = "Kanban",
     KNOCKOUT = "Knockout",
-    BOOTSTRAP = "Bootstrap"
-    
+    BOOTSTRAP = "Bootstrap",
+    GO = "Golang"
 }

@@ -61,8 +61,12 @@ export class ResumeService {
 
   private get workExperiences(): WorkExperience[] {
     return [
+      (new WorkExperience(WorkExperienceEnum.UBER_SOFTWARE_ENGINEER, 
+        [PositionEnum.SOFTWARE_ENGINEER], CompanyEnum.UBER, new Period(new MonthYear(MonthEnum.JUL, 2021)), [
+        WorkExperienceTechnologyEnum.GO, WorkExperienceTechnologyEnum.SCRUM, WorkExperienceTechnologyEnum.GIT
+      ])),
       (new WorkExperience(WorkExperienceEnum.OPUS_SENIOR_TECH_LEAD, [PositionEnum.SENIOR_SOFTWARE_DEVELOPER, PositionEnum.TECH_LEAD], CompanyEnum.OPUS,
-        new Period(new MonthYear(MonthEnum.NOV, 2019)), [
+        new Period(new MonthYear(MonthEnum.NOV, 2019), new MonthYear(MonthEnum.JUL, 2021)), [
         WorkExperienceTechnologyEnum.JAVA_11, WorkExperienceTechnologyEnum.SPRING_BOOT, WorkExperienceTechnologyEnum.ANGULAR_6, WorkExperienceTechnologyEnum.POSTGRESQL,
         WorkExperienceTechnologyEnum.AWS, WorkExperienceTechnologyEnum.GIT, WorkExperienceTechnologyEnum.JIRA, WorkExperienceTechnologyEnum.SCRUM,
         WorkExperienceTechnologyEnum.JENKINS, WorkExperienceTechnologyEnum.SONAR_QUBE

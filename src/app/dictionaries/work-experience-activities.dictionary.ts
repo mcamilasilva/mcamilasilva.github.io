@@ -5,7 +5,12 @@ import { WorkExperienceEnum } from '../models/enums/work-experience.enum';
 
 
 const english = <{ [id: string]: ActivityItem[] }>{
+    [WorkExperienceEnum.UBER_SOFTWARE_ENGINEER]: [
+        new ActivityItem(ActivityTypeEnum.CODING, `Work as Software Engineer on Identity Customer team, which is responsible for developing Identity SaaS, some of which includes sign-up, login, and identity management
+            which are used by Uber and its partners`)
+    ],
     [WorkExperienceEnum.OPUS_SENIOR_TECH_LEAD]: [
+        new ActivityItem(ActivityTypeEnum.CODING, "Development of one of the company's first own products in many years, which is a Open Banking solution, following all of Brazil's Central Bank regulations and specifications, to be offered to banks and financial institutions, be it on the client's cloud infraestructure or as SaaS"),
         new ActivityItem(ActivityTypeEnum.CODING, "Evolution of a bank loan application into a white label platform which allowed the client to offer the platform to key partners with minimal effort and profit from the loans provided by the partners"),
         new ActivityItem(ActivityTypeEnum.CODING, "Study and initiation of the use of AWS Batch for batch processing"),
         new ActivityItem(ActivityTypeEnum.SUPPORT, "Recording of a training on how the white label platform works, in both technical and user's experience levels, to facilitate the onboarding of new members to the team. Before that, a member of the team had to give the same training over and over again every time a new person would come along")
@@ -28,7 +33,12 @@ const english = <{ [id: string]: ActivityItem[] }>{
 };
 
 const portuguese = <{ [id: string]: ActivityItem[] }>{
+    [WorkExperienceEnum.UBER_SOFTWARE_ENGINEER]: [
+        new ActivityItem(ActivityTypeEnum.CODING, `Atuar como Software Engineer no time de Identity Customer, o qual é responsável por desenvolver soluções de sign-up, login e gerenciamento de identidade 
+            a serem utilizadas por todos os sistemas da Uber e parceiros`)
+    ],
     [WorkExperienceEnum.OPUS_SENIOR_TECH_LEAD]: [
+        new ActivityItem(ActivityTypeEnum.CODING, "Criação de uma solução pronta de Open Banking, conforme resoluções e especificações do Banco Central, como um produto próprio da empresa a ser oferecido para bancos e instuições financeiras"),
         new ActivityItem(ActivityTypeEnum.CODING, "Evolução de uma plataforma de empréstimo bancário para transformá-la em white label, permitindo que o nosso cliente possa oferecer a plataforma para parceiros chave com mínimo esforço e obter lucro a partir disso"),
         new ActivityItem(ActivityTypeEnum.CODING, "Estudo e implementação do uso do AWS Batch para processamentos em lote"),
         new ActivityItem(ActivityTypeEnum.SUPPORT, "Gravação de um treinamento sobre a plataforma white label, tanto em nível técnico quanto de experiência do usuário. Antes disso, membros do time precisavam dar esse mesmo treinamento toda vez que algum colaborador novo se juntava ao time")

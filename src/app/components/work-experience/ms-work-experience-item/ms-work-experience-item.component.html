@@ -3,7 +3,7 @@
         <span class="h5">{{ info.positions | positions: language }}</span>
     </div>
     <div class="company">
-        <span>{{ info.company }}</span>
+        <a href="{{companyWebsite}}" target="_blank">{{ info.company }}</a>
     </div>
     <div class="period">
         <ms-btn-period [period]="info.period"></ms-btn-period>

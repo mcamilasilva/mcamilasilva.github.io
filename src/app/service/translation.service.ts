@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { AboutMeInfoDictionary } from '../dictionaries/about-me-info.dictionary';
+import { CompanyWebsiteDictionary } from '../dictionaries/company-website.dictionary';
 import { FixedLabelsAndTooltipsDictionary } from '../dictionaries/fixed-labels-and-tooltips.dictionary';
 import { HardSkillsDictionary } from '../dictionaries/hard-skills.dictionary';
 import { LanguageDictionary } from '../dictionaries/language.dictionary';
@@ -10,6 +11,7 @@ import { MajorDictionary } from '../dictionaries/major.dictionary';
 import { MenuItemDictionary } from '../dictionaries/menu-item.dictionary';
 import { PositionDictionary } from '../dictionaries/position.dictionary';
 import { ResumeInfoDictionary } from '../dictionaries/resume-info.dictionary';
+import { SchoolWebsiteDictionary } from '../dictionaries/school-website.dictionary';
 import { SchoolDictionary } from '../dictionaries/school.dictionary';
 import { SoftSkillsDictionary } from '../dictionaries/soft-skill.dictionary';
 import { SystemLanguageDictionary } from '../dictionaries/system-language.dictionary';
@@ -89,6 +91,12 @@ export class TranslationService {
       case TranslationTypeEnum.RESUME_INFO:
         translatedValue = ResumeInfoDictionary[language][value];
         break;
+      case TranslationTypeEnum.COMPANY_WEBSITE:
+        translatedValue = CompanyWebsiteDictionary[language][value];
+        break;
+      case TranslationTypeEnum.SCHOOL_WEBSITE:
+          translatedValue = SchoolWebsiteDictionary[language][value];
+          break;
       default:
         return value;
     }
