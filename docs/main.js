@@ -4361,7 +4361,7 @@ var CompanyEnum;
 (function (CompanyEnum) {
     CompanyEnum["OPUS"] = "OPUS Software Ltda.";
     CompanyEnum["AUDAXWARE"] = "Audaxware LLC";
-    CompanyEnum["UBER"] = "Uber Technologies Inc";
+    CompanyEnum["UBER"] = "Uber Technologies Inc.";
 })(CompanyEnum || (CompanyEnum = {}));
 
 
