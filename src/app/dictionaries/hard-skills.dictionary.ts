@@ -36,7 +36,15 @@ const commons = <{ [id: string]: string }> {
     [HardSkillEnum.TFS]: 'TFS',
     [HardSkillEnum.XML]: 'XML',
     [HardSkillEnum.SONAR_QUBE]: 'SonarQube',
-    [HardSkillEnum.CI_CD]: 'CI/CD'
+    [HardSkillEnum.CI_CD]: 'CI/CD',
+    [HardSkillEnum.KIBANA]: 'Kibana',
+    [HardSkillEnum.GRAFANA]: 'Grafana',
+    [HardSkillEnum.M3]: 'M3',
+    [HardSkillEnum.CASSANDRA]: 'Cassandra',
+    [HardSkillEnum.PHABRICATOR_ARCANIST]: 'Phabricator/Arcanist',
+    [HardSkillEnum.OAUTH20]: 'OAuth 2.0',
+    [HardSkillEnum.JWT]: 'JWT',
+    [HardSkillEnum.GOLANG]: 'GoLang',
 }
 
 const english = <{ [id: string]: string }> {

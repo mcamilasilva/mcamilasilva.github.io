@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ManoelaCBSilva": {
+    "MCamilaSilva": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -72,18 +72,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ManoelaCBSilva:build"
+            "browserTarget": "MCamilaSilva:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ManoelaCBSilva:build:production"
+              "browserTarget": "MCamilaSilva:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ManoelaCBSilva:build"
+            "browserTarget": "MCamilaSilva:build"
           }
         },
         "test": {
@@ -120,16 +120,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "ManoelaCBSilva:serve"
+            "devServerTarget": "MCamilaSilva:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "ManoelaCBSilva:serve:production"
+              "devServerTarget": "MCamilaSilva:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "ManoelaCBSilva"
+  "defaultProject": "MCamilaSilva"
 }

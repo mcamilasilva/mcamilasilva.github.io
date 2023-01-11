@@ -63,7 +63,10 @@ export class ResumeService {
     return [
       (new WorkExperience(WorkExperienceEnum.UBER_SOFTWARE_ENGINEER, 
         [PositionEnum.SOFTWARE_ENGINEER], CompanyEnum.UBER, new Period(new MonthYear(MonthEnum.JUL, 2021)), [
-        WorkExperienceTechnologyEnum.GO, WorkExperienceTechnologyEnum.SCRUM, WorkExperienceTechnologyEnum.GIT
+        WorkExperienceTechnologyEnum.OAUTH20, WorkExperienceTechnologyEnum.GO, WorkExperienceTechnologyEnum.KANBAN, WorkExperienceTechnologyEnum.CASSANDRA, 
+        WorkExperienceTechnologyEnum.KIBANA, WorkExperienceTechnologyEnum.PHABRICATOR, WorkExperienceTechnologyEnum.CPLUS2, WorkExperienceTechnologyEnum.M3, 
+        WorkExperienceTechnologyEnum.GIT, WorkExperienceTechnologyEnum.LUA, WorkExperienceTechnologyEnum.ARCANIST, WorkExperienceTechnologyEnum.GRAFANA,
+        WorkExperienceTechnologyEnum.SCRUM, WorkExperienceTechnologyEnum.CICD    
       ])),
       (new WorkExperience(WorkExperienceEnum.OPUS_SENIOR_TECH_LEAD, [PositionEnum.SENIOR_SOFTWARE_DEVELOPER, PositionEnum.TECH_LEAD], CompanyEnum.OPUS,
         new Period(new MonthYear(MonthEnum.NOV, 2019), new MonthYear(MonthEnum.JUL, 2021)), [
@@ -110,7 +113,7 @@ export class ResumeService {
 
   private get certifications(): Certification[] {
     return [
-      new Certification('IELTS General Training Overall Band Scores 8', 'IELTS', new MonthYear(MonthEnum.MAR, 2020)),
+      new Certification('IELTS General Training Overall Band Scores 8', 'IELTS', new MonthYear(MonthEnum.FEB, 2022)),
       new Certification('MCSA: SQL 2016 Database Development', 'MCSA', new MonthYear(MonthEnum.OCT, 2018))
     ];
   }
@@ -126,42 +129,73 @@ export class ResumeService {
 
   private get hardSkills(): HardSkill[] {
     return [
+      // Languages
       new HardSkill(HardSkillEnum.OOP, SkillLevelEnum.MAX),
-      new HardSkill(HardSkillEnum.DATA_WAREHOUSE, SkillLevelEnum.THREE_AND_HALF),
-      new HardSkill(HardSkillEnum.OLAP, SkillLevelEnum.THREE_AND_HALF),
-      new HardSkill(HardSkillEnum.SQL_SERVER, SkillLevelEnum.FOUR),
-      new HardSkill(HardSkillEnum.POSTGRESQL, SkillLevelEnum.FOUR_AND_HALF),
-      new HardSkill(HardSkillEnum.MY_SQL, SkillLevelEnum.THREE_AND_HALF),
-      new HardSkill(HardSkillEnum.MONGO_DB, SkillLevelEnum.FOUR),
-      new HardSkill(HardSkillEnum.SCRUM_KANBAN, SkillLevelEnum.MAX),
-      new HardSkill(HardSkillEnum.JIRA_CONFLUENCE, SkillLevelEnum.FOUR),
-      new HardSkill(HardSkillEnum.DDD, SkillLevelEnum.THREE_AND_HALF),
-      new HardSkill(HardSkillEnum.TDD, SkillLevelEnum.MAX),
-      new HardSkill(HardSkillEnum.API_DESIGN, SkillLevelEnum.FOUR),
-      new HardSkill(HardSkillEnum.DESIGN_PATTERNS, SkillLevelEnum.THREE_AND_HALF),
-      new HardSkill(HardSkillEnum.SWAGGER, SkillLevelEnum.FOUR),
-      new HardSkill(HardSkillEnum.POSTMAN, SkillLevelEnum.FOUR),
-      new HardSkill(HardSkillEnum.SOAPUI, SkillLevelEnum.TWO_AND_HALF),
-      new HardSkill(HardSkillEnum.GIT, SkillLevelEnum.FOUR),
-      new HardSkill(HardSkillEnum.TFS, SkillLevelEnum.THREE),
+      new HardSkill(HardSkillEnum.GOLANG, SkillLevelEnum.FOUR_AND_HALF),
       new HardSkill(HardSkillEnum.JAVA, SkillLevelEnum.MAX),
       new HardSkill(HardSkillEnum.SPRING_BOOT, SkillLevelEnum.FOUR),
       new HardSkill(HardSkillEnum.HIBERNATE, SkillLevelEnum.THREE_AND_HALF),
       new HardSkill(HardSkillEnum.C_SHARP, SkillLevelEnum.FOUR),
       new HardSkill(HardSkillEnum.ENTITY_FRAMEWORK, SkillLevelEnum.FOUR),
-      new HardSkill(HardSkillEnum.JUNIT, SkillLevelEnum.THREE),
+
+      // Databases
+      new HardSkill(HardSkillEnum.POSTGRESQL, SkillLevelEnum.FOUR_AND_HALF),
+      new HardSkill(HardSkillEnum.SQL_SERVER, SkillLevelEnum.FOUR),
+      new HardSkill(HardSkillEnum.MY_SQL, SkillLevelEnum.THREE_AND_HALF),
+      new HardSkill(HardSkillEnum.CASSANDRA, SkillLevelEnum.FOUR_AND_HALF),
+      new HardSkill(HardSkillEnum.MONGO_DB, SkillLevelEnum.THREE_AND_HALF),
+      new HardSkill(HardSkillEnum.DATA_WAREHOUSE, SkillLevelEnum.THREE_AND_HALF),
+      new HardSkill(HardSkillEnum.OLAP, SkillLevelEnum.THREE_AND_HALF),
+      
+      // Management tools
+      new HardSkill(HardSkillEnum.SCRUM_KANBAN, SkillLevelEnum.MAX),
+      new HardSkill(HardSkillEnum.JIRA_CONFLUENCE, SkillLevelEnum.FOUR),
+
+      // Patterns
+      new HardSkill(HardSkillEnum.DDD, SkillLevelEnum.THREE_AND_HALF),
+      new HardSkill(HardSkillEnum.TDD, SkillLevelEnum.MAX),
+      new HardSkill(HardSkillEnum.DESIGN_PATTERNS, SkillLevelEnum.THREE_AND_HALF),
+     
+     
+      // Version control
+      new HardSkill(HardSkillEnum.GIT, SkillLevelEnum.FOUR),
+      new HardSkill(HardSkillEnum.TFS, SkillLevelEnum.THREE),
+      new HardSkill(HardSkillEnum.PHABRICATOR_ARCANIST, SkillLevelEnum.THREE_AND_HALF),
+
+      // Frontend
       new HardSkill(HardSkillEnum.ANGULAR, SkillLevelEnum.FOUR),
       new HardSkill(HardSkillEnum.JAVASCRIPT_TYPESCRIPT, SkillLevelEnum.THREE_AND_HALF),
-      new HardSkill(HardSkillEnum.KENDO_UI, SkillLevelEnum.THREE),
-      new HardSkill(HardSkillEnum.JSON, SkillLevelEnum.MAX),
-      new HardSkill(HardSkillEnum.XML, SkillLevelEnum.THREE),
       new HardSkill(HardSkillEnum.FRONT_TECHNOLOGIES, SkillLevelEnum.THREE),
+      new HardSkill(HardSkillEnum.KENDO_UI, SkillLevelEnum.THREE),
+
+      // Formats
+      new HardSkill(HardSkillEnum.JSON, SkillLevelEnum.MAX),
+      new HardSkill(HardSkillEnum.JWT, SkillLevelEnum.MAX),
+      new HardSkill(HardSkillEnum.XML, SkillLevelEnum.THREE),
+
+      // General
+      new HardSkill(HardSkillEnum.OAUTH20, SkillLevelEnum.FOUR),
+      new HardSkill(HardSkillEnum.JUNIT, SkillLevelEnum.THREE),
+      
+      // API
+      new HardSkill(HardSkillEnum.API_DESIGN, SkillLevelEnum.FOUR),
       new HardSkill(HardSkillEnum.REST, SkillLevelEnum.FOUR_AND_HALF),
+      new HardSkill(HardSkillEnum.SWAGGER, SkillLevelEnum.FOUR),
+      new HardSkill(HardSkillEnum.POSTMAN, SkillLevelEnum.FOUR),
+      new HardSkill(HardSkillEnum.SOAPUI, SkillLevelEnum.TWO_AND_HALF),
+      
+      // CI/CD and build tools
       new HardSkill(HardSkillEnum.MAVEN, SkillLevelEnum.FOUR),
       new HardSkill(HardSkillEnum.JENKINS, SkillLevelEnum.THREE),
       new HardSkill(HardSkillEnum.SONAR_QUBE, SkillLevelEnum.FOUR_AND_HALF),
       new HardSkill(HardSkillEnum.AWS, SkillLevelEnum.THREE_AND_HALF),
-      new HardSkill(HardSkillEnum.CI_CD, SkillLevelEnum.THREE_AND_HALF)
+      new HardSkill(HardSkillEnum.CI_CD, SkillLevelEnum.THREE_AND_HALF),
+      
+      // Observability
+      new HardSkill(HardSkillEnum.KIBANA, SkillLevelEnum.FOUR),
+      new HardSkill(HardSkillEnum.GRAFANA, SkillLevelEnum.FOUR),
+      new HardSkill(HardSkillEnum.M3, SkillLevelEnum.THREE_AND_HALF),
+      
     ];
   }
 

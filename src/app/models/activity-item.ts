@@ -27,6 +27,10 @@ export class ActivityItem {
                 return 'fa-database';
             case ActivityTypeEnum.SUPPORT:
                 return 'fa-info-circle';
+            case ActivityTypeEnum.ARCHITECTURE:
+                return 'fa-duotone fa-sitemap';
+            default:
+                return 'fa-code'
         }
     }
 }

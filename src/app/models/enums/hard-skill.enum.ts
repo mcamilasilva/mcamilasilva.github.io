@@ -37,6 +37,13 @@ export enum HardSkillEnum {
     AWS,
     TFS,
     SONAR_QUBE,
-    CI_CD
-
+    CI_CD,
+    KIBANA,
+    GRAFANA,
+    M3,
+    CASSANDRA,
+    PHABRICATOR_ARCANIST,
+    OAUTH20,
+    JWT,
+    GOLANG
 }

@@ -16,24 +16,5 @@ export class MsHardSkillsComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-    if (this.skills.length > 0) {
-      if (this.skills.length % 2 == 0) {
-        this.splitIntoTwoGroups(this.skills.length / 2);
-      } else {
-        this.splitIntoTwoGroups(this.skills.length / 2 + 1);
-      }
-    }
-  }
-
-  /**
-   * Split the skills into two groups due to the layout
-   * 
-   * @param dividerIdx 
-   */
-  private splitIntoTwoGroups(dividerIdx: number) {
-    this.skillGroups[0] = this.skills.slice(0, dividerIdx);
-    this.skillGroups[1] = this.skills.slice(dividerIdx);
-  }
-
+  ngOnInit(): void { }
 }

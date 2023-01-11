@@ -24,5 +24,15 @@ export enum WorkExperienceTechnologyEnum {
     KANBAN = "Kanban",
     KNOCKOUT = "Knockout",
     BOOTSTRAP = "Bootstrap",
-    GO = "Golang"
+    GO = "GoLang",
+    KIBANA = "Kibana",
+    GRAFANA = "Grafana",
+    CPLUS2 = "C++",
+    LUA = "Lua",
+    M3 = "M3",
+    CASSANDRA = "Cassandra",
+    PHABRICATOR = "Phabricator",
+    ARCANIST = "Arcanist",
+    CICD = "CI/CD",
+    OAUTH20 = "OAuth 2.0"
 }

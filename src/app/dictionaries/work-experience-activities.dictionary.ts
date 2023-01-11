@@ -6,8 +6,11 @@ import { WorkExperienceEnum } from '../models/enums/work-experience.enum';
 
 const english = <{ [id: string]: ActivityItem[] }>{
     [WorkExperienceEnum.UBER_SOFTWARE_ENGINEER]: [
-        new ActivityItem(ActivityTypeEnum.CODING, `Work as Software Engineer on Identity Customer team, which is responsible for developing Identity SaaS, some of which includes sign-up, login, and identity management
-            which are used by Uber and its partners`)
+        new ActivityItem(ActivityTypeEnum.ARCHITECTURE, `Design and architecture of solutions, through elaboration of RFCs`),
+        new ActivityItem(ActivityTypeEnum.SUPPORT, `Leadership of initiatives end-to-end, which requires collaboration and coordination with multiple LoBs and stakeholders from multiple seniority and multiple platforms (Androi, iOS, Web, etc)`),
+        new ActivityItem(ActivityTypeEnum.CODING, `Development of Backend codebase in languages like GoLang, C++ and Lua`),
+        new ActivityItem(ActivityTypeEnum.CODING, `Code review from projects that I am directly involved and also the ones that I am not`),
+        new ActivityItem(ActivityTypeEnum.SUPPORT, `Mentoring of other engineers`),
     ],
     [WorkExperienceEnum.OPUS_SENIOR_TECH_LEAD]: [
         new ActivityItem(ActivityTypeEnum.CODING, "Development of one of the company's first own products in many years, which is a Open Banking solution, following all of Brazil's Central Bank regulations and specifications, to be offered to banks and financial institutions, be it on the client's cloud infraestructure or as SaaS"),
@@ -34,8 +37,11 @@ const english = <{ [id: string]: ActivityItem[] }>{
 
 const portuguese = <{ [id: string]: ActivityItem[] }>{
     [WorkExperienceEnum.UBER_SOFTWARE_ENGINEER]: [
-        new ActivityItem(ActivityTypeEnum.CODING, `Atuar como Software Engineer no time de Identity Customer, o qual é responsável por desenvolver soluções de sign-up, login e gerenciamento de identidade 
-            a serem utilizadas por todos os sistemas da Uber e parceiros`)
+        new ActivityItem(ActivityTypeEnum.ARCHITECTURE, `Design e elaboração da arquitetura de soluçoes, através da escrita de RFCs`),
+        new ActivityItem(ActivityTypeEnum.SUPPORT, `Liderança de iniciativas do início ao fim, o que inclue colaborção e cordenação com diversos times e stakeholders de múltiplas senioridades e plataformas (android, iOS, Web e etc)`),
+        new ActivityItem(ActivityTypeEnum.CODING, `Desenvolvimento da parte Backend de soluções em linguagens como GoLang, C++ e Lua`),
+        new ActivityItem(ActivityTypeEnum.CODING, `Revisão de código não somente de projetos que estou envolvida mas da Org como um todo`),
+        new ActivityItem(ActivityTypeEnum.SUPPORT, `Mentoria de outros engenheiros`),
     ],
     [WorkExperienceEnum.OPUS_SENIOR_TECH_LEAD]: [
         new ActivityItem(ActivityTypeEnum.CODING, "Criação de uma solução pronta de Open Banking, conforme resoluções e especificações do Banco Central, como um produto próprio da empresa a ser oferecido para bancos e instuições financeiras"),
