@@ -185,21 +185,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function MsHardSkillsComponent_div_1_ms_hard_skills_item_1_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "ms-hard-skills-item", 4);
+function MsHardSkillsComponent_ms_hard_skills_item_1_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "ms-hard-skills-item", 2);
 } if (rf & 2) {
-    const skill_r3 = ctx.$implicit;
-    const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("skill", skill_r3)("language", ctx_r2.language);
-} }
-function MsHardSkillsComponent_div_1_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, MsHardSkillsComponent_div_1_ms_hard_skills_item_1_Template, 1, 2, "ms-hard-skills-item", 3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-} if (rf & 2) {
-    const skills_r1 = ctx.$implicit;
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", skills_r1);
+    const skill_r1 = ctx.$implicit;
+    const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("skill", skill_r1)("language", ctx_r0.language);
 } }
 class MsHardSkillsComponent {
     constructor() {
@@ -207,34 +198,16 @@ class MsHardSkillsComponent {
         this.language = src_app_models_enums_system_language_enum__WEBPACK_IMPORTED_MODULE_1__["SystemLanguageEnum"].EN_US;
         this.skillGroups = new Array(2);
     }
-    ngOnInit() {
-        if (this.skills.length > 0) {
-            if (this.skills.length % 2 == 0) {
-                this.splitIntoTwoGroups(this.skills.length / 2);
-            }
-            else {
-                this.splitIntoTwoGroups(this.skills.length / 2 + 1);
-            }
-        }
-    }
-    /**
-     * Split the skills into two groups due to the layout
-     *
-     * @param dividerIdx
-     */
-    splitIntoTwoGroups(dividerIdx) {
-        this.skillGroups[0] = this.skills.slice(0, dividerIdx);
-        this.skillGroups[1] = this.skills.slice(dividerIdx);
-    }
+    ngOnInit() { }
 }
 MsHardSkillsComponent.ɵfac = function MsHardSkillsComponent_Factory(t) { return new (t || MsHardSkillsComponent)(); };
-MsHardSkillsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: MsHardSkillsComponent, selectors: [["ms-hard-skills"]], inputs: { skills: "skills", language: "language" }, decls: 2, vars: 1, consts: [[1, "row"], ["class", "col-md-6", 4, "ngFor", "ngForOf"], [1, "col-md-6"], [3, "skill", "language", 4, "ngFor", "ngForOf"], [3, "skill", "language"]], template: function MsHardSkillsComponent_Template(rf, ctx) { if (rf & 1) {
+MsHardSkillsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: MsHardSkillsComponent, selectors: [["ms-hard-skills"]], inputs: { skills: "skills", language: "language" }, decls: 2, vars: 1, consts: [[1, "row"], ["class", "col-md-6", 3, "skill", "language", 4, "ngFor", "ngForOf"], [1, "col-md-6", 3, "skill", "language"]], template: function MsHardSkillsComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, MsHardSkillsComponent_div_1_Template, 2, 1, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, MsHardSkillsComponent_ms_hard_skills_item_1_Template, 1, 2, "ms-hard-skills-item", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.skillGroups);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.skills);
     } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["NgForOf"], _ms_hard_skills_item_ms_hard_skills_item_component__WEBPACK_IMPORTED_MODULE_3__["MsHardSkillsItemComponent"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJtcy1oYXJkLXNraWxscy5jb21wb25lbnQuY3NzIn0= */"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](MsHardSkillsComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
@@ -979,16 +952,17 @@ const portuguese = {
         fornecido um excelente ambiente para aprender e crescer como profissional. Os principais projetos que eu participei durante esse tempo foram:`
 };
 const english = {
-    [_models_enums_work_experience_enum__WEBPACK_IMPORTED_MODULE_1__["WorkExperienceEnum"].UBER_SOFTWARE_ENGINEER]: `Uber is a multinational American technology company focused on urban mobility and transportation, whose services include,
-        but are not limited to: ride-sharing, food delivery, package delivery, couriers and freight transportation. As a newly member of the Tech Center located in São Paulo,
-        I am going to:`,
+    [_models_enums_work_experience_enum__WEBPACK_IMPORTED_MODULE_1__["WorkExperienceEnum"].UBER_SOFTWARE_ENGINEER]: `Uber is Big Tech focused on urban mobility and transportation, whose services include,
+        but are not limited to: ride-sharing, food and package delivery, couriers and freight transportation. The "Session Management" team, from which I am a member,
+        is responsible for taking care of all matters related to user's authentication and user's identity evaluation, as well as control of user's sessions. As a Backend Engineer,
+        my responsibilities include:`,
     [_models_enums_work_experience_enum__WEBPACK_IMPORTED_MODULE_1__["WorkExperienceEnum"].OPUS_SENIOR_TECH_LEAD]: `OPUS Software is a software development consulting company based in São Paulo - Brazil. As Tech Lead and Senior 
         Developer, my responsibilities consisted mostly of designing solutions, coding, performing code review and assisting my colleagues in order to come out 
-        with the best solutions and practices. Some of the activities I was involved are given as follows:`,
+        with the best solutions and practices. Some of the projects I was involved are given as follows:`,
     [_models_enums_work_experience_enum__WEBPACK_IMPORTED_MODULE_1__["WorkExperienceEnum"].OPUS_INTERMEDIATE_DEVELOPER]: `Due to the fact that OPUS Software is a consulting company, I had the opportunity of working in many different 
         projects and with a variety of technologies. As a Software Developer, the main projects I was involved to were:`,
     [_models_enums_work_experience_enum__WEBPACK_IMPORTED_MODULE_1__["WorkExperienceEnum"].AUDAXWARE]: `Audaxware is a startup based in Austin - Texas whose product is a project planning system. Back in 2015 they had legacy system 
-        which was developed using ASP.Net with a PostgreSQL database, and they wanted to change it to C#, AngularJS and SQL Server. My main activities were:`,
+        which was developed using ASP.Net with a PostgreSQL database, and they wanted to change it to C#, AngularJS and SQL Server. My main contributions were:`,
     [_models_enums_work_experience_enum__WEBPACK_IMPORTED_MODULE_1__["WorkExperienceEnum"].OPUS_JR_SYSTEM_ANALYST]: `This one was my first job related to technology. I was just finishing my Bachelor's Degree when I got there, and 
         it provided a great environment for me to learn and grow as professional. The main projects I was involved were:`
 };
@@ -1083,7 +1057,9 @@ const commons = {
     [_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_1__["HardSkillEnum"].M3]: 'M3',
     [_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_1__["HardSkillEnum"].CASSANDRA]: 'Cassandra',
     [_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_1__["HardSkillEnum"].PHABRICATOR_ARCANIST]: 'Phabricator/Arcanist',
-    [_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_1__["HardSkillEnum"].PHABRICATOR_ARCANIST]: 'OAuth 2.0',
+    [_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_1__["HardSkillEnum"].OAUTH20]: 'OAuth 2.0',
+    [_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_1__["HardSkillEnum"].JWT]: 'JWT',
+    [_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_1__["HardSkillEnum"].GOLANG]: 'GoLang',
 };
 const english = {
     [_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_1__["HardSkillEnum"].API_DESIGN]: 'API Design',
@@ -1265,6 +1241,8 @@ var HardSkillEnum;
     HardSkillEnum[HardSkillEnum["CASSANDRA"] = 41] = "CASSANDRA";
     HardSkillEnum[HardSkillEnum["PHABRICATOR_ARCANIST"] = 42] = "PHABRICATOR_ARCANIST";
     HardSkillEnum[HardSkillEnum["OAUTH20"] = 43] = "OAUTH20";
+    HardSkillEnum[HardSkillEnum["JWT"] = 44] = "JWT";
+    HardSkillEnum[HardSkillEnum["GOLANG"] = 45] = "GOLANG";
 })(HardSkillEnum || (HardSkillEnum = {}));
 
 
@@ -4021,8 +3999,11 @@ __webpack_require__.r(__webpack_exports__);
 
 const english = {
     [_models_enums_work_experience_enum__WEBPACK_IMPORTED_MODULE_3__["WorkExperienceEnum"].UBER_SOFTWARE_ENGINEER]: [
-        new _models_activity_item__WEBPACK_IMPORTED_MODULE_0__["ActivityItem"](_models_enums_activity_type_enum__WEBPACK_IMPORTED_MODULE_1__["ActivityTypeEnum"].CODING, `Work as Software Engineer on Identity Customer team, which is responsible for developing Identity SaaS, some of which includes sign-up, login, and identity management
-            which are used by Uber and its partners`)
+        new _models_activity_item__WEBPACK_IMPORTED_MODULE_0__["ActivityItem"](_models_enums_activity_type_enum__WEBPACK_IMPORTED_MODULE_1__["ActivityTypeEnum"].ARCHITECTURE, `Design and architecture of solutions, through elaboration of RFCs`),
+        new _models_activity_item__WEBPACK_IMPORTED_MODULE_0__["ActivityItem"](_models_enums_activity_type_enum__WEBPACK_IMPORTED_MODULE_1__["ActivityTypeEnum"].SUPPORT, `Leadership of initiatives end-to-end, which requires collaboration and coordination with multiple LoBs and stakeholders from multiple seniority and multiple platforms (Androi, iOS, Web, etc)`),
+        new _models_activity_item__WEBPACK_IMPORTED_MODULE_0__["ActivityItem"](_models_enums_activity_type_enum__WEBPACK_IMPORTED_MODULE_1__["ActivityTypeEnum"].CODING, `Development of Backend codebase in languages like GoLang, C++ and Lua`),
+        new _models_activity_item__WEBPACK_IMPORTED_MODULE_0__["ActivityItem"](_models_enums_activity_type_enum__WEBPACK_IMPORTED_MODULE_1__["ActivityTypeEnum"].CODING, `Code review from projects that I am directly involved and also the ones that I am not`),
+        new _models_activity_item__WEBPACK_IMPORTED_MODULE_0__["ActivityItem"](_models_enums_activity_type_enum__WEBPACK_IMPORTED_MODULE_1__["ActivityTypeEnum"].SUPPORT, `Mentoring of other engineers`),
     ],
     [_models_enums_work_experience_enum__WEBPACK_IMPORTED_MODULE_3__["WorkExperienceEnum"].OPUS_SENIOR_TECH_LEAD]: [
         new _models_activity_item__WEBPACK_IMPORTED_MODULE_0__["ActivityItem"](_models_enums_activity_type_enum__WEBPACK_IMPORTED_MODULE_1__["ActivityTypeEnum"].CODING, "Development of one of the company's first own products in many years, which is a Open Banking solution, following all of Brazil's Central Bank regulations and specifications, to be offered to banks and financial institutions, be it on the client's cloud infraestructure or as SaaS"),
@@ -4688,42 +4669,61 @@ class ResumeService {
     }
     get hardSkills() {
         return [
+            // Languages
             new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].OOP, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].MAX),
-            new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].DATA_WAREHOUSE, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].THREE_AND_HALF),
-            new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].OLAP, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].THREE_AND_HALF),
-            new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].SQL_SERVER, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].FOUR),
-            new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].POSTGRESQL, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].FOUR_AND_HALF),
-            new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].MY_SQL, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].THREE_AND_HALF),
-            new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].MONGO_DB, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].FOUR),
-            new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].SCRUM_KANBAN, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].MAX),
-            new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].JIRA_CONFLUENCE, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].FOUR),
-            new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].DDD, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].THREE_AND_HALF),
-            new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].TDD, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].MAX),
-            new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].API_DESIGN, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].FOUR),
-            new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].DESIGN_PATTERNS, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].THREE_AND_HALF),
-            new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].SWAGGER, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].FOUR),
-            new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].POSTMAN, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].FOUR),
-            new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].SOAPUI, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].TWO_AND_HALF),
-            new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].GIT, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].FOUR),
-            new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].TFS, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].THREE),
+            new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].GOLANG, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].FOUR_AND_HALF),
             new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].JAVA, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].MAX),
             new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].SPRING_BOOT, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].FOUR),
             new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].HIBERNATE, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].THREE_AND_HALF),
             new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].C_SHARP, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].FOUR),
             new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].ENTITY_FRAMEWORK, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].FOUR),
-            new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].JUNIT, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].THREE),
+            // Databases
+            new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].POSTGRESQL, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].FOUR_AND_HALF),
+            new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].SQL_SERVER, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].FOUR),
+            new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].MY_SQL, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].THREE_AND_HALF),
+            new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].CASSANDRA, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].FOUR_AND_HALF),
+            new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].MONGO_DB, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].THREE_AND_HALF),
+            new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].DATA_WAREHOUSE, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].THREE_AND_HALF),
+            new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].OLAP, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].THREE_AND_HALF),
+            // Management tools
+            new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].SCRUM_KANBAN, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].MAX),
+            new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].JIRA_CONFLUENCE, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].FOUR),
+            // Patterns
+            new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].DDD, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].THREE_AND_HALF),
+            new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].TDD, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].MAX),
+            new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].DESIGN_PATTERNS, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].THREE_AND_HALF),
+            // Version control
+            new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].GIT, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].FOUR),
+            new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].TFS, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].THREE),
+            new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].PHABRICATOR_ARCANIST, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].THREE_AND_HALF),
+            // Frontend
             new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].ANGULAR, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].FOUR),
             new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].JAVASCRIPT_TYPESCRIPT, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].THREE_AND_HALF),
-            new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].KENDO_UI, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].THREE),
-            new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].JSON, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].MAX),
-            new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].XML, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].THREE),
             new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].FRONT_TECHNOLOGIES, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].THREE),
+            new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].KENDO_UI, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].THREE),
+            // Formats
+            new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].JSON, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].MAX),
+            new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].JWT, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].MAX),
+            new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].XML, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].THREE),
+            // General
+            new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].OAUTH20, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].FOUR),
+            new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].JUNIT, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].THREE),
+            // API
+            new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].API_DESIGN, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].FOUR),
             new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].REST, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].FOUR_AND_HALF),
+            new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].SWAGGER, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].FOUR),
+            new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].POSTMAN, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].FOUR),
+            new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].SOAPUI, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].TWO_AND_HALF),
+            // CI/CD and build tools
             new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].MAVEN, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].FOUR),
             new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].JENKINS, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].THREE),
             new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].SONAR_QUBE, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].FOUR_AND_HALF),
             new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].AWS, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].THREE_AND_HALF),
-            new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].CI_CD, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].THREE_AND_HALF)
+            new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].CI_CD, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].THREE_AND_HALF),
+            // Observability
+            new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].KIBANA, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].FOUR),
+            new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].GRAFANA, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].FOUR),
+            new _models_hard_skill__WEBPACK_IMPORTED_MODULE_24__["HardSkill"](_models_enums_hard_skill_enum__WEBPACK_IMPORTED_MODULE_8__["HardSkillEnum"].M3, _models_enums_skill_level_enum__WEBPACK_IMPORTED_MODULE_16__["SkillLevelEnum"].THREE_AND_HALF),
         ];
     }
     get skills() {
