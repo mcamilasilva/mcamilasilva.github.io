@@ -90,6 +90,7 @@ var WorkExperienceEnum;
     WorkExperienceEnum[WorkExperienceEnum["AUDAXWARE"] = 2] = "AUDAXWARE";
     WorkExperienceEnum[WorkExperienceEnum["OPUS_JR_SYSTEM_ANALYST"] = 3] = "OPUS_JR_SYSTEM_ANALYST";
     WorkExperienceEnum[WorkExperienceEnum["UBER_SOFTWARE_ENGINEER"] = 4] = "UBER_SOFTWARE_ENGINEER";
+    WorkExperienceEnum[WorkExperienceEnum["UBER_SENIOR_SOFTWARE_ENGINEER"] = 5] = "UBER_SENIOR_SOFTWARE_ENGINEER";
 })(WorkExperienceEnum || (WorkExperienceEnum = {}));
 
 
@@ -312,7 +313,8 @@ const english = {
     [_models_enums_position_enum__WEBPACK_IMPORTED_MODULE_0__["PositionEnum"].INTERMEDIATE_SOFTWARE_DEVELOPER]: 'Software Developer',
     [_models_enums_position_enum__WEBPACK_IMPORTED_MODULE_0__["PositionEnum"].WEB_DEVELOPER]: 'Web Developer',
     [_models_enums_position_enum__WEBPACK_IMPORTED_MODULE_0__["PositionEnum"].SYSTEM_ANALYST]: 'Jr. System Analyst',
-    [_models_enums_position_enum__WEBPACK_IMPORTED_MODULE_0__["PositionEnum"].SOFTWARE_ENGINEER]: "Software Engineer"
+    [_models_enums_position_enum__WEBPACK_IMPORTED_MODULE_0__["PositionEnum"].SOFTWARE_ENGINEER]: "Software Engineer",
+    [_models_enums_position_enum__WEBPACK_IMPORTED_MODULE_0__["PositionEnum"].SENIOR_SOFTWARE_ENGINEER]: "Senior Software Engineer"
 };
 const portuguese = {
     [_models_enums_position_enum__WEBPACK_IMPORTED_MODULE_0__["PositionEnum"].TECH_LEAD]: 'Tech Lead',
@@ -320,7 +322,8 @@ const portuguese = {
     [_models_enums_position_enum__WEBPACK_IMPORTED_MODULE_0__["PositionEnum"].INTERMEDIATE_SOFTWARE_DEVELOPER]: 'Desenvolvedora de Software Pleno',
     [_models_enums_position_enum__WEBPACK_IMPORTED_MODULE_0__["PositionEnum"].WEB_DEVELOPER]: 'Desenvolvedora Web',
     [_models_enums_position_enum__WEBPACK_IMPORTED_MODULE_0__["PositionEnum"].SYSTEM_ANALYST]: 'Analista de Sistemas Jr.',
-    [_models_enums_position_enum__WEBPACK_IMPORTED_MODULE_0__["PositionEnum"].SOFTWARE_ENGINEER]: "Engenheira de Software"
+    [_models_enums_position_enum__WEBPACK_IMPORTED_MODULE_0__["PositionEnum"].SOFTWARE_ENGINEER]: "Engenheira de Software",
+    [_models_enums_position_enum__WEBPACK_IMPORTED_MODULE_0__["PositionEnum"].SENIOR_SOFTWARE_ENGINEER]: "Engenheira de Software Sênior"
 };
 const PositionDictionary = {
     [_models_enums_system_language_enum__WEBPACK_IMPORTED_MODULE_1__["SystemLanguageEnum"].EN_US]: english,
@@ -937,9 +940,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const portuguese = {
-    [_models_enums_work_experience_enum__WEBPACK_IMPORTED_MODULE_1__["WorkExperienceEnum"].UBER_SOFTWARE_ENGINEER]: `Uber é uma Big Tech com foco em mobilidade urbana, cujo os serviços incluem: 
+    [_models_enums_work_experience_enum__WEBPACK_IMPORTED_MODULE_1__["WorkExperienceEnum"].UBER_SENIOR_SOFTWARE_ENGINEER]: `Uber é uma Big Tech com foco em mobilidade urbana, cujo os serviços incluem: 
         transporte privado, entrega de comida/pacotes, transporte de carga, entre outros. O time de "Session Management",  do qual eu faço parte, é responsável por 
-        cuidar de toda a parte de autenticação dos usuários assim como gerenciamento de sessões. Como Engenheira Backend no time minhas atividades incluem:`,
+        cuidar de toda a parte de autenticação dos usuários assim como gerenciamento de sessões. Como Engenheira Backend Sênior no time minhas principais contribuições até o momento foram:`,
+    [_models_enums_work_experience_enum__WEBPACK_IMPORTED_MODULE_1__["WorkExperienceEnum"].UBER_SOFTWARE_ENGINEER]: `Durante meu tempo como Engenheira Backend L4 na Uber, eu tive a oportunidade de trabalhar em diversos projetos e atividades, alguns dos quais listados abaixo:`,
     [_models_enums_work_experience_enum__WEBPACK_IMPORTED_MODULE_1__["WorkExperienceEnum"].OPUS_SENIOR_TECH_LEAD]: `A OPUS Software é uma consultoria localizada em São Paulo - SP. Como Tech Lead e Desenvolvedor Sênior, minhas 
         responsabilidades consistiam principalmente do design de soluções, codificação, realização de code review and assistência aos meus colegas no intuito de 
         atingir as melhores soluções utilizando-se das melhores práticas. Alguma dos projetos que eu estive envolvida foram:`,
@@ -952,10 +956,11 @@ const portuguese = {
         fornecido um excelente ambiente para aprender e crescer como profissional. Os principais projetos que eu participei durante esse tempo foram:`
 };
 const english = {
-    [_models_enums_work_experience_enum__WEBPACK_IMPORTED_MODULE_1__["WorkExperienceEnum"].UBER_SOFTWARE_ENGINEER]: `Uber is Big Tech focused on urban mobility and transportation, whose services include,
+    [_models_enums_work_experience_enum__WEBPACK_IMPORTED_MODULE_1__["WorkExperienceEnum"].UBER_SENIOR_SOFTWARE_ENGINEER]: `Uber is Big Tech focused on urban mobility and transportation, whose services include,
         but are not limited to: ride-sharing, food and package delivery, couriers and freight transportation. The "Session Management" team, from which I am a member,
-        is responsible for taking care of all matters related to user's authentication and user's identity evaluation, as well as control of user's sessions. As a Backend Engineer,
-        my responsibilities include:`,
+        is responsible for taking care of all matters related to user's authentication and user's identity evaluation, as well as control of user's sessions. As a Senior Backend Engineer,
+        my main contributions so far have been:`,
+    [_models_enums_work_experience_enum__WEBPACK_IMPORTED_MODULE_1__["WorkExperienceEnum"].UBER_SOFTWARE_ENGINEER]: `During my time as L4 Backend Engineer at Uber I had the opportunity of working in a variety of projects and activities, some of which included:`,
     [_models_enums_work_experience_enum__WEBPACK_IMPORTED_MODULE_1__["WorkExperienceEnum"].OPUS_SENIOR_TECH_LEAD]: `OPUS Software is a software development consulting company based in São Paulo - Brazil. As Tech Lead and Senior 
         Developer, my responsibilities consisted mostly of designing solutions, coding, performing code review and assisting my colleagues in order to come out 
         with the best solutions and practices. Some of the projects I was involved are given as follows:`,
@@ -2144,7 +2149,7 @@ class AppComponent {
             new _models_menu_item__WEBPACK_IMPORTED_MODULE_4__["MenuItem"](_models_enums_menu_item_enum__WEBPACK_IMPORTED_MODULE_1__["MenuItemEnum"].SKILLS, '#mySkills'),
             new _models_menu_item__WEBPACK_IMPORTED_MODULE_4__["MenuItem"](_models_enums_menu_item_enum__WEBPACK_IMPORTED_MODULE_1__["MenuItemEnum"].CERTIFICATION, '#certifications')
         ];
-        this.headerInfo = new _models_header_info__WEBPACK_IMPORTED_MODULE_3__["HeaderInfo"]('Camila Silva', [_models_enums_position_enum__WEBPACK_IMPORTED_MODULE_2__["PositionEnum"].SOFTWARE_ENGINEER], 'assets/images/me.jpeg');
+        this.headerInfo = new _models_header_info__WEBPACK_IMPORTED_MODULE_3__["HeaderInfo"]('Camila Silva', [_models_enums_position_enum__WEBPACK_IMPORTED_MODULE_2__["PositionEnum"].SENIOR_SOFTWARE_ENGINEER], 'assets/images/me.jpeg');
         this.resume = this.resumeService.get();
     }
     ngOnInit() {
@@ -3270,6 +3275,7 @@ var PositionEnum;
     PositionEnum[PositionEnum["WEB_DEVELOPER"] = 3] = "WEB_DEVELOPER";
     PositionEnum[PositionEnum["SYSTEM_ANALYST"] = 4] = "SYSTEM_ANALYST";
     PositionEnum[PositionEnum["SOFTWARE_ENGINEER"] = 5] = "SOFTWARE_ENGINEER";
+    PositionEnum[PositionEnum["SENIOR_SOFTWARE_ENGINEER"] = 6] = "SENIOR_SOFTWARE_ENGINEER";
 })(PositionEnum || (PositionEnum = {}));
 
 
@@ -3998,6 +4004,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const english = {
+    [_models_enums_work_experience_enum__WEBPACK_IMPORTED_MODULE_3__["WorkExperienceEnum"].UBER_SENIOR_SOFTWARE_ENGINEER]: [
+        new _models_activity_item__WEBPACK_IMPORTED_MODULE_0__["ActivityItem"](_models_enums_activity_type_enum__WEBPACK_IMPORTED_MODULE_1__["ActivityTypeEnum"].SUPPORT, `Leasership of initiative to improve users' sessions security and reduce cases of ATOs`),
+        new _models_activity_item__WEBPACK_IMPORTED_MODULE_0__["ActivityItem"](_models_enums_activity_type_enum__WEBPACK_IMPORTED_MODULE_1__["ActivityTypeEnum"].ARCHITECTURE, `Raised scope, effort and limitations of an initiative to allow one-tap login across native and web applications`),
+        new _models_activity_item__WEBPACK_IMPORTED_MODULE_0__["ActivityItem"](_models_enums_activity_type_enum__WEBPACK_IMPORTED_MODULE_1__["ActivityTypeEnum"].CODING, `Improvement of the quality of our data and codebase`),
+        new _models_activity_item__WEBPACK_IMPORTED_MODULE_0__["ActivityItem"](_models_enums_activity_type_enum__WEBPACK_IMPORTED_MODULE_1__["ActivityTypeEnum"].CODING, `Increasing of our services' codebase reliability by improving of integration tests`),
+        new _models_activity_item__WEBPACK_IMPORTED_MODULE_0__["ActivityItem"](_models_enums_activity_type_enum__WEBPACK_IMPORTED_MODULE_1__["ActivityTypeEnum"].SUPPORT, `Analysis and reduction of infra growth costs when applicable`),
+    ],
     [_models_enums_work_experience_enum__WEBPACK_IMPORTED_MODULE_3__["WorkExperienceEnum"].UBER_SOFTWARE_ENGINEER]: [
         new _models_activity_item__WEBPACK_IMPORTED_MODULE_0__["ActivityItem"](_models_enums_activity_type_enum__WEBPACK_IMPORTED_MODULE_1__["ActivityTypeEnum"].ARCHITECTURE, `Design and architecture of solutions, through elaboration of RFCs`),
         new _models_activity_item__WEBPACK_IMPORTED_MODULE_0__["ActivityItem"](_models_enums_activity_type_enum__WEBPACK_IMPORTED_MODULE_1__["ActivityTypeEnum"].SUPPORT, `Leadership of initiatives end-to-end, which requires collaboration and coordination with multiple LoBs and stakeholders from multiple seniority and multiple platforms (Androi, iOS, Web, etc)`),
@@ -4028,6 +4041,13 @@ const english = {
     ]
 };
 const portuguese = {
+    [_models_enums_work_experience_enum__WEBPACK_IMPORTED_MODULE_3__["WorkExperienceEnum"].UBER_SENIOR_SOFTWARE_ENGINEER]: [
+        new _models_activity_item__WEBPACK_IMPORTED_MODULE_0__["ActivityItem"](_models_enums_activity_type_enum__WEBPACK_IMPORTED_MODULE_1__["ActivityTypeEnum"].SUPPORT, `Liderança de iniciativa para melhorar a segurança das sessões dos usuários e diminuir casos de ATOs`),
+        new _models_activity_item__WEBPACK_IMPORTED_MODULE_0__["ActivityItem"](_models_enums_activity_type_enum__WEBPACK_IMPORTED_MODULE_1__["ActivityTypeEnum"].SUPPORT, `Levantamento de escope, esforço e limitações de uma iniciativa para permitir one-tap login entre aplicações web e nativas`),
+        new _models_activity_item__WEBPACK_IMPORTED_MODULE_0__["ActivityItem"](_models_enums_activity_type_enum__WEBPACK_IMPORTED_MODULE_1__["ActivityTypeEnum"].CODING, `Melhoria na qualidade dos nosso dados e código`),
+        new _models_activity_item__WEBPACK_IMPORTED_MODULE_0__["ActivityItem"](_models_enums_activity_type_enum__WEBPACK_IMPORTED_MODULE_1__["ActivityTypeEnum"].CODING, `Aumento da confiabilidade dos nossos serviços através de melhorias nos testes de integração`),
+        new _models_activity_item__WEBPACK_IMPORTED_MODULE_0__["ActivityItem"](_models_enums_activity_type_enum__WEBPACK_IMPORTED_MODULE_1__["ActivityTypeEnum"].SUPPORT, `Análise e redução de custos de infraestrutura quando aplicável`),
+    ],
     [_models_enums_work_experience_enum__WEBPACK_IMPORTED_MODULE_3__["WorkExperienceEnum"].UBER_SOFTWARE_ENGINEER]: [
         new _models_activity_item__WEBPACK_IMPORTED_MODULE_0__["ActivityItem"](_models_enums_activity_type_enum__WEBPACK_IMPORTED_MODULE_1__["ActivityTypeEnum"].ARCHITECTURE, `Design e elaboração da arquitetura de soluçoes, através da escrita de RFCs`),
         new _models_activity_item__WEBPACK_IMPORTED_MODULE_0__["ActivityItem"](_models_enums_activity_type_enum__WEBPACK_IMPORTED_MODULE_1__["ActivityTypeEnum"].SUPPORT, `Liderança de iniciativas do início ao fim, o que inclue colaborção e cordenação com diversos times e stakeholders de múltiplas senioridades e plataformas (android, iOS, Web e etc)`),
@@ -4619,7 +4639,13 @@ class ResumeService {
     }
     get workExperiences() {
         return [
-            (new _models_work_experience__WEBPACK_IMPORTED_MODULE_30__["WorkExperience"](_models_enums_work_experience_enum__WEBPACK_IMPORTED_MODULE_22__["WorkExperienceEnum"].UBER_SOFTWARE_ENGINEER, [_models_enums_position_enum__WEBPACK_IMPORTED_MODULE_14__["PositionEnum"].SOFTWARE_ENGINEER], _models_enums_company_enum__WEBPACK_IMPORTED_MODULE_7__["CompanyEnum"].UBER, new _models_period__WEBPACK_IMPORTED_MODULE_27__["Period"](new _models_month_year__WEBPACK_IMPORTED_MODULE_26__["MonthYear"](_models_enums_month_enum__WEBPACK_IMPORTED_MODULE_13__["MonthEnum"].JUL, 2021)), [
+            (new _models_work_experience__WEBPACK_IMPORTED_MODULE_30__["WorkExperience"](_models_enums_work_experience_enum__WEBPACK_IMPORTED_MODULE_22__["WorkExperienceEnum"].UBER_SENIOR_SOFTWARE_ENGINEER, [_models_enums_position_enum__WEBPACK_IMPORTED_MODULE_14__["PositionEnum"].SENIOR_SOFTWARE_ENGINEER], _models_enums_company_enum__WEBPACK_IMPORTED_MODULE_7__["CompanyEnum"].UBER, new _models_period__WEBPACK_IMPORTED_MODULE_27__["Period"](new _models_month_year__WEBPACK_IMPORTED_MODULE_26__["MonthYear"](_models_enums_month_enum__WEBPACK_IMPORTED_MODULE_13__["MonthEnum"].MAR, 2023)), [
+                _models_enums_work_experience_technology_enum__WEBPACK_IMPORTED_MODULE_21__["WorkExperienceTechnologyEnum"].OAUTH20, _models_enums_work_experience_technology_enum__WEBPACK_IMPORTED_MODULE_21__["WorkExperienceTechnologyEnum"].GO, _models_enums_work_experience_technology_enum__WEBPACK_IMPORTED_MODULE_21__["WorkExperienceTechnologyEnum"].KANBAN, _models_enums_work_experience_technology_enum__WEBPACK_IMPORTED_MODULE_21__["WorkExperienceTechnologyEnum"].CASSANDRA,
+                _models_enums_work_experience_technology_enum__WEBPACK_IMPORTED_MODULE_21__["WorkExperienceTechnologyEnum"].KIBANA, _models_enums_work_experience_technology_enum__WEBPACK_IMPORTED_MODULE_21__["WorkExperienceTechnologyEnum"].PHABRICATOR, _models_enums_work_experience_technology_enum__WEBPACK_IMPORTED_MODULE_21__["WorkExperienceTechnologyEnum"].CPLUS2, _models_enums_work_experience_technology_enum__WEBPACK_IMPORTED_MODULE_21__["WorkExperienceTechnologyEnum"].M3,
+                _models_enums_work_experience_technology_enum__WEBPACK_IMPORTED_MODULE_21__["WorkExperienceTechnologyEnum"].GIT, _models_enums_work_experience_technology_enum__WEBPACK_IMPORTED_MODULE_21__["WorkExperienceTechnologyEnum"].LUA, _models_enums_work_experience_technology_enum__WEBPACK_IMPORTED_MODULE_21__["WorkExperienceTechnologyEnum"].ARCANIST, _models_enums_work_experience_technology_enum__WEBPACK_IMPORTED_MODULE_21__["WorkExperienceTechnologyEnum"].GRAFANA,
+                _models_enums_work_experience_technology_enum__WEBPACK_IMPORTED_MODULE_21__["WorkExperienceTechnologyEnum"].SCRUM, _models_enums_work_experience_technology_enum__WEBPACK_IMPORTED_MODULE_21__["WorkExperienceTechnologyEnum"].CICD
+            ])),
+            (new _models_work_experience__WEBPACK_IMPORTED_MODULE_30__["WorkExperience"](_models_enums_work_experience_enum__WEBPACK_IMPORTED_MODULE_22__["WorkExperienceEnum"].UBER_SOFTWARE_ENGINEER, [_models_enums_position_enum__WEBPACK_IMPORTED_MODULE_14__["PositionEnum"].SOFTWARE_ENGINEER], _models_enums_company_enum__WEBPACK_IMPORTED_MODULE_7__["CompanyEnum"].UBER, new _models_period__WEBPACK_IMPORTED_MODULE_27__["Period"](new _models_month_year__WEBPACK_IMPORTED_MODULE_26__["MonthYear"](_models_enums_month_enum__WEBPACK_IMPORTED_MODULE_13__["MonthEnum"].JUL, 2021), new _models_month_year__WEBPACK_IMPORTED_MODULE_26__["MonthYear"](_models_enums_month_enum__WEBPACK_IMPORTED_MODULE_13__["MonthEnum"].FEB, 2023)), [
                 _models_enums_work_experience_technology_enum__WEBPACK_IMPORTED_MODULE_21__["WorkExperienceTechnologyEnum"].OAUTH20, _models_enums_work_experience_technology_enum__WEBPACK_IMPORTED_MODULE_21__["WorkExperienceTechnologyEnum"].GO, _models_enums_work_experience_technology_enum__WEBPACK_IMPORTED_MODULE_21__["WorkExperienceTechnologyEnum"].KANBAN, _models_enums_work_experience_technology_enum__WEBPACK_IMPORTED_MODULE_21__["WorkExperienceTechnologyEnum"].CASSANDRA,
                 _models_enums_work_experience_technology_enum__WEBPACK_IMPORTED_MODULE_21__["WorkExperienceTechnologyEnum"].KIBANA, _models_enums_work_experience_technology_enum__WEBPACK_IMPORTED_MODULE_21__["WorkExperienceTechnologyEnum"].PHABRICATOR, _models_enums_work_experience_technology_enum__WEBPACK_IMPORTED_MODULE_21__["WorkExperienceTechnologyEnum"].CPLUS2, _models_enums_work_experience_technology_enum__WEBPACK_IMPORTED_MODULE_21__["WorkExperienceTechnologyEnum"].M3,
                 _models_enums_work_experience_technology_enum__WEBPACK_IMPORTED_MODULE_21__["WorkExperienceTechnologyEnum"].GIT, _models_enums_work_experience_technology_enum__WEBPACK_IMPORTED_MODULE_21__["WorkExperienceTechnologyEnum"].LUA, _models_enums_work_experience_technology_enum__WEBPACK_IMPORTED_MODULE_21__["WorkExperienceTechnologyEnum"].ARCANIST, _models_enums_work_experience_technology_enum__WEBPACK_IMPORTED_MODULE_21__["WorkExperienceTechnologyEnum"].GRAFANA,

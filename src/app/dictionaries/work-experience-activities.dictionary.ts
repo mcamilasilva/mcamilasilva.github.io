@@ -5,6 +5,13 @@ import { WorkExperienceEnum } from '../models/enums/work-experience.enum';
 
 
 const english = <{ [id: string]: ActivityItem[] }>{
+    [WorkExperienceEnum.UBER_SENIOR_SOFTWARE_ENGINEER]: [
+        new ActivityItem(ActivityTypeEnum.SUPPORT, `Leasership of initiative to improve users' sessions security and reduce cases of ATOs`),
+        new ActivityItem(ActivityTypeEnum.ARCHITECTURE, `Raised scope, effort and limitations of an initiative to allow one-tap login across native and web applications`),
+        new ActivityItem(ActivityTypeEnum.CODING, `Improvement of the quality of our data and codebase`),
+        new ActivityItem(ActivityTypeEnum.CODING, `Increasing of our services' codebase reliability by improving of integration tests`),
+        new ActivityItem(ActivityTypeEnum.SUPPORT, `Analysis and reduction of infra growth costs when applicable`),
+    ],
     [WorkExperienceEnum.UBER_SOFTWARE_ENGINEER]: [
         new ActivityItem(ActivityTypeEnum.ARCHITECTURE, `Design and architecture of solutions, through elaboration of RFCs`),
         new ActivityItem(ActivityTypeEnum.SUPPORT, `Leadership of initiatives end-to-end, which requires collaboration and coordination with multiple LoBs and stakeholders from multiple seniority and multiple platforms (Androi, iOS, Web, etc)`),
@@ -36,6 +43,13 @@ const english = <{ [id: string]: ActivityItem[] }>{
 };
 
 const portuguese = <{ [id: string]: ActivityItem[] }>{
+    [WorkExperienceEnum.UBER_SENIOR_SOFTWARE_ENGINEER]: [
+        new ActivityItem(ActivityTypeEnum.SUPPORT, `Liderança de iniciativa para melhorar a segurança das sessões dos usuários e diminuir casos de ATOs`),
+        new ActivityItem(ActivityTypeEnum.SUPPORT, `Levantamento de escope, esforço e limitações de uma iniciativa para permitir one-tap login entre aplicações web e nativas`),
+        new ActivityItem(ActivityTypeEnum.CODING, `Melhoria na qualidade dos nosso dados e código`),
+        new ActivityItem(ActivityTypeEnum.CODING, `Aumento da confiabilidade dos nossos serviços através de melhorias nos testes de integração`),
+        new ActivityItem(ActivityTypeEnum.SUPPORT, `Análise e redução de custos de infraestrutura quando aplicável`),
+    ],
     [WorkExperienceEnum.UBER_SOFTWARE_ENGINEER]: [
         new ActivityItem(ActivityTypeEnum.ARCHITECTURE, `Design e elaboração da arquitetura de soluçoes, através da escrita de RFCs`),
         new ActivityItem(ActivityTypeEnum.SUPPORT, `Liderança de iniciativas do início ao fim, o que inclue colaborção e cordenação com diversos times e stakeholders de múltiplas senioridades e plataformas (android, iOS, Web e etc)`),

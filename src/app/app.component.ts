@@ -37,7 +37,7 @@ export class AppComponent implements OnInit, OnDestroy {
       new MenuItem(MenuItemEnum.CERTIFICATION, '#certifications')
     ];
 
-    this.headerInfo = new HeaderInfo('Camila Silva', [PositionEnum.SOFTWARE_ENGINEER], 'assets/images/me.jpeg');
+    this.headerInfo = new HeaderInfo('Camila Silva', [PositionEnum.SENIOR_SOFTWARE_ENGINEER], 'assets/images/me.jpeg');
 
     this.resume = this.resumeService.get();
 

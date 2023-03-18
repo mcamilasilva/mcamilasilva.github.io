@@ -61,8 +61,15 @@ export class ResumeService {
 
   private get workExperiences(): WorkExperience[] {
     return [
+      (new WorkExperience(WorkExperienceEnum.UBER_SENIOR_SOFTWARE_ENGINEER, 
+        [PositionEnum.SENIOR_SOFTWARE_ENGINEER], CompanyEnum.UBER, new Period(new MonthYear(MonthEnum.MAR, 2023)), [
+        WorkExperienceTechnologyEnum.OAUTH20, WorkExperienceTechnologyEnum.GO, WorkExperienceTechnologyEnum.KANBAN, WorkExperienceTechnologyEnum.CASSANDRA, 
+        WorkExperienceTechnologyEnum.KIBANA, WorkExperienceTechnologyEnum.PHABRICATOR, WorkExperienceTechnologyEnum.CPLUS2, WorkExperienceTechnologyEnum.M3, 
+        WorkExperienceTechnologyEnum.GIT, WorkExperienceTechnologyEnum.LUA, WorkExperienceTechnologyEnum.ARCANIST, WorkExperienceTechnologyEnum.GRAFANA,
+        WorkExperienceTechnologyEnum.SCRUM, WorkExperienceTechnologyEnum.CICD    
+      ])),
       (new WorkExperience(WorkExperienceEnum.UBER_SOFTWARE_ENGINEER, 
-        [PositionEnum.SOFTWARE_ENGINEER], CompanyEnum.UBER, new Period(new MonthYear(MonthEnum.JUL, 2021)), [
+        [PositionEnum.SOFTWARE_ENGINEER], CompanyEnum.UBER, new Period(new MonthYear(MonthEnum.JUL, 2021), new MonthYear(MonthEnum.FEB, 2023)), [
         WorkExperienceTechnologyEnum.OAUTH20, WorkExperienceTechnologyEnum.GO, WorkExperienceTechnologyEnum.KANBAN, WorkExperienceTechnologyEnum.CASSANDRA, 
         WorkExperienceTechnologyEnum.KIBANA, WorkExperienceTechnologyEnum.PHABRICATOR, WorkExperienceTechnologyEnum.CPLUS2, WorkExperienceTechnologyEnum.M3, 
         WorkExperienceTechnologyEnum.GIT, WorkExperienceTechnologyEnum.LUA, WorkExperienceTechnologyEnum.ARCANIST, WorkExperienceTechnologyEnum.GRAFANA,
