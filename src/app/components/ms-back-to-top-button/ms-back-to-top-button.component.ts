@@ -26,9 +26,6 @@ export class MsBackToTopButtonComponent implements OnInit {
         return this.translationService.translate(this.language, TranslationTypeEnum.FIXED_LABELS_AND_TOOLTIPS, FixedLabelsAndTooltipsEnum.BACK_TO_TOP_BTN_TOOLTIP)
     }
 
-    /**
-     * Credits about the logic to https://www.techtrek.io/Adding-a-Scroll-to-Top-button-in-Angular
-     */
     @HostListener("window:scroll", [])
     public onWindowScroll() {
         if (window.pageYOffset || this.document.documentElement.scrollTop || this.document.body.scrollTop > 100) {
@@ -38,14 +35,29 @@ export class MsBackToTopButtonComponent implements OnInit {
             this.showButton = false;
         }
     }
-    public scrollToTop() {
-        (function smoothscroll() {
-            var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
-            if (currentScroll > 0) {
-                window.requestAnimationFrame(smoothscroll);
-                window.scrollTo(0, currentScroll - (currentScroll / 8));
-            }
-        })();
-    }
+    
+    public scrollToTop(durationMs: number = 200): void {
+        const startPosition = window.pageYOffset || this.document.documentElement.scrollTop || this.document.body.scrollTop;
+        if (startPosition === 0) return;
+      
+        const startTime = performance.now();
+      
+        const animateScroll = (currentTime: number) => {
+          const timeElapsed = currentTime - startTime;
+          const progress = Math.min(timeElapsed / durationMs, 1);
+          
+          // Fast ease-out curve
+          const easeOut = 1 - (1 - progress) * (1 - progress); 
+          const nextPosition = startPosition * (1 - easeOut);
+      
+          window.scrollTo(0, nextPosition);
+      
+          if (timeElapsed < durationMs) {
+            window.requestAnimationFrame(animateScroll);
+          }
+        };
+      
+        window.requestAnimationFrame(animateScroll);
+      }
 
 }

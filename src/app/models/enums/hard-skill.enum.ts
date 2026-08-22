@@ -45,5 +45,11 @@ export enum HardSkillEnum {
     PHABRICATOR_ARCANIST,
     OAUTH20,
     JWT,
-    GOLANG
+    GOLANG,
+    CLAUDE_CODE,
+    CURSOR,
+    PRESTO_DB,
+    APACHE_HIVE,
+    AGENTIC_AI,
+    GITHUB
 }

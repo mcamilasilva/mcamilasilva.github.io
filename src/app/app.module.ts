@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 // Components
@@ -68,7 +67,6 @@ import { TranslatePipe } from './pipes/translate.pipe';
   ],
   imports: [
     BrowserModule,
-    ScrollToModule.forRoot(),
     NgbModule
   ],
   providers: [DatePipe],

@@ -34,5 +34,10 @@ export enum WorkExperienceTechnologyEnum {
     PHABRICATOR = "Phabricator",
     ARCANIST = "Arcanist",
     CICD = "CI/CD",
-    OAUTH20 = "OAuth 2.0"
+    OAUTH20 = "OAuth 2.0",
+    CLAUDE_CODE = "Claude Code",
+    CURSOR = "Cursor",
+    AGENTIC_AI = "Agentic AI",
+    PRESTO_DB = "Presto DB",
+    APACHE_HIVE = "Apache Hive",
 }

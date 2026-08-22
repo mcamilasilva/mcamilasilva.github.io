@@ -3,6 +3,7 @@ export enum TranslationTypeEnum {
     MAJOR_DEGREE = 'MAJOR_DEGREE',
     MAJOR = 'MAJOR',
     LOCALE = 'LOCALE',
+    COUNTRY = 'COUNTRY',
     SCHOOL = 'SCHOOL',
     LANGUAGE = 'LANGUAGE',
     TITLE = 'TITLE',

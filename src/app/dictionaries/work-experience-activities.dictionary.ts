@@ -5,6 +5,11 @@ import { WorkExperienceEnum } from '../models/enums/work-experience.enum';
 
 
 const english = <{ [id: string]: ActivityItem[] }>{
+    [WorkExperienceEnum.UBER_SENIOR_SOFTWARE_ENGINEER_ADS]: [
+        new ActivityItem(ActivityTypeEnum.ARCHITECTURE, `Ownership of the Grocery Ads end-to-end flow, spanning demand and supply`),
+        new ActivityItem(ActivityTypeEnum.CODING, `Demand-side work across auction, bidders, and relevance`),
+        new ActivityItem(ActivityTypeEnum.SUPPORT, `Oversight of the supply side for the Grocery Ads vertical`),
+    ],
     [WorkExperienceEnum.UBER_SENIOR_SOFTWARE_ENGINEER]: [
         new ActivityItem(ActivityTypeEnum.SUPPORT, `Leasership of initiative to improve users' sessions security and reduce cases of ATOs`),
         new ActivityItem(ActivityTypeEnum.ARCHITECTURE, `Raised scope, effort and limitations of an initiative to allow one-tap login across native and web applications`),
@@ -43,6 +48,11 @@ const english = <{ [id: string]: ActivityItem[] }>{
 };
 
 const portuguese = <{ [id: string]: ActivityItem[] }>{
+    [WorkExperienceEnum.UBER_SENIOR_SOFTWARE_ENGINEER_ADS]: [
+        new ActivityItem(ActivityTypeEnum.ARCHITECTURE, `Responsável pelo fluxo ponta a ponta de Grocery Ads, abrangendo demanda e oferta`),
+        new ActivityItem(ActivityTypeEnum.CODING, `Atuação no lado da demanda: leilão, bidders e relevância`),
+        new ActivityItem(ActivityTypeEnum.SUPPORT, `Acompanhamento do lado da oferta (supply) da vertical de Grocery Ads`),
+    ],
     [WorkExperienceEnum.UBER_SENIOR_SOFTWARE_ENGINEER]: [
         new ActivityItem(ActivityTypeEnum.SUPPORT, `Liderança de iniciativa para melhorar a segurança das sessões dos usuários e diminuir casos de ATOs`),
         new ActivityItem(ActivityTypeEnum.SUPPORT, `Levantamento de escope, esforço e limitações de uma iniciativa para permitir one-tap login entre aplicações web e nativas`),

@@ -1,5 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ScrollToConfigOptions, ScrollToService } from '@nicky-lenaers/ngx-scroll-to';
 import { SystemLanguageEnum } from 'src/app/models/enums/system-language.enum';
 import { MenuItem } from 'src/app/models/menu-item';
 
@@ -13,7 +12,7 @@ export class MsHeaderMenuComponent implements OnInit {
   @Input() items: MenuItem[] = [];
   @Input() language: SystemLanguageEnum = SystemLanguageEnum.EN_US;
 
-  constructor(private scrollToService: ScrollToService) { }
+  constructor() { }
 
   ngOnInit(): void {
   }
@@ -22,11 +21,13 @@ export class MsHeaderMenuComponent implements OnInit {
    * Scrolls the screen to the target element
    */
   public scrollTo(target: string) {
+    if (!target) return;
 
-    const config: ScrollToConfigOptions = {
-      target: target
-    };
-
-    this.scrollToService.scrollTo(config);
+    const elementId = target.startsWith('#') ? target.substring(1) : target;
+    const element = document.getElementById(elementId);
+  
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   }
 }

@@ -45,6 +45,12 @@ const commons = <{ [id: string]: string }> {
     [HardSkillEnum.OAUTH20]: 'OAuth 2.0',
     [HardSkillEnum.JWT]: 'JWT',
     [HardSkillEnum.GOLANG]: 'GoLang',
+    [HardSkillEnum.CLAUDE_CODE]: 'Claude Code',
+    [HardSkillEnum.AGENTIC_AI]: 'Agentic AI',
+    [HardSkillEnum.CURSOR]: 'Cursor',
+    [HardSkillEnum.PRESTO_DB]: 'PrestoDB',
+    [HardSkillEnum.APACHE_HIVE]: 'Apache Hive',
+    [HardSkillEnum.GITHUB]: 'GitHub'
 }
 
 const english = <{ [id: string]: string }> {

@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { AboutMeInfoDictionary } from '../dictionaries/about-me-info.dictionary';
 import { CompanyWebsiteDictionary } from '../dictionaries/company-website.dictionary';
+import { CountryDictionary } from '../dictionaries/country.dictionary';
 import { FixedLabelsAndTooltipsDictionary } from '../dictionaries/fixed-labels-and-tooltips.dictionary';
 import { HardSkillsDictionary } from '../dictionaries/hard-skills.dictionary';
 import { LanguageDictionary } from '../dictionaries/language.dictionary';
@@ -45,6 +46,9 @@ export class TranslationService {
         break;
       case TranslationTypeEnum.LOCALE:
         translatedValue = LocaleDictionary[language][value];
+        break;
+      case TranslationTypeEnum.COUNTRY:
+        translatedValue = CountryDictionary[language][value];
         break;
       case TranslationTypeEnum.SCHOOL:
         translatedValue = SchoolDictionary[language][value];

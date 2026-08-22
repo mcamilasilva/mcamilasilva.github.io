@@ -1,2 +1,7 @@
-# MCamilaSilva.github.io
-Personal page
+# How to run
+
+```
+npm install
+
+npm start
+```

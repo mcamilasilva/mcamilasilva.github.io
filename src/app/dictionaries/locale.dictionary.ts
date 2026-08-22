@@ -4,13 +4,15 @@ import { LocaleEnum } from '../models/enums/locale.enum';
 const english = <{ [id: string]: string }> {
     [LocaleEnum.SOROCABA]: 'Sorocaba, SP, Brazil',
     [LocaleEnum.ROME]: 'Rome, Italy',
-    [LocaleEnum.SAO_PAULO]: 'São Paulo, SP, Brazil'
+    [LocaleEnum.SAO_PAULO]: 'São Paulo, SP, Brazil',
+    [LocaleEnum.TORONTO]: 'Toronton, ON, Canada'
 };
 
 const portuguese = <{ [id: string]: string }> {
     [LocaleEnum.SOROCABA]: 'Sorocaba, SP, Brasil',
     [LocaleEnum.ROME]: 'Roma, Itália',
-    [LocaleEnum.SAO_PAULO]: 'São Paulo, SP, Brasil'
+    [LocaleEnum.SAO_PAULO]: 'São Paulo, SP, Brasil',
+    [LocaleEnum.TORONTO]: 'Toronton, ON, Canadá'
 };
 
 export const LocaleDictionary = <{ [id: string]: { [id: string]: string } }>{

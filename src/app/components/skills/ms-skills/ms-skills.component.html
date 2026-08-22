@@ -1,18 +1,25 @@
 <div class="h4 text-center mb-4 title">{{ title | translate: 'TITLE':language }}</div>
-<div class="row justify-content-between ms-skills">
-    <div class="card col-lg-9 col-md-12 ms-hard-skills">
-        <div class="card-body">
-            <div class="h5 mt-0 title">Hard Skills</div>
-            <div>
-                <ms-hard-skills [skills]="skills.hardSkills" [language]="language"></ms-hard-skills>
+<div class="row g-4 ms-skills">
+  <!-- Hard Skills Column -->
+  <div class="col-lg-9 col-md-12 d-flex flex-column">
+    <div class="card ms-hard-skills h-100">
+            <div class="card-body">
+                <div class="h5 mt-0 title">Hard Skills</div>
+                <div>
+                    <ms-hard-skills [skills]="skills.hardSkills" [language]="language"></ms-hard-skills>
+                </div>
             </div>
         </div>
     </div>
-    <div class="card col-lg-3 col-md-12 ms-soft-skills">
-        <div class="card-body">
-            <div class="h5 mt-0 title">Soft Skills</div>
-            <div>
-                <ms-soft-skills [skills]="skills.softSkills" [language]="language"></ms-soft-skills>
+
+    <!-- Soft Skills Column -->
+    <div class="col-lg-3 col-md-12 d-flex flex-column">
+        <div class="card ms-soft-skills h-100">
+            <div class="card-body">
+                <div class="h5 mt-0 title">Soft Skills</div>
+                <div>
+                    <ms-soft-skills [skills]="skills.softSkills" [language]="language"></ms-soft-skills>
+                </div>
             </div>
         </div>
     </div>

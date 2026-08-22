@@ -6,6 +6,7 @@ import { EducationAdditionalInfo } from '../models/education-additional-info';
 import { EducationItem } from '../models/education-item';
 import { AboutMeInfoEnum } from '../models/enums/about-me-info.enum';
 import { CompanyEnum } from '../models/enums/company.enum';
+import { CountryEnum } from '../models/enums/country.enum';
 import { HardSkillEnum } from '../models/enums/hard-skill.enum';
 import { LanguageEnum } from '../models/enums/language.enum';
 import { LocaleEnum } from '../models/enums/locale.enum';
@@ -61,39 +62,46 @@ export class ResumeService {
 
   private get workExperiences(): WorkExperience[] {
     return [
+      (new WorkExperience(WorkExperienceEnum.UBER_SENIOR_SOFTWARE_ENGINEER_ADS,
+        [PositionEnum.SENIOR_SOFTWARE_ENGINEER], CompanyEnum.UBER, CountryEnum.CANADA, new Period(new MonthYear(MonthEnum.MAY, 2025)), [
+        WorkExperienceTechnologyEnum.CLAUDE_CODE, WorkExperienceTechnologyEnum.AGENTIC_AI, WorkExperienceTechnologyEnum.GO,
+        WorkExperienceTechnologyEnum.GIT, WorkExperienceTechnologyEnum.PRESTO_DB, WorkExperienceTechnologyEnum.APACHE_HIVE, 
+        WorkExperienceTechnologyEnum.M3, WorkExperienceTechnologyEnum.JIRA, WorkExperienceTechnologyEnum.CICD, 
+        WorkExperienceTechnologyEnum.CURSOR,
+      ])),
       (new WorkExperience(WorkExperienceEnum.UBER_SENIOR_SOFTWARE_ENGINEER, 
-        [PositionEnum.SENIOR_SOFTWARE_ENGINEER], CompanyEnum.UBER, new Period(new MonthYear(MonthEnum.MAR, 2023)), [
+        [PositionEnum.SENIOR_SOFTWARE_ENGINEER], CompanyEnum.UBER, CountryEnum.BRAZIL, new Period(new MonthYear(MonthEnum.MAR, 2023), new MonthYear(MonthEnum.APR, 2025)), [
         WorkExperienceTechnologyEnum.OAUTH20, WorkExperienceTechnologyEnum.GO, WorkExperienceTechnologyEnum.KANBAN, WorkExperienceTechnologyEnum.CASSANDRA, 
         WorkExperienceTechnologyEnum.KIBANA, WorkExperienceTechnologyEnum.PHABRICATOR, WorkExperienceTechnologyEnum.CPLUS2, WorkExperienceTechnologyEnum.M3, 
         WorkExperienceTechnologyEnum.GIT, WorkExperienceTechnologyEnum.LUA, WorkExperienceTechnologyEnum.ARCANIST, WorkExperienceTechnologyEnum.GRAFANA,
         WorkExperienceTechnologyEnum.SCRUM, WorkExperienceTechnologyEnum.CICD    
       ])),
       (new WorkExperience(WorkExperienceEnum.UBER_SOFTWARE_ENGINEER, 
-        [PositionEnum.SOFTWARE_ENGINEER], CompanyEnum.UBER, new Period(new MonthYear(MonthEnum.JUL, 2021), new MonthYear(MonthEnum.FEB, 2023)), [
+        [PositionEnum.SOFTWARE_ENGINEER], CompanyEnum.UBER, CountryEnum.BRAZIL, new Period(new MonthYear(MonthEnum.JUL, 2021), new MonthYear(MonthEnum.FEB, 2023)), [
         WorkExperienceTechnologyEnum.OAUTH20, WorkExperienceTechnologyEnum.GO, WorkExperienceTechnologyEnum.KANBAN, WorkExperienceTechnologyEnum.CASSANDRA, 
         WorkExperienceTechnologyEnum.KIBANA, WorkExperienceTechnologyEnum.PHABRICATOR, WorkExperienceTechnologyEnum.CPLUS2, WorkExperienceTechnologyEnum.M3, 
         WorkExperienceTechnologyEnum.GIT, WorkExperienceTechnologyEnum.LUA, WorkExperienceTechnologyEnum.ARCANIST, WorkExperienceTechnologyEnum.GRAFANA,
         WorkExperienceTechnologyEnum.SCRUM, WorkExperienceTechnologyEnum.CICD    
       ])),
-      (new WorkExperience(WorkExperienceEnum.OPUS_SENIOR_TECH_LEAD, [PositionEnum.SENIOR_SOFTWARE_DEVELOPER, PositionEnum.TECH_LEAD], CompanyEnum.OPUS,
+      (new WorkExperience(WorkExperienceEnum.OPUS_SENIOR_TECH_LEAD, [PositionEnum.SENIOR_SOFTWARE_DEVELOPER, PositionEnum.TECH_LEAD], CompanyEnum.OPUS, CountryEnum.BRAZIL,
         new Period(new MonthYear(MonthEnum.NOV, 2019), new MonthYear(MonthEnum.JUL, 2021)), [
         WorkExperienceTechnologyEnum.JAVA_11, WorkExperienceTechnologyEnum.SPRING_BOOT, WorkExperienceTechnologyEnum.ANGULAR_6, WorkExperienceTechnologyEnum.POSTGRESQL,
         WorkExperienceTechnologyEnum.AWS, WorkExperienceTechnologyEnum.GIT, WorkExperienceTechnologyEnum.JIRA, WorkExperienceTechnologyEnum.SCRUM,
         WorkExperienceTechnologyEnum.JENKINS, WorkExperienceTechnologyEnum.SONAR_QUBE
       ])),
-      (new WorkExperience(WorkExperienceEnum.OPUS_INTERMEDIATE_DEVELOPER, [PositionEnum.INTERMEDIATE_SOFTWARE_DEVELOPER], CompanyEnum.OPUS,
+      (new WorkExperience(WorkExperienceEnum.OPUS_INTERMEDIATE_DEVELOPER, [PositionEnum.INTERMEDIATE_SOFTWARE_DEVELOPER], CompanyEnum.OPUS, CountryEnum.BRAZIL,
         new Period(new MonthYear(MonthEnum.NOV, 2017), new MonthYear(MonthEnum.NOV, 2019)), [
         WorkExperienceTechnologyEnum.JAVA_8, WorkExperienceTechnologyEnum.SPRING_BOOT, WorkExperienceTechnologyEnum.ANGULAR_2, WorkExperienceTechnologyEnum.MY_SQL,
         WorkExperienceTechnologyEnum.AWS, WorkExperienceTechnologyEnum.GIT, WorkExperienceTechnologyEnum.JIRA, WorkExperienceTechnologyEnum.SCRUM,
         WorkExperienceTechnologyEnum.JENKINS, WorkExperienceTechnologyEnum.SONAR_QUBE
       ])),
-      (new WorkExperience(WorkExperienceEnum.AUDAXWARE, [PositionEnum.WEB_DEVELOPER], CompanyEnum.AUDAXWARE,
+      (new WorkExperience(WorkExperienceEnum.AUDAXWARE, [PositionEnum.WEB_DEVELOPER], CompanyEnum.AUDAXWARE, CountryEnum.BRAZIL,
         new Period(new MonthYear(MonthEnum.NOV, 2015), new MonthYear(MonthEnum.APR, 2020)), [
         WorkExperienceTechnologyEnum.C_SHARP, WorkExperienceTechnologyEnum.SQL_SERVER, WorkExperienceTechnologyEnum.ANGULAR_JS, WorkExperienceTechnologyEnum.KENDO_UI,
         WorkExperienceTechnologyEnum.MATERIAL, WorkExperienceTechnologyEnum.AZURE, WorkExperienceTechnologyEnum.WEB_JOB, WorkExperienceTechnologyEnum.TFS,
         WorkExperienceTechnologyEnum.KANBAN
       ])),
-      (new WorkExperience(WorkExperienceEnum.OPUS_JR_SYSTEM_ANALYST, [PositionEnum.SYSTEM_ANALYST], CompanyEnum.OPUS,
+      (new WorkExperience(WorkExperienceEnum.OPUS_JR_SYSTEM_ANALYST, [PositionEnum.SYSTEM_ANALYST], CompanyEnum.OPUS, CountryEnum.BRAZIL,
         new Period(new MonthYear(MonthEnum.JAN, 2015), new MonthYear(MonthEnum.NOV, 2015)), [
         WorkExperienceTechnologyEnum.C_SHARP, WorkExperienceTechnologyEnum.SQL_SERVER, WorkExperienceTechnologyEnum.ANGULAR_JS,
         WorkExperienceTechnologyEnum.KNOCKOUT, WorkExperienceTechnologyEnum.BOOTSTRAP, WorkExperienceTechnologyEnum.SCRUM
@@ -120,6 +128,7 @@ export class ResumeService {
 
   private get certifications(): Certification[] {
     return [
+      new Certification('CELPIP General Overall Average 11', 'CELPIP', new MonthYear(MonthEnum.JUN, 2026)),
       new Certification('IELTS General Training Overall Band Scores 8', 'IELTS', new MonthYear(MonthEnum.FEB, 2022)),
       new Certification('MCSA: SQL 2016 Database Development', 'MCSA', new MonthYear(MonthEnum.OCT, 2018))
     ];
@@ -136,9 +145,14 @@ export class ResumeService {
 
   private get hardSkills(): HardSkill[] {
     return [
+      // AI
+      new HardSkill(HardSkillEnum.CLAUDE_CODE, SkillLevelEnum.FOUR),
+      new HardSkill(HardSkillEnum.AGENTIC_AI, SkillLevelEnum.THREE),
+      new HardSkill(HardSkillEnum.CURSOR, SkillLevelEnum.THREE),
+
       // Languages
       new HardSkill(HardSkillEnum.OOP, SkillLevelEnum.MAX),
-      new HardSkill(HardSkillEnum.GOLANG, SkillLevelEnum.FOUR_AND_HALF),
+      new HardSkill(HardSkillEnum.GOLANG, SkillLevelEnum.MAX),
       new HardSkill(HardSkillEnum.JAVA, SkillLevelEnum.MAX),
       new HardSkill(HardSkillEnum.SPRING_BOOT, SkillLevelEnum.FOUR),
       new HardSkill(HardSkillEnum.HIBERNATE, SkillLevelEnum.THREE_AND_HALF),
@@ -150,6 +164,8 @@ export class ResumeService {
       new HardSkill(HardSkillEnum.SQL_SERVER, SkillLevelEnum.FOUR),
       new HardSkill(HardSkillEnum.MY_SQL, SkillLevelEnum.THREE_AND_HALF),
       new HardSkill(HardSkillEnum.CASSANDRA, SkillLevelEnum.FOUR_AND_HALF),
+      new HardSkill(HardSkillEnum.PRESTO_DB, SkillLevelEnum.FOUR),
+      new HardSkill(HardSkillEnum.APACHE_HIVE, SkillLevelEnum.THREE_AND_HALF),
       new HardSkill(HardSkillEnum.MONGO_DB, SkillLevelEnum.THREE_AND_HALF),
       new HardSkill(HardSkillEnum.DATA_WAREHOUSE, SkillLevelEnum.THREE_AND_HALF),
       new HardSkill(HardSkillEnum.OLAP, SkillLevelEnum.THREE_AND_HALF),

@@ -1,3 +1,8 @@
 .timeline-card-title .company>span, .timeline-card-title .company>p {
     font-style: italic;
   }
+
+.timeline-card-title .company .country {
+    font-style: italic;
+    color: #666;
+  }

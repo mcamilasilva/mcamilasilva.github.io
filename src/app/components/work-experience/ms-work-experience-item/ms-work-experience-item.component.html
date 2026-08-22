@@ -4,6 +4,7 @@
     </div>
     <div class="company">
         <a href="{{companyWebsite}}" target="_blank">{{ info.company }}</a>
+        <span class="country"> · {{ info.country | translate: 'COUNTRY':language }}</span>
     </div>
     <div class="period">
         <ms-btn-period [period]="info.period"></ms-btn-period>

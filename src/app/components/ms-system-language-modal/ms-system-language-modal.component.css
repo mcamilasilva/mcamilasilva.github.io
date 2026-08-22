@@ -13,3 +13,23 @@
 .modal-footer {
     display: none;
 }
+
+/* Container keeps lines inset from modal edges */
+.options-container {
+    border-top: 1px solid rgba(0, 0, 0, 0.15); /* Top border */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15); /* Bottom border */
+  }
+  
+  /* Border between items */
+  .option {
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out;
+  }
+  
+  .option + .option {
+    border-top: 1px solid rgba(0, 0, 0, 0.15); /* Separator between options */
+  }
+  
+  .option:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }

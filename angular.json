@@ -72,18 +72,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "MCamilaSilva:build"
+            "buildTarget": "MCamilaSilva:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "MCamilaSilva:build:production"
+              "buildTarget": "MCamilaSilva:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "MCamilaSilva:build"
+            "buildTarget": "MCamilaSilva:build"
           }
         },
         "test": {
@@ -131,5 +131,8 @@
       }
     }
   },
-  "defaultProject": "MCamilaSilva"
+  "defaultProject": "MCamilaSilva",
+  "cli": {
+    "analytics": false
+  }
 }
