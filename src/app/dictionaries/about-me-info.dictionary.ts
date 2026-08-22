@@ -36,7 +36,7 @@ const portuguese = <{ [id: string]: any }>{
     [AboutMeInfoEnum.PHONE]: '+1 (647) 450-4209',
     [AboutMeInfoEnum.LOCATION]: LocaleDictionary[SystemLanguageEnum.PT_BR][LocaleEnum.TORONTO],
     [AboutMeInfoEnum.BIO]: [
-        'Sou Engenheira de Software Sênior, com foco em backend e experiência em sistemas de larga escala, incluindo autenticação e gerenciamento de sessões na Uber. Gosto de transformar ideias em software confiável, que de fato melhora o dia a dia das pessoas.',
+        'Sou Engenheira de Software Sênior, com foco em backend e 10+ anos de experiência em sistemas de larga escala, incluindo autenticação e gerenciamento de sessões na Uber. Gosto de transformar ideias em software confiável, que de fato melhora o dia a dia das pessoas.',
         'Atuo principalmente no backend (Java, Go, C#, APIs e sistemas distribuídos) e tenho fluência em front-end quando o projeto exige. Valorizo código limpo, bom design e práticas que sustentam o crescimento do sistema.',
         'Tenho perfil prático, colaborativo e curioso. Acredito que times fortes aprendem juntos e que o conhecimento sempre pode ser aprimorado.'
     ]

@@ -3,9 +3,9 @@ import { WorkExperienceEnum } from '../models/enums/work-experience.enum';
 
 
 const portuguese = <{ [id: string]: string }>{
-    [WorkExperienceEnum.UBER_SENIOR_SOFTWARE_ENGINEER_ADS]: `Engenheira Backend Sênior no time de Ads, responsável pelo fluxo ponta a ponta da vertical de Grocery Ads (lado da demanda: leilão, bidders e relevância; acompanhando também o lado da oferta).`,
-    [WorkExperienceEnum.UBER_SENIOR_SOFTWARE_ENGINEER]: `Uber é uma Big Tech com foco em mobilidade urbana, cujo os serviços incluem: 
-        transporte privado, entrega de comida/pacotes, transporte de carga, entre outros. O time de "Session Management",  do qual eu fiz parte, é responsável por 
+    [WorkExperienceEnum.UBER_SENIOR_SOFTWARE_ENGINEER_ADS]: `Engenheira Backend Sênior no time de Ads, responsável pelo fluxo ponta a ponta da vertical de Grocery Ads 
+        (lado da demanda: leilão, bidders e relevância; acompanhando também o lado da oferta). Minhas principais responsabilidades são:`,
+    [WorkExperienceEnum.UBER_SENIOR_SOFTWARE_ENGINEER]: `O time de "Session Management",  do qual eu fiz parte, é responsável por 
         cuidar de toda a parte de autenticação dos usuários assim como gerenciamento de sessões. Como Engenheira Backend Sênior no time minhas principais contribuições foram:`,
     [WorkExperienceEnum.UBER_SOFTWARE_ENGINEER]: `Durante meu tempo como Engenheira Backend L4 na Uber, eu tive a oportunidade de trabalhar em diversos projetos e atividades, alguns dos quais listados abaixo:`,
     [WorkExperienceEnum.OPUS_SENIOR_TECH_LEAD]: `A OPUS Software é uma consultoria localizada em São Paulo - SP. Como Tech Lead e Desenvolvedor Sênior, minhas 
