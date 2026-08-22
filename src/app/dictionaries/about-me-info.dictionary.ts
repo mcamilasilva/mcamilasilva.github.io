@@ -26,7 +26,7 @@ const english = <{ [id: string]: any }>{
     [AboutMeInfoEnum.PHONE]: '+1 (647) 450-4209',
     [AboutMeInfoEnum.LOCATION]: LocaleDictionary[SystemLanguageEnum.EN_US][LocaleEnum.TORONTO],
     [AboutMeInfoEnum.BIO]: [
-        `I am a Senior Backend Engineer with experience building and operating large-scale systems, including Ads and authentication platforms at Uber. I enjoy turning product ideas into reliable software that people actually use.`,
+        `I am a Senior Backend Engineer with 10+ years of experience building and operating large-scale systems, including Ads and authentication platforms at Uber. I enjoy turning product ideas into reliable software that people actually use.`,
         `I work primarily on the backend (Java, Go, C#, APIs, and distributed systems) and I am comfortable across the stack when the work requires it. I care about clean design, maintainable code, and practices that keep systems healthy as they grow.`,
         `I am hands-on, collaborative, and curious. I work best in teams where people challenge each other, share knowledge, and keep raising the bar.`
     ]
