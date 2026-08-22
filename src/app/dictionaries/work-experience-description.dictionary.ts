@@ -21,9 +21,9 @@ const portuguese = <{ [id: string]: string }>{
 };
 
 const english = <{ [id: string]: string }>{
-    [WorkExperienceEnum.UBER_SENIOR_SOFTWARE_ENGINEER_ADS]: `Senior Backend Engineer on the Ads team, responsible for the end-to-end flow of the Grocery Ads vertical (demand side: auction, bidders, and relevance; overseeing the supply side).`,
-    [WorkExperienceEnum.UBER_SENIOR_SOFTWARE_ENGINEER]: `Uber is Big Tech focused on urban mobility and transportation, whose services include,
-        but are not limited to: ride-sharing, food and package delivery, couriers and freight transportation. The "Session Management" team, of which I was a member,
+    [WorkExperienceEnum.UBER_SENIOR_SOFTWARE_ENGINEER_ADS]: `Senior Backend Engineer on the Ads team, responsible for the end-to-end flow of the Grocery Ads vertical (demand side: 
+        auction, bidders, and relevance; overseeing the supply side). My main responsibilities are:`,
+    [WorkExperienceEnum.UBER_SENIOR_SOFTWARE_ENGINEER]: `The "Session Management" team 
         is responsible for taking care of all matters related to user's authentication and user's identity evaluation, as well as control of user's sessions. As a Senior Backend Engineer,
         my main contributions were:`,
     [WorkExperienceEnum.UBER_SOFTWARE_ENGINEER]: `During my time as L4 Backend Engineer at Uber I had the opportunity of working in a variety of projects and activities, some of which included:`,
