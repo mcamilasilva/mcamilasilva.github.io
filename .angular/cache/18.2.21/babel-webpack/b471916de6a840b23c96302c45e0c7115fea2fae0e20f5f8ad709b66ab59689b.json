@@ -1,0 +1,1 @@
+{"ast":null,"code":"export var MajorEnum = /*#__PURE__*/function (MajorEnum) {\n  MajorEnum[MajorEnum[\"COMPUTER_SCIENCE\"] = 0] = \"COMPUTER_SCIENCE\";\n  MajorEnum[MajorEnum[\"BUSINESS_INTELLIGENCE\"] = 1] = \"BUSINESS_INTELLIGENCE\";\n  return MajorEnum;\n}(MajorEnum || {});","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}

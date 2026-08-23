@@ -1,0 +1,1 @@
+{"ast":null,"code":"export var SystemLanguageEnum = /*#__PURE__*/function (SystemLanguageEnum) {\n  SystemLanguageEnum[\"EN_US\"] = \"EN_US\";\n  SystemLanguageEnum[\"PT_BR\"] = \"PT_BR\";\n  return SystemLanguageEnum;\n}(SystemLanguageEnum || {});","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}

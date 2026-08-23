@@ -1,0 +1,1 @@
+{"ast":null,"code":"export var SchoolEnum = /*#__PURE__*/function (SchoolEnum) {\n  SchoolEnum[SchoolEnum[\"UFSCAR\"] = 0] = \"UFSCAR\";\n  SchoolEnum[SchoolEnum[\"SAPIENZA\"] = 1] = \"SAPIENZA\";\n  return SchoolEnum;\n}(SchoolEnum || {});","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}

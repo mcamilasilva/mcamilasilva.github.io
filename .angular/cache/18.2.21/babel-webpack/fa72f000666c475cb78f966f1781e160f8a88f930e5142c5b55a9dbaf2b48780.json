@@ -1,0 +1,1 @@
+{"ast":null,"code":"export var CountryEnum = /*#__PURE__*/function (CountryEnum) {\n  CountryEnum[CountryEnum[\"BRAZIL\"] = 0] = \"BRAZIL\";\n  CountryEnum[CountryEnum[\"CANADA\"] = 1] = \"CANADA\";\n  return CountryEnum;\n}(CountryEnum || {});","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}

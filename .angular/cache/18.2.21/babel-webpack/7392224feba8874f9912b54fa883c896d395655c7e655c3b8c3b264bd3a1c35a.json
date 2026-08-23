@@ -1,0 +1,1 @@
+{"ast":null,"code":"export var CompanyEnum = /*#__PURE__*/function (CompanyEnum) {\n  CompanyEnum[\"OPUS\"] = \"OPUS Software Ltda.\";\n  CompanyEnum[\"AUDAXWARE\"] = \"Audaxware LLC\";\n  CompanyEnum[\"UBER\"] = \"Uber Technologies Inc.\";\n  return CompanyEnum;\n}(CompanyEnum || {});","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}
