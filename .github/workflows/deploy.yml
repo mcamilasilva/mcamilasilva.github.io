@@ -27,11 +27,15 @@ jobs:
         run: npm install --legacy-peer-deps 
 
       - name: Build Angular Application
-        run: npx ng build --configuration production --base-href /mcamilasilva.github.io/
+        run: npx ng build --configuration production --base-href /
 
       - name: Handle Angular Routing (404 page)
         # Copies index.html to 404.html using 'docs' output path
         run: cp docs/index.html docs/404.html
+
+      - name: Disable Jekyll
+        # Prevents GitHub from hiding files starting with underscores
+        run: touch docs/.nojekyll
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
